@@ -1,0 +1,135 @@
+<!-- sections/los-life.liquid -->
+<div
+  class="los-life"
+  style="display: flex; flex-wrap: wrap; justify-content: center; gap: 60px; padding: 60px 20px; align-items: center;"
+>
+  <!-- Static Left Image -->
+  <div class="left-image" style="flex: 1 1 400px; max-width: 600px;">
+    {% if section.settings.hero_image %}
+      <img
+        src="{{ section.settings.hero_image | image_url: width: 800 }}"
+        alt="Hero Image"
+        style="width: 100%; border-radius: 10px;"
+      >
+    {% endif %}
+  </div>
+
+  <!-- Carousel Right Side -->
+  <div class="carousel-wrapper" style="flex: 1 1 300px; max-width: 400px; position: relative;">
+    <div id="los-carousel">
+      {% for block in section.blocks %}
+        <div
+          class="carousel-item"
+          style="display: none; flex-direction: column; align-items: center; text-align: center;"
+        >
+          {% if block.settings.image %}
+            <img
+              src="{{ block.settings.image | image_url: width: 400 }}"
+              alt="Carousel Image"
+              style="width: 100%; border-radius: 10px; margin-bottom: 20px;"
+            >
+          {% endif %}
+          <div class="carousel-text">
+            <p style="margin: 0 0 5px; font-weight: 700;">{{ block.settings.name }}</p>
+            <p style="margin: 0 0 10px; font-style: italic; color: #555;">@{{ block.settings.handle }}</p>
+            <p style="margin: 0; font-size: 14px; color: #333;">{{ block.settings.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Arrows -->
+    <div style="text-align: center; margin-top: 20px;">
+      <button
+        onclick="losPrev()"
+        style="font-size: 18px; padding: 8px 14px; margin-right: 10px; border: 1px solid #ccc; border-radius: 50%; background: white;"
+      >
+        &#8592;
+      </button>
+      <button
+        onclick="losNext()"
+        style="font-size: 18px; padding: 8px 14px; border: 1px solid #ccc; border-radius: 50%; background: white;"
+      >
+        &#8594;
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('#los-carousel .carousel-item');
+    let current = 0;
+
+    function showItem(index) {
+      items.forEach((el, i) => {
+        el.style.display = i === index ? 'flex' : 'none';
+      });
+    }
+
+    window.losNext = function () {
+      current = (current + 1) % items.length;
+      showItem(current);
+    }
+
+    window.losPrev = function () {
+      current = (current - 1 + items.length) % items.length;
+      showItem(current);
+    }
+
+    if (items.length > 0) {
+      showItem(current);
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "LOS LIFE",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "carousel_item",
+      "name": "Carousel Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Carousel Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "RONY SEIKALY"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Handle",
+          "default": "RONYSEIKALY"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "LOS LIFE",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

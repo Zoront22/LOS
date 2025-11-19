@@ -1,0 +1,137 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:groups.header_group.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_gTpJhT": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free standard shipping and returns on all orders",
+            "text_mobile": ""
+          }
+        },
+        "announcement_PnbGB7": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free standard shipping and returns on all orders",
+            "text_mobile": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_gTpJhT",
+        "announcement_PnbGB7"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_on_homepage_only": true,
+        "enable_sticky_announcement_bar": "never",
+        "text_size": "fs-body-75",
+        "style": "scrolling-text",
+        "slideshow_enable_autoplay": true,
+        "slideshow_autoplay_delay": 4,
+        "scrolling_text_duration": 10,
+        "scrolling_text_direction": "normal"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "meganav_tBHHrg": {
+          "type": "meganav",
+          "settings": {
+            "title": "",
+            "column_count": 4,
+            "condense_solo_categories": true,
+            "heading_text_style": "heading",
+            "submenu_text_style": "heading",
+            "promotion_image_aspect_ratio": "square",
+            "promotion_position_on_desktop": "last",
+            "promotion_position_on_mobile": "last",
+            "promotion_show_on_mobile": true,
+            "promotion_layout_on_mobile": "slider",
+            "promotion_item_1_enabled": true,
+            "promotion_item_1_heading": "",
+            "promotion_item_1_text": "",
+            "promotion_item_1_link": "",
+            "promotion_item_2_enabled": true,
+            "promotion_item_2_heading": "",
+            "promotion_item_2_text": "",
+            "promotion_item_2_link": "",
+            "promotion_item_3_enabled": true,
+            "promotion_item_3_heading": "",
+            "promotion_item_3_text": "",
+            "promotion_item_3_link": "",
+            "promotion_item_4_enabled": true,
+            "promotion_item_4_image": "shopify://shop_images/image_2.png",
+            "promotion_item_4_heading": "heding",
+            "promotion_item_4_text": "",
+            "promotion_item_4_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "meganav_tBHHrg"
+      ],
+      "custom_css": [
+        "a {font-size: 15px; font-weight: 600;}",
+        "ul {gap: 5px;}",
+        "@media (min-width: 1700px) {ul {gap: 20px; }}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "menu": "main-menu",
+        "show_search": true,
+        "enable_sticky_header": true,
+        "sticky_header_style": "delayed",
+        "header_layout": "logo-center_menu-left",
+        "logo": "shopify://shop_images/LOGO_black.svg",
+        "logo_width": 120,
+        "logo_width_mobile": 90,
+        "show_language_selector": false,
+        "show_country_selector": false,
+        "show_country_flag": true,
+        "country_selector_label": "currency",
+        "enable_transparent_on_home": true,
+        "enable_transparent_template_list": "",
+        "logo_transparent": "shopify://shop_images/LOGO_black.svg",
+        "color_text_transparent": "#ffffff"
+      }
+    },
+    "impact-logo": {
+      "type": "impact-logo",
+      "settings": {
+        "color_scheme": "",
+        "logo": "shopify://shop_images/LOS_Logo_1.svg",
+        "visibility": "all-screens",
+        "logo_width": "full-width",
+        "logo_custom_width": 510,
+        "logo_alignment": "center",
+        "enable_transparent_logo": true,
+        "enable_parallax_on_scroll": true,
+        "fade_effect": "top_bottom_fade",
+        "top_padding": 65,
+        "bottom_padding": 40,
+        "top_padding_mobile": 20,
+        "bottom_padding_mobile": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "impact-logo"
+  ]
+}

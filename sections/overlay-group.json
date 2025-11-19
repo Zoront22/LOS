@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.overlay",
+  "name": "t:groups.overlay_group.name",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "disabled": true,
+      "settings": {
+        "cross_sells_layout": "list"
+      }
+    },
+    "predictive-search-drawer": {
+      "type": "predictive-search-drawer",
+      "disabled": true,
+      "settings": {}
+    },
+    "popups": {
+      "type": "popups",
+      "blocks": {
+        "flyout_XV77Kp": {
+          "type": "flyout",
+          "settings": {
+            "color_scheme": "scheme_1",
+            "delay_appearance": "timer_30000",
+            "frequency": "100000",
+            "show_on_exit_intent": false,
+            "disable_for_account_holders": true,
+            "show_on_specific_page": false,
+            "target_page": "",
+            "overline": "",
+            "heading": "Announce your promotion",
+            "heading_font_size": 2,
+            "text": "<p>You also get free shipping. Use code PROMO</p>",
+            "text_font_size": 3,
+            "button_link": "",
+            "button_label": "Start shopping",
+            "dismiss_text": "No thanks",
+            "footer_text": "<p>* optional footer note</p>",
+            "flyout_position": "right_center",
+            "content_alignment": "left",
+            "enable_image": true,
+            "image_size": "small"
+          }
+        }
+      },
+      "block_order": [
+        "flyout_XV77Kp"
+      ],
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "cart-drawer",
+    "predictive-search-drawer",
+    "popups"
+  ]
+}

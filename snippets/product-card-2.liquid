@@ -1,0 +1,17 @@
+
+  <div class="product-card">
+    <a href="{{ product.url | within: collection }}">
+      <img
+        src="{{ product.featured_image | image_url: width: 480 }}"
+        alt="{{ product.featured_image.alt | escape }}"
+        width="120"
+        height="{{ 120 | divided_by: product.featured_image.aspect_ratio | round }}"
+        loading="lazy"
+      >
+      <div class="product-card-content">
+        <div class="product-vendor">{{ product.vendor }}</div>
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price | money }}</p>
+      </div>
+    </a>
+  </div>

@@ -1,0 +1,790 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "enable_corner_radius": true,
+        "top_padding": 80,
+        "bottom_padding": 60
+      }
+    },
+    "rich_text_dpf6bN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kawYN9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Los Origins",
+            "heading_font_size": 8,
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kawYN9"
+      ],
+      "custom_css": [
+        "h1 {color: #dbd5c2; font-size: 215px !important;}",
+        "@media (max-width: 719.9px) {h1 {font-size: 60px; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "content_width": "custom-width",
+        "custom_width": 950,
+        "text_alignment": "center",
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    },
+    "rich_text_1": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cRPG9U": {
+          "type": "heading",
+          "settings": {
+            "heading": "We knew that men who value versatility in stylish, elevated, high-performance apparel didn't have a brand aligned with their needs.",
+            "heading_font_size": 4,
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cRPG9U"
+      ],
+      "custom_css": [
+        "h3 {color: #989385;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-8187da2a-8d08-43a2-a64b-cc92776a9b04",
+        "content_width": "custom-width",
+        "custom_width": 950,
+        "text_alignment": "center",
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    },
+    "image_hero_HCpE94": {
+      "type": "image-hero",
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/resort-co-summer-2024-swim-shorts-mens-5_1.png",
+        "background_link": "",
+        "custom_desktop_height": "80vh",
+        "custom_mobile_height": "550px",
+        "content_width": 500,
+        "text_position_desktop": "center_center",
+        "text_position_mobile": "center_center",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 20,
+        "enable_text_animation": true,
+        "image_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "image_with_text_RyG6hc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qiKq8K": {
+          "type": "heading",
+          "settings": {
+            "heading": "from our founder",
+            "heading_font_size": 1,
+            "heading_tag": "h6"
+          }
+        },
+        "text_YLWKRQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>",
+            "text_font_size": 3,
+            "text_width": "100%",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qiKq8K",
+        "text_YLWKRQ"
+      ],
+      "custom_css": [
+        ".section-inner {margin-top: 130px;}",
+        ".media-with-text__content-blocks {padding: 0px;}",
+        ".media-with-text__content-blocks-inner {max-width: max-content; padding-left: 4rem;}",
+        "p {font-size: 23px !important; font-weight: 300 !important; font-family: var(--font-family-body) !important;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/founder_image111.png",
+        "aspect_ratio": "natural",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 25,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "top",
+        "container_color_scheme": "",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 0
+      }
+    },
+    "rich_text_bxRYXz": {
+      "type": "rich-text",
+      "blocks": {
+        "overline_X6Ee8x": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "text": "Overline"
+          }
+        },
+        "heading_GkRhrF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Rich text",
+            "heading_font_size": 5,
+            "heading_tag": "h2"
+          }
+        },
+        "text_A8tikP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>MOSHE LANIADO, FOUNDER</p>",
+            "text_font_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "overline_X6Ee8x",
+        "heading_GkRhrF",
+        "text_A8tikP"
+      ],
+      "custom_css": [
+        ".content-block--text {font-family: \"Hanken Grotesk\", sans-serif; font-weight: 500; font-size: 15px;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "page-width",
+        "custom_width": 1000,
+        "text_alignment": "left",
+        "top_padding": 20,
+        "bottom_padding": 0
+      }
+    },
+    "image_with_text_7KQcWK": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_4JFd4e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>",
+            "text_font_size": 3,
+            "text_width": "75%",
+            "text_alignment": "right"
+          }
+        },
+        "text_7xVF6x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>",
+            "text_font_size": 3,
+            "text_width": "75%",
+            "text_alignment": "right"
+          }
+        },
+        "image_wtcMaQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Moshe_Laniado.png",
+            "image_size": 50,
+            "image_size_mobile": 50,
+            "enable_corner_radius": true
+          }
+        }
+      },
+      "block_order": [
+        "text_4JFd4e",
+        "text_7xVF6x",
+        "image_wtcMaQ"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 721px) {.section-inner {margin-top: -10%; }}",
+        "@media screen and (min-width: 720px) and (max-width: 900px) {.section-inner {margin-top: -2%; }}",
+        "@media screen and (max-width: 721px) {.text-block-wrapper {justify-content: center !important; }}",
+        ".media-with-text__content-blocks {padding-left: 40px; align-items: self-end;}",
+        ".image-block__inner {display: flex; justify-content: flex-end;}",
+        "@media (max-width: 720px) {.image-block__inner {justify-content: center; }}",
+        ".content-block p {font-size: 18px; font-weight: 300;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Group_633246_39949ba5-bbd6-46f9-8af9-eeca0bb59966.png",
+        "aspect_ratio": "natural",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "right",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "multi_column_1": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_1": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/Ratio_frame.png",
+            "heading": "sun shield technology",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.  </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_9jcEVH": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/Ratio_frame-1.png",
+            "heading": "targeted support",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.  </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_EQ7Qwa": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/Ratio_frame-2.png",
+            "heading": "body mapped compression",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.  </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_xwRE9z": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/Ratio_frame.png",
+            "heading": "sun shield technology",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.  </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_1",
+        "column_item_9jcEVH",
+        "column_item_EQ7Qwa",
+        "column_item_xwRE9z"
+      ],
+      "custom_css": [
+        ".section-header__content {display: flex; justify-content: center;}",
+        "@media (min-width: 720px) {.section-header {display: flex; justify-content: center; }}",
+        ".image {border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "materials",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Learn more",
+        "column_spacing": "medium",
+        "column_count_desktop": "3",
+        "column_count_mobile": "2",
+        "enable_slider_on_desktop": true,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 3,
+        "button_style": "solid",
+        "media_aspect_ratio": "portrait",
+        "media_position": "above_content",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "image_with_text_je8wq7": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_xBNy6H": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"centered\">\n        <span style=\"font-size:30px; line-height:1.5rem; font-weight:500; display:block;\">\n          DESIGN\n        </span>\n      </div>\n\n      <div class=\"image-block\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/0e0a10d0-691c-4146-ab08-58227906eb3b_94780b9b-e301-4318-ad07-7195ce8024cb.png?v=1747839444\" alt=\"Design Image\">\n        <p class=\"text\" style=\"font-family: Hanken Grotesk;\nfont-weight: 500;\nfont-size: 18px;\nline-height: 138%;\nletter-spacing: 0%;\nvertical-align: middle;\n\">\n          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque\n        </p>\n      </div>\n    </div>\n\n    <div>\n      <p class=\"texts\" style=\"font-family: Hanken Grotesk;\nfont-weight: 300;\nfont-size: 18px;\nline-height: 138%;\nletter-spacing: 0%;\nvertical-align: middle;\n\">\n        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.\n      </p>\n    </div>\n  </div>\n\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      height: 100%;\n    }\n\n    .row {\n      display: flex;\n      gap: 1.875rem;\n      padding-bottom: 3rem;\n    }\n\n    .centered {\n      width: 40%;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n@media (min-width: 720px) and (max-width: 1020px) {\n  .centered {\n    width: 100%;\n  }\n}\n\n    .image-block {\n      width: 100%;\n    }\n\n    .image-block img {\n      width: 100%;\n      margin-bottom: 1.25rem;\n    }\n\n    .text {\n      font-size: 0.875rem;\n      line-height: 1.25rem;\n      margin-top: 0;\n      width: 100%;\n    }\n .texts {\n      font-size: 0.875rem;\n      line-height: 1.25rem;\n      margin-top: 0;\n      width: 60%;\n    }\n@media (max-width: 869px) {\n  .texts {\n    width: 100%;\n  }\n}\n    @media screen and (max-width: 920px) { \n      .text {\n        width: 100%;\n      }\n    }\n  </style>"
+          }
+        },
+        "overline_UeegdF": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_zLmraL": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_FG6xk4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>",
+            "text_font_size": 3,
+            "text_width": "50%",
+            "text_alignment": "left"
+          }
+        },
+        "button_RxVkdh": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_link": "",
+            "button_label": "Button",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_xBNy6H",
+        "overline_UeegdF",
+        "heading_zLmraL",
+        "text_FG6xk4",
+        "button_RxVkdh"
+      ],
+      "custom_css": [
+        ".image {border-radius: 10px;}",
+        ".media-with-text__content-blocks {padding: 0px; align-items: flex-start;}",
+        ",.media-with-text-inner,.media-with-text__content-blocks {height: auto;}",
+        ".media-with-text__content-blocks-inner,.content-blocks,.block-div,.content-block {height: 100%;}",
+        "@media screen and (min-width: 1000px) {.block-div {padding-left: 10%; }}"
+      ],
+      "name": "DESIGN",
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Group_633246.png",
+        "aspect_ratio": "natural",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 1000,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "rich_text_3": {
+      "type": "rich-text",
+      "blocks": {
+        "overline": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "text": "Overline"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Design",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text_font_size": 3
+          }
+        },
+        "button": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_link": "",
+            "button_label": "Button",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "overline",
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme_1",
+        "content_width": "page-width",
+        "custom_width": 1000,
+        "text_alignment": "center",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "multi_column_2": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_1": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/Group_633246.png",
+            "heading": "",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_2": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/0e0a10d0-691c-4146-ab08-58227906eb3b.png",
+            "heading": "",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_1",
+        "column_item_2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Learn more",
+        "column_spacing": "small",
+        "column_count_desktop": "2",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 6,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 3,
+        "button_style": "solid",
+        "media_aspect_ratio": "portrait",
+        "media_position": "above_content",
+        "width": "full-width-padded",
+        "top_padding": 10,
+        "bottom_padding": 30
+      }
+    },
+    "image_with_text_trYP3W": {
+      "type": "image-with-text",
+      "blocks": {
+        "overline_ryPXcz": {
+          "type": "overline",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_RVjwVT": {
+          "type": "heading",
+          "settings": {
+            "heading": "talk to us",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_XUPDiJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_font_size": 3,
+            "text_width": "100%",
+            "text_alignment": "center"
+          }
+        },
+        "button_xb9VzG": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "contact@los.com",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "overline_ryPXcz",
+        "heading_RVjwVT",
+        "text_XUPDiJ",
+        "button_xb9VzG"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/543ab13e-a613-4c51-bd05-c371292b4bba.png",
+        "aspect_ratio": "natural",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "grid_E9HdAY": {
+      "type": "grid",
+      "blocks": {
+        "grid_item_CyzX4X": {
+          "type": "grid_item",
+          "disabled": true,
+          "settings": {
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20,
+            "width": "100%",
+            "height": 400,
+            "mobile_height": 500,
+            "content_position": "center_center",
+            "mobile_content_position": "center_center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "content_width": "custom",
+            "maximum_content_width": 450,
+            "overline": "Trending now",
+            "heading": "Grid item",
+            "heading_font_size": 8,
+            "heading_tag": "h3",
+            "text": "The grid is perfect for promotions, lookbooks, and editorial photography.",
+            "text_font_size": 3,
+            "button_link": "",
+            "button_label": "Button",
+            "button_style": "solid",
+            "button_size": "regular",
+            "enable_scrolling_text": true,
+            "scrolling_text": "Trending now"
+          }
+        },
+        "grid_item_zF3JLm": {
+          "type": "grid_item",
+          "settings": {
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20,
+            "width": "50%",
+            "height": 400,
+            "mobile_height": 500,
+            "image": "shopify://shop_images/image_1.png",
+            "content_position": "center_center",
+            "mobile_content_position": "center_center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "content_width": "custom",
+            "maximum_content_width": 450,
+            "overline": "",
+            "heading": "TALK TO US",
+            "heading_font_size": 8,
+            "heading_tag": "h3",
+            "text": "",
+            "text_font_size": 3,
+            "button_link": "",
+            "button_label": "Button",
+            "button_style": "solid",
+            "button_size": "regular",
+            "enable_scrolling_text": false,
+            "scrolling_text": ""
+          }
+        },
+        "grid_item_4B4Rp3": {
+          "type": "grid_item",
+          "settings": {
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20,
+            "width": "50%",
+            "height": 400,
+            "mobile_height": 500,
+            "image": "shopify://shop_images/image_2.png",
+            "content_position": "center_center",
+            "mobile_content_position": "center_center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "content_width": "custom",
+            "maximum_content_width": 730,
+            "overline": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque",
+            "heading": "",
+            "heading_font_size": 3,
+            "heading_tag": "h6",
+            "text": "",
+            "text_font_size": 3,
+            "button_link": "shopify://policies/privacy-policy",
+            "button_label": "CONTACT@LOS.COM",
+            "button_style": "outline",
+            "button_size": "regular",
+            "enable_scrolling_text": false,
+            "scrolling_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_CyzX4X",
+        "grid_item_zF3JLm",
+        "grid_item_4B4Rp3"
+      ],
+      "custom_css": [
+        ".btn,.shopify-challenge__button {width: 60%;}",
+        ".btn__label {font-weight: bolder;}"
+      ],
+      "name": "t:sections.grid.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "section_header_heading": "",
+        "heading_font_size": 5,
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "desktop_spacing": 0,
+        "mobile_spacing": 0,
+        "enable_scrolling_text": true,
+        "scroll_duration": 5,
+        "scroll_direction": "reverse",
+        "text_divider": "icon",
+        "icon": "general-smile",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "newsletter_nxPLED": {
+      "type": "newsletter",
+      "blocks": {
+        "overline_RdejTM": {
+          "type": "overline",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_4TNrfU": {
+          "type": "heading",
+          "settings": {
+            "heading": "join our mailing list",
+            "heading_font_size": 3,
+            "heading_tag": "h2"
+          }
+        },
+        "text_iNwA6n": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": 3
+          }
+        },
+        "email_form_pMxYjg": {
+          "type": "email-form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "overline_RdejTM",
+        "heading_4TNrfU",
+        "text_iNwA6n",
+        "email_form_pMxYjg"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "content_max_width": 500,
+        "banner_height_type": "adapt",
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "450px",
+        "text_alignment": "top_left",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 40,
+        "image_animation": "iris",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    }
+  },
+  "order": [
+    "main_page",
+    "rich_text_dpf6bN",
+    "rich_text_1",
+    "image_hero_HCpE94",
+    "image_with_text_RyG6hc",
+    "rich_text_bxRYXz",
+    "image_with_text_7KQcWK",
+    "multi_column_1",
+    "image_with_text_je8wq7",
+    "rich_text_3",
+    "multi_column_2",
+    "image_with_text_trYP3W",
+    "grid_E9HdAY",
+    "newsletter_nxPLED"
+  ]
+}

@@ -1,0 +1,926 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "video": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0810ac44c9ec648ce15fd520194cffa47439f376.mp4",
+            "video_focal_point": "bottom",
+            "mobile_video_focal_point": "center",
+            "content_max_width": 630,
+            "text_position": "bottom_left",
+            "mobile_text_position": "bottom_center",
+            "overline": "",
+            "heading": "",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+            "text_font_size": 8,
+            "button_1_link": "",
+            "button_1_label": "EXPLORE",
+            "button_1_style": "outline",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "scheme_4",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "video"
+      ],
+      "custom_css": [
+        "button {font-weight: bold;}",
+        ".slideshow-slide__content {padding-bottom: 0px !important;}",
+        ".slideshow-slide__content-inner {display: flex; width: 100%; flex-direction: row; align-content: center; justify-content: space-between; align-items: flex-end; max-width: 100% !important;}",
+        "@media screen and (max-width: 749px) {.slideshow-slide__content-inner {flex-direction: column; align-items: center; }}",
+        ".content-block--text {margin-bottom: 0px; font-weight: 700;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "100vh",
+        "custom_mobile_height": "80vh",
+        "pagination_alignment": "center",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#222222",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 50,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "featured_collection_1": {
+      "type": "featured-collection",
+      "custom_css": [
+        "{border-top: 16px solid #ffce00;}",
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.2rem;}",
+        ".product-item__price {flex-direction: row;}",
+        ".product-item__swatches {display: none !important;}",
+        ".product-item__image-wrapper {border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "TRENDING NOW",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "collection": "frontpage",
+        "max_products": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_slider_indicator": false,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 80
+      }
+    },
+    "scrolling_content": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_PtLREJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LOS_Logo_1.svg",
+            "image_size_desktop": 200,
+            "image_size_mobile": 50,
+            "enable_corner_radius": false,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PtLREJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme_2",
+        "text_style": "heading",
+        "text_font_size": 4,
+        "text_mobile_font_size": 4,
+        "duration": 13,
+        "direction": "normal",
+        "gap_desktop": 50,
+        "gap_mobile": 30,
+        "top_padding": 30,
+        "bottom_padding": 30
+      }
+    },
+    "image_with_text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "WATER",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
+            "text_font_size": 5,
+            "text_width": "75%",
+            "text_alignment": "center"
+          }
+        },
+        "button": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_link": "shopify://pages/copy-of-los-origins",
+            "button_label": "SHOP WATER",
+            "button_style": "outline"
+          }
+        },
+        "button_qWKfbH": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/waller-collection",
+            "button_label": "SHOP WATER",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button",
+        "button_qWKfbH"
+      ],
+      "custom_css": [
+        "h2,p,button {text-align: center; margin: auto;}",
+        "button {font-weight: bold;}",
+        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
+        ".block-div {display: flex; justify-content: center;}",
+        ".content-block--text {width: 70%;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/water.png",
+        "aspect_ratio": "landscape-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "right",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "st-tropez-circuit-short",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "scheme_1",
+        "width": "page-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "image_with_text_e3MGnq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Hm4YQm": {
+          "type": "heading",
+          "settings": {
+            "heading": "EARTH",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_xjNiAM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
+            "text_font_size": 5,
+            "text_width": "75%",
+            "text_alignment": "center"
+          }
+        },
+        "button_j9p7yL": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "SHOP EARTH",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hm4YQm",
+        "text_xjNiAM",
+        "button_j9p7yL"
+      ],
+      "custom_css": [
+        "h2,p,button {text-align: center; margin: auto;}",
+        "button {font-weight: bold;}",
+        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
+        ".block-div {display: flex; justify-content: center;}",
+        ".content-block--text {width: 70%;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/earth.png",
+        "aspect_ratio": "landscape-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "st-tropez-circuit-short",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "scheme_1",
+        "width": "page-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "video_with_text_BARfFA": {
+      "type": "video-with-text",
+      "blocks": {
+        "overline_dFAmTU": {
+          "type": "overline",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_dkfkJL": {
+          "type": "heading",
+          "settings": {
+            "heading": "COURT",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_xb7FKL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
+            "text_font_size": 5,
+            "text_width": "75%",
+            "text_alignment": "center"
+          }
+        },
+        "button_pWpdeg": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "SHOP COURT",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "overline_dFAmTU",
+        "heading_dkfkJL",
+        "text_xb7FKL",
+        "button_pWpdeg"
+      ],
+      "custom_css": [
+        "h2,p,button {text-align: center; margin: auto;}",
+        "button {font-weight: bold;}",
+        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
+        ".block-div {display: flex; justify-content: center;}",
+        ".content-block--text {width: 70%;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "video": "shopify://files/videos/71878ce79dbe50f3515d80c44f494d3eba3a4fea.mp4",
+        "video_focal_point": "center",
+        "mobile_video_focal_point": "center",
+        "aspect_ratio": "landscape-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "right",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "st-tropez-circuit-short",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "",
+        "width": "page-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "image_with_text_Rtii4q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4teR7M": {
+          "type": "heading",
+          "settings": {
+            "heading": "club",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_A9FnrX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
+            "text_font_size": 5,
+            "text_width": "75%",
+            "text_alignment": "center"
+          }
+        },
+        "button_qQ7E47": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "SHOP CLUB",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4teR7M",
+        "text_A9FnrX",
+        "button_qQ7E47"
+      ],
+      "custom_css": [
+        "h2,p,button {text-align: center; margin: auto;}",
+        "button {font-weight: bold;}",
+        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
+        ".block-div {display: flex; justify-content: center;}",
+        ".content-block--text {width: 70%;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/club.png",
+        "aspect_ratio": "landscape-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "st-tropez-circuit-short",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "scheme_1",
+        "width": "page-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "multi_column_x3gxBA": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_mCDeez": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/david.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_KXJcD3": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/earl.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_9Ky8zf": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/rony.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_Peq68W": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/justin.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_mCDeez",
+        "column_item_KXJcD3",
+        "column_item_9Ky8zf",
+        "column_item_Peq68W"
+      ],
+      "custom_css": [
+        ".section-header {display: flex; flex-direction: column; align-items: center;}",
+        ".section-inner {background: linear-gradient( to bottom, #dfd5c5 0%, #dfd5c5 5%, white 5%, white 40%, #dfd5c5 40%, #dfd5c5 100% );}",
+        ".image {border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_3",
+        "section_header_heading": "The LOS Life",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Discover all",
+        "column_spacing": "small",
+        "column_count_desktop": "4",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 3,
+        "button_style": "solid",
+        "media_aspect_ratio": "natural",
+        "media_position": "below_content",
+        "width": "full-width-padded",
+        "top_padding": 80,
+        "bottom_padding": 0
+      }
+    },
+    "rich_text_n4ergL": {
+      "type": "rich-text",
+      "blocks": {
+        "button_DhQefq": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://pages/landing-page",
+            "button_label": "EXPLORE THE LOS LIFE >",
+            "button_style": "text"
+          }
+        }
+      },
+      "block_order": [
+        "button_DhQefq"
+      ],
+      "custom_css": [
+        "button {font-weight: bold;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_3",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "hero-phrase-1": {
+      "type": "hero-phrase",
+      "settings": {
+        "title": "WEDNESDAY IN MIAMI",
+        "subtitle": "Experience a day with our friends",
+        "bg_color": "#EFEAE2",
+        "title_size": 132,
+        "subtitle_size": 38.79,
+        "max_width": 1728,
+        "section_height": 480
+      }
+    },
+    "main": {
+      "type": "main-collection-banner"
+    },
+    "featured_collection_84hhUq": {
+      "type": "featured-collection",
+      "blocks": {
+        "promotion_tile_qUcWxX": {
+          "type": "promotion-tile",
+          "settings": {
+            "min_height": 300,
+            "image": "shopify://shop_images/los_life_promo.png",
+            "link": "",
+            "heading": "explore the los life",
+            "heading_font_size": 3,
+            "text": "",
+            "text_font_size": 3,
+            "text_alignment": "top_left",
+            "button_label": "Shop now",
+            "button_style": "solid",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "scheme_4",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "promotion_tile_qUcWxX"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "button {font-weight: bold;}",
+        ".price {display: none;}",
+        ".product-item__title {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_3",
+        "section_header_heading": "THE LOS LIFE",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "collection": "",
+        "max_products": 4,
+        "column_count_desktop": "3",
+        "column_count_mobile": "2",
+        "show_slider_indicator": false,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 80
+      }
+    },
+    "video_hero": {
+      "type": "video-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOS ORIGINS",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>",
+            "text_font_size": 5,
+            "text_width": "65%",
+            "text_alignment": "center"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://pages/copy-of-los-origins",
+            "button_label": "LEARN MORE",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "custom_css": [
+        "button {font-weight: bold;}",
+        ".content-block--text {width: 0%;}",
+        ".block-div {display: flex; align-items: center; justify-content: center;}",
+        ".content-block-wrapper--heading {width: 100%;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "video": "shopify://files/videos/aaf1c4e3776e11821483d5d5fc29da717e58a9ab.mp4",
+        "video_focal_point": "center",
+        "mobile_video_focal_point": "center",
+        "background_link": "",
+        "custom_desktop_height": "650px",
+        "custom_mobile_height": "350px",
+        "content_width": 660,
+        "text_position_desktop": "center_center",
+        "text_position_mobile": "center_center",
+        "overlay_color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "overlay_opacity": 42,
+        "enable_text_animation": true,
+        "image_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "collection_list": {
+      "type": "collection-list",
+      "custom_css": [
+        "{border-bottom: 24px solid #8acfd0;}",
+        ".image {border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_5",
+        "section_header_heading": "EXPLORE OUR DROPS",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "selected_collections": [
+          "new-arrivals",
+          "sun-sand-25",
+          "liquid-chrome",
+          "line-drawings"
+        ],
+        "layout": "slider",
+        "show_slider_indicator": false,
+        "column_count_desktop": "3",
+        "column_count_mobile": "1",
+        "image_source": "collection_image",
+        "image_aspect_ratio": "portrait",
+        "collection_item_color_scheme": "scheme_4",
+        "overlay_opacity": 20,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "multi_column": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_eAfKnX": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/Ratio_frame_bfbdfe28-834e-4cc3-bcfd-de9494277c0b.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_XCygJM": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/social_1.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_UJrbi9": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/social_2.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_xzr8Ft": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/social_3.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_TJPHfE": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/social_4.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_bVJdXE": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": true,
+            "image": "shopify://shop_images/social_4.png",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_eAfKnX",
+        "column_item_XCygJM",
+        "column_item_UJrbi9",
+        "column_item_xzr8Ft",
+        "column_item_TJPHfE",
+        "column_item_bVJdXE"
+      ],
+      "custom_css": [
+        ".section-header {flex-direction: column; align-items: center;}",
+        ".image {border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Discover all",
+        "column_spacing": "large",
+        "column_count_desktop": "5",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": true,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 3,
+        "button_style": "solid",
+        "media_aspect_ratio": "natural",
+        "media_position": "above_content",
+        "width": "full-width-padded",
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    },
+    "multi_column_bpzjRj": {
+      "type": "multi-column",
+      "custom_css": [
+        ".section-header {flex-direction: column; align-items: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "@LORDSOFSUN",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Discover all",
+        "column_spacing": "small",
+        "column_count_desktop": "2",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 3,
+        "button_style": "solid",
+        "media_aspect_ratio": "portrait",
+        "media_position": "above_content",
+        "width": "page-width",
+        "top_padding": 40,
+        "bottom_padding": 30
+      }
+    },
+    "newsletter_ykiteA": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Npp4dV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our Emails",
+            "heading_font_size": 3,
+            "heading_tag": "h2"
+          }
+        },
+        "email_form_BLywtc": {
+          "type": "email-form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_Npp4dV",
+        "email_form_BLywtc"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "content_max_width": 600,
+        "banner_height_type": "adapt",
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "450px",
+        "text_alignment": "top_left",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 40,
+        "image_animation": "iris",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "multi_column_taFwJG": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_HPtngN": {
+          "type": "column-item",
+          "settings": {
+            "display_media": false,
+            "media_full_height": true,
+            "heading": "need help fiNDINg something?",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_McXimP": {
+          "type": "column-item",
+          "settings": {
+            "display_media": false,
+            "media_full_height": true,
+            "heading": "",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae <strong>pellentesque sem placerat.</strong></p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_HPtngN",
+        "column_item_McXimP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {color: #989385;}",
+        "p {color: black;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "color_scheme": "scheme_2",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Learn more",
+        "column_spacing": "medium",
+        "column_count_desktop": "2",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 2,
+        "button_style": "solid",
+        "media_aspect_ratio": "natural",
+        "media_position": "above_content",
+        "width": "page-width",
+        "top_padding": 20,
+        "bottom_padding": 20
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured_collection_1",
+    "scrolling_content",
+    "image_with_text",
+    "image_with_text_e3MGnq",
+    "video_with_text_BARfFA",
+    "image_with_text_Rtii4q",
+    "multi_column_x3gxBA",
+    "rich_text_n4ergL",
+    "hero-phrase-1",
+    "main",
+    "featured_collection_84hhUq",
+    "video_hero",
+    "collection_list",
+    "multi_column",
+    "multi_column_bpzjRj",
+    "newsletter_ykiteA",
+    "multi_column_taFwJG"
+  ]
+}

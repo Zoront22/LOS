@@ -1,0 +1,344 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_F6XMH3": {
+      "type": "slideshow",
+      "blocks": {
+        "image_jD6teQ": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "Overline",
+            "heading": "Image slide",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "Tell your brand's story through images",
+            "text_font_size": 3,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        },
+        "video_w38VE6": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "Overline",
+            "heading": "Video slide",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "Tell your brand's story through images",
+            "text_font_size": 3,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        },
+        "image_TYAB3W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shop-min.jpg",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "SHOP ALL",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "",
+            "text_font_size": 3,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_jD6teQ",
+        "video_w38VE6",
+        "image_TYAB3W"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "350px",
+        "custom_mobile_height": "650px",
+        "pagination_alignment": "right",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme_1",
+        "heading_font_size": 7,
+        "heading_mobile_font_size": 7,
+        "show_collection_description": true,
+        "show_product_count": true,
+        "content_max_width": 500,
+        "show_banner_image": true,
+        "image": "shopify://shop_images/shop-min.jpg",
+        "banner_height_type": "custom",
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "350px",
+        "text_alignment": "center_center",
+        "overlay_color_scheme": "scheme_2",
+        "overlay_opacity": 0,
+        "enable_text_animation": true,
+        "image_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "product_grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "promotion_tile": {
+          "type": "promotion-tile",
+          "settings": {
+            "position": 7,
+            "width": "two-column",
+            "mobile_width": "full",
+            "min_height": 300,
+            "min_height_mobile": 300,
+            "image": "shopify://shop_images/Rectangle_9.png",
+            "link": "shopify://collections/sun-sand-25",
+            "heading": "SUN & SAND",
+            "heading_font_size": 4,
+            "text": "",
+            "text_font_size": 3,
+            "content_max_width": 700,
+            "text_alignment": "top_left",
+            "button_label": "VIEW THE COLLECTION >",
+            "button_style": "text",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "scheme_4",
+            "overlay_opacity": 20
+          }
+        },
+        "promotion_tile_ayR8PB": {
+          "type": "promotion-tile",
+          "settings": {
+            "position": 12,
+            "width": "two-column",
+            "mobile_width": "full",
+            "min_height": 300,
+            "min_height_mobile": 300,
+            "image": "shopify://shop_images/SHOPBANNER-min.jpg",
+            "link": "shopify://collections/line-drawings",
+            "heading": "LINE DRAWINGS",
+            "heading_font_size": 4,
+            "text": "",
+            "text_font_size": 3,
+            "content_max_width": 700,
+            "text_alignment": "top_left",
+            "button_label": "VIEW THE COLLECTION >",
+            "button_style": "text",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "scheme_4",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "promotion_tile",
+        "promotion_tile_ayR8PB"
+      ],
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper,.promotion-tile {border-radius: 10px;}",
+        ".btn-wrapper.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "products_per_page": 12,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_total_result_count": false,
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "show_sticky_filter_and_sort_button": true,
+        "filter_group_open_state": "all",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "slideshow_TBtzTG": {
+      "type": "slideshow",
+      "blocks": {
+        "image_6376Yi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHOPHALF-min_1.jpg",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "FROM LOREM TO EVENING",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "",
+            "text_font_size": 7,
+            "button_1_link": "",
+            "button_1_label": "SHOP BOTTOMS",
+            "button_1_style": "text",
+            "button_2_link": "",
+            "button_2_label": "SHOP TOPS",
+            "button_2_style": "text",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_6376Yi"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "650px",
+        "pagination_alignment": "right",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "featured_collection_X4bzTY": {
+      "type": "featured-collection",
+      "blocks": {
+        "promotion_tile_qLzUW4": {
+          "type": "promotion-tile",
+          "disabled": true,
+          "settings": {
+            "min_height": 300,
+            "image": "shopify://shop_images/SHOPBANNER-min.jpg",
+            "link": "",
+            "heading": "SUN & SAND",
+            "heading_font_size": 1,
+            "text": "",
+            "text_font_size": 3,
+            "text_alignment": "top_left",
+            "button_label": "VIEW THE COLLECTION  >",
+            "button_style": "text",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "promotion_tile_qLzUW4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper {border-radius: 10px;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}"
+      ],
+      "name": "t:sections.featured_collection.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop now",
+        "collection": "frontpage",
+        "max_products": 8,
+        "column_count_desktop": "3",
+        "column_count_mobile": "1",
+        "show_slider_indicator": false,
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "custom_liquid_6ELb9r": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".section-inner {padding: 0px;}"
+      ],
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "custom_liquid": "<div class=\"banner-wrapper\">\n  <div class=\"full-width-banner\">\n    <div class=\"image-block left\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/Ratio_frame_2.png?v=1746724868\" alt=\"Left Image\">\n      <a href=\"/collections/bottoms\" class=\"image-link\">\n        SHOP BOTTOMS <span class=\"arrow-icon\">›</span>\n      </a>\n    </div>\n    <div class=\"image-block right\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/Ratio_frame_3.png?v=1746724867\" alt=\"Right Image\">\n      <a href=\"/collections/shop-tops\" class=\"image-link\">\n        SHOP TOPS <span class=\"arrow-icon\">›</span>\n      </a>\n    </div>\n    <h2 class=\"center-heading\">FROM LOREM TO EVENING</h2>\n  </div>\n</div>\n\n<style>\n.banner-wrapper {\n  width: 100%;\n}\n\n.full-width-banner {\n  position: relative;\n  width: 100%;\n  display: flex;\n  margin: 0 auto;\n  padding: 0;\n  overflow: hidden;\n  height: 80vh;\n}\n\n.image-block {\n  width: 50%;\n  position: relative;\n  overflow: hidden;\n}\n\n.image-block img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n\n.image-link {\n  position: absolute;\n  bottom: 40px;\n  left: 50%;\n  transform: translateX(-50%);\n  color: white;\n  font-size: 0.9rem;\n  font-weight: 500;\n  text-transform: uppercase;\n  text-decoration: none;\n  letter-spacing: 0.05em;\n  display: inline-flex;\n  align-items: center;\n  gap: 6px;\n  z-index: 2;\n}\n\n.image-link .arrow-icon {\n  font-size: 1.2em;\n  line-height: 1;\n  display: inline-block;\n}\n\n.center-heading {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  white-space: nowrap;\n  color: white;\n  font-size: clamp(3rem, 5vw, 3.7863rem);\n  font-family: 'Oswald', sans-serif;\n  font-weight: bold;\n  text-align: center;\n  z-index: 3;\n  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);\n  pointer-events: none;\n}\n\n@media (max-width: 750px) {\n  .center-heading {\n    white-space: normal;\n    width: 90%;\n  }\n}\n\n@media (min-width: 751px) {\n  .banner-wrapper {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n</style>",
+        "top_padding": 80,
+        "bottom_padding": 50
+      }
+    }
+  },
+  "order": [
+    "slideshow_F6XMH3",
+    "banner",
+    "product_grid",
+    "slideshow_TBtzTG",
+    "featured_collection_X4bzTY",
+    "custom_liquid_6ELb9r"
+  ]
+}

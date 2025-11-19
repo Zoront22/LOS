@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 8,
+        "heading_mobile_font_size": 7,
+        "show_collection_description": true,
+        "show_product_count": false,
+        "content_max_width": 500,
+        "show_banner_image": true,
+        "image": "shopify://shop_images/tops-min.jpg",
+        "banner_height_type": "custom",
+        "custom_desktop_height": "350px",
+        "custom_mobile_height": "350px",
+        "text_alignment": "center_center",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 0,
+        "enable_text_animation": true,
+        "image_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "product_grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "promotion_tile": {
+          "type": "promotion-tile",
+          "settings": {
+            "position": 7,
+            "width": "two-column",
+            "mobile_width": "full",
+            "min_height": 300,
+            "min_height_mobile": 300,
+            "image": "shopify://shop_images/tenis-min.jpg",
+            "link": "",
+            "heading": "LINE DRAWINGS",
+            "heading_font_size": 4,
+            "text": "",
+            "text_font_size": 3,
+            "content_max_width": 700,
+            "text_alignment": "top_left",
+            "button_label": "VIEW THE COLLECTION >",
+            "button_style": "text",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "scheme_2",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "promotion_tile"
+      ],
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper,.promotion-tile {border-radius: 10px;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "products_per_page": 10,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_total_result_count": false,
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "show_sticky_filter_and_sort_button": true,
+        "filter_group_open_state": "first",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "slideshow_cyAtdX": {
+      "type": "slideshow",
+      "blocks": {
+        "image_zW7BDq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHOPBANN-min.jpg",
+            "content_max_width": 560,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "",
+            "text_font_size": 3,
+            "button_1_link": "shopify://collections",
+            "button_1_label": "VIEW THE COLLECTION   >",
+            "button_1_style": "text",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_zW7BDq"
+      ],
+      "custom_css": [],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "650px",
+        "pagination_alignment": "center",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product_grid",
+    "slideshow_cyAtdX"
+  ]
+}

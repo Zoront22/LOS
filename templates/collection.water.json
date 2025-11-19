@@ -1,0 +1,288 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "enable_corner_radius": true,
+        "top_padding": 80,
+        "bottom_padding": 50
+      }
+    },
+    "slideshow_przWPJ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PtfYbe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled.png",
+            "mobile_image": "shopify://shop_images/Untitled.png",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "Water",
+            "heading_font_size": 9,
+            "heading_tag": "h2",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
+            "text_font_size": 6,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_PtfYbe"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "100vh",
+        "custom_mobile_height": "100vh",
+        "pagination_alignment": "right",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "product_grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "promotion_tile_4jYUFD": {
+          "type": "promotion-tile",
+          "settings": {
+            "position": 1,
+            "width": "one-column",
+            "mobile_width": "full",
+            "min_height": 300,
+            "min_height_mobile": 300,
+            "image": "shopify://shop_images/abstract-surface-textures-white-concrete-stone-wall.jpg",
+            "link": "",
+            "heading": "Heading",
+            "heading_font_size": 8,
+            "text": "",
+            "text_font_size": 3,
+            "content_max_width": 500,
+            "text_alignment": "top_center",
+            "button_label": "SHOP ALL WATER",
+            "button_style": "outline",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "scheme_1",
+            "overlay_opacity": 100
+          }
+        }
+      },
+      "block_order": [
+        "promotion_tile_4jYUFD"
+      ],
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper,.promotion-tile {border-radius: 10px;}",
+        ".btn-wrapper.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".pagination-wrapper {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "products_per_page": 3,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_total_result_count": false,
+        "enable_sorting": false,
+        "enable_filtering": false,
+        "show_sticky_filter_and_sort_button": false,
+        "filter_group_open_state": "first",
+        "width": "page-width",
+        "top_padding": 40,
+        "bottom_padding": 40
+      }
+    },
+    "slideshow_kLLzNC": {
+      "type": "slideshow",
+      "blocks": {
+        "image_prRQTL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_633280_14382d30-6b83-406d-81e8-f6b6a9bf4204.png",
+            "mobile_image": "shopify://shop_images/Frame_633280_14382d30-6b83-406d-81e8-f6b6a9bf4204.png",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "",
+            "text_font_size": 3,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_prRQTL"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "60vh",
+        "custom_mobile_height": "650px",
+        "pagination_alignment": "right",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "newsletter_kLdFbG": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_MD7eex": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join OuR Mailing list",
+            "heading_font_size": 6,
+            "heading_tag": "h2"
+          }
+        },
+        "email_form_XkryeA": {
+          "type": "email-form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_MD7eex",
+        "email_form_XkryeA"
+      ],
+      "custom_css": [
+        ".newsletter .newsletter-form__email-input {background: transparent; border-left: none; border-right: none; border-top: none; border-radius: 0;}",
+        ".newsletter .newsletter-content {display: flex; flex-direction: row; width: 100%; align-items: center;}",
+        ".content-block-wrapper--heading {margin-bottom: 0px; width: 100%; justify-content: start; align-items: center;}",
+        "@media screen and (min-width: 591px) {.newsletter-email-form {display: flex; margin-top: 0; margin-bottom: 0; justify-content: flex-end; width: 200%; }}",
+        ".block-div {width: 100%;}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "content_max_width": 500,
+        "banner_height_type": "adapt",
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "450px",
+        "text_alignment": "top_left",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 40,
+        "image_animation": "iris",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "product_grid_2": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "promotion_tile_U3dCeG": {
+          "type": "promotion-tile",
+          "settings": {
+            "position": 4,
+            "width": "one-column",
+            "mobile_width": "full",
+            "min_height": 300,
+            "min_height_mobile": 300,
+            "image": "shopify://shop_images/abstract-surface-textures-white-concrete-stone-wall.jpg",
+            "link": "",
+            "heading": "Heading",
+            "heading_font_size": 8,
+            "text": "",
+            "text_font_size": 3,
+            "content_max_width": 500,
+            "text_alignment": "top_center",
+            "button_label": "SHOP ALL WATER",
+            "button_style": "outline",
+            "button_placement": "bottom-anchored",
+            "overlay_color_scheme": "scheme_1",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "promotion_tile_U3dCeG"
+      ],
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper,.promotion-tile {border-radius: 10px;}",
+        ".btn-wrapper.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".pagination-wrapper {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "products_per_page": 7,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_total_result_count": false,
+        "enable_sorting": false,
+        "enable_filtering": false,
+        "show_sticky_filter_and_sort_button": false,
+        "filter_group_open_state": "first",
+        "width": "page-width",
+        "top_padding": 40,
+        "bottom_padding": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_przWPJ",
+    "product_grid",
+    "slideshow_kLLzNC",
+    "newsletter_kLdFbG",
+    "product_grid_2"
+  ]
+}

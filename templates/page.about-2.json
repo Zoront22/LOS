@@ -1,0 +1,584 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "enable_corner_radius": true,
+        "top_padding": 80,
+        "bottom_padding": 60
+      }
+    },
+    "slideshow_1": {
+      "type": "slideshow",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27.png",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "LOS LIFE",
+            "heading_font_size": 8,
+            "heading_tag": "h1",
+            "text": "",
+            "text_font_size": 2,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "scheme_2",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image"
+      ],
+      "custom_css": [
+        ".current-slide .slideshow-slide__content-inner .animation-slideshow-heading {color: #dbd5c2; font-size: 16.8rem;}",
+        ".slideshow-slide__content {align-items: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "750px",
+        "custom_mobile_height": "650px",
+        "pagination_alignment": "center",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEET OUR AMBASSADORS",
+            "heading_font_size": 1,
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "custom_css": [
+        "h2 {margin-top: 0px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "content_width": "page-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 0,
+        "bottom_padding": 70
+      }
+    },
+    "image_with_text_DpT7D8": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_h6EpJj": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display: flex; gap: 1.25rem; padding-left: 10%;\">\n\n  <div class=\"left-container\" style=\"width:40%; display:flex; align-items:center;\">\n    <span style=\"line-height: 18px; display: block; font-size: var(--font-size-body-100); font-weight:var(--font-weight-body); font-family: 'Hanken Grotesk', sans-serif;\">\n      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque\n    </span> \n  </div>\n\n  <div style=\"width:100%;\">\n    <img id=\"slider-image\" style=\"width:100%; margin-bottom:20px;border-radius: 15px;\" src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/life11-min.png?v=1745543854\">\n\n    <div style=\"display:flex; gap: 12px; justify-content: flex-end; margin-top:10px;\">\n      <div class=\"navigation-btn\" onclick=\"navigateImage('prev')\" style=\"width:40px; height:40px; background:#FFCE00; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">‹</span>\n      </div>\n      <div class=\"navigation-btn\" onclick=\"navigateImage('next')\" style=\"width:40px; height:40px; background:#FFCE00; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">›</span>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.left-container {\n  width: 40%;\n}\n\n@media (min-width: 720px) and (max-width: 1020px) {\n  .left-container {\n    width: 100% !important;\n  }\n}\n</style>\n\n<script>\n  const images = [\n    \"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/life11-min.png?v=1745543854\",\n    \"http://lordsofsun.myshopify.com/cdn/shop/files/life1-min.jpg\"\n  ];\n  let currentIndex = 0;\n\n  function navigateImage(direction) {\n    if (direction === 'prev') {\n      currentIndex = (currentIndex - 1 + images.length) % images.length;\n    } else {\n      currentIndex = (currentIndex + 1) % images.length;\n    }\n    document.getElementById('slider-image').src = images[currentIndex];\n  }\n</script>"
+          }
+        },
+        "heading_FqUMdQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "DAVID LARRAZABAL",
+            "heading_font_size": 4,
+            "heading_tag": "h2"
+          }
+        },
+        "overline_8ffpzb": {
+          "type": "overline",
+          "settings": {
+            "text": "@4DAOCEAN"
+          }
+        },
+        "text_8T9zzm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.”</p>",
+            "text_font_size": 3,
+            "text_width": "75%",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_h6EpJj",
+        "heading_FqUMdQ",
+        "overline_8ffpzb",
+        "text_8T9zzm"
+      ],
+      "custom_css": [
+        "@media (min-width: 1250px) {.content-block-wrapper {margin-top: 15%; }}",
+        "@media (min-width: 1350px) {.content-block-wrapper {margin-top: 20%; }}",
+        "@media (min-width: 720px) {.media-with-text__content-blocks-inner {max-width: 100%; }}",
+        ".image {border-radius: 10px;}",
+        ".fs-overline {font-size: 1.3rem; color: #989385;}"
+      ],
+      "name": "RONY SEIKALY",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/life1-min.jpg",
+        "aspect_ratio": "portrait-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 1000,
+        "text_alignment": "left",
+        "text_alignment_vertical": "bottom",
+        "container_color_scheme": "scheme_1",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 0
+      }
+    },
+    "image_with_text_c4een9": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_p7XjPj": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display: flex; gap: 1.25rem; padding-right: 10%;\">\n  <div style=\"width:100%;\">\n    <img id=\"slider-image-1\" style=\"width:100%; margin-bottom:20px; border-radius:15px;\" src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/LIFE41-min.png?v=1745543445\">\n    \n    <!-- Navigation icons aligned to end -->\n    <div style=\"display:flex; gap: 12px; justify-content: flex-end; margin-top:10px;\">\n      <!-- Left arrow -->\n      <div class=\"navigation-btn\" onclick=\"navigateImage1('prev')\" style=\"width:40px; height:40px; border:1px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">‹</span>\n      </div>\n\n      <!-- Right arrow -->\n      <div class=\"navigation-btn\" onclick=\"navigateImage1('next')\" style=\"width:40px; height:40px; border:1px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">›</span>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"left-container\" style=\"width:40%; display:flex; align-items:center;\">\n    <span style=\"font-size: var(--font-size-body-100); font-weight:var(--font-weight-body); line-height: 18px; display: block;  font-family: 'Hanken Grotesk', sans-serif;text-align:left\">\n      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque\n    </span> \n  </div>\n</div>\n\n<style>\n.left-container {\n  width: 40%;\n}\n\n@media (min-width: 720px) and (max-width: 1020px) {\n  .left-container {\n    width: 100% !important;\n  }\n}\n</style>\n\n<script>\n  const images1 = [\n    \"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/LIFE41-min.png?v=1745543445\",\n    \"https://lordsofsun.myshopify.com/cdn/shop/files/hoodie-min.jpg?crop=center&height=481&v=1745455806&width=409\"\n  ];\n  let currentIndex1 = 0;\n\n  function navigateImage1(direction) {\n    if (direction === 'prev') {\n      currentIndex1 = (currentIndex1 - 1 + images1.length) % images1.length;\n    } else {\n      currentIndex1 = (currentIndex1 + 1) % images1.length;\n    }\n    document.getElementById('slider-image-1').src = images1[currentIndex1];\n  }\n</script>"
+          }
+        },
+        "heading_PArxph": {
+          "type": "heading",
+          "settings": {
+            "heading": "EARL WOLFF",
+            "heading_font_size": 4,
+            "heading_tag": "h2"
+          }
+        },
+        "overline_hhCe7W": {
+          "type": "overline",
+          "settings": {
+            "text": "@ewolff28"
+          }
+        },
+        "text_48VBYh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.”</p>",
+            "text_font_size": 3,
+            "text_width": "75%",
+            "text_alignment": "right"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_p7XjPj",
+        "heading_PArxph",
+        "overline_hhCe7W",
+        "text_48VBYh"
+      ],
+      "custom_css": [
+        "@media (min-width: 1250px) {.content-block-wrapper {margin-top: 15%; }}",
+        "@media (min-width: 1350px) {.content-block-wrapper {margin-top: 20%; }}",
+        "@media (min-width: 720px) {.media-with-text__content-blocks-inner {max-width: 100%; }}",
+        ".fs-overline {font-size: 1.3rem; color: #989385;}",
+        ".image {border-radius: 10px;}",
+        "@media (min-width: 720px) {.media-with-text-inner {align-items: flex-start; }}"
+      ],
+      "name": "EARL WOLFF",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/hoodie-min.jpg",
+        "aspect_ratio": "portrait-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "right",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "right",
+        "text_alignment_vertical": "bottom",
+        "container_color_scheme": "scheme_1",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "image_with_text_3": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_DpVDCw": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display: flex; gap: 1.25rem; padding-left: 10%;\">\n\n  <div class=\"left-container\" style=\"width:40%; display:flex; align-items:center;\">\n    <span style=\"font-size: var(--font-size-body-100); font-weight:var(--font-weight-body); line-height: 18px; display: block;  font-family: 'Hanken Grotesk', sans-serif;\">\n      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque\n    </span> \n  </div>\n\n  <div style=\"width:100%;\">\n    <img id=\"slider-image-3\" style=\"width:100%; margin-bottom:20px; border-radius:15px;\" src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/life31-min.png?v=1745542325\">\n    \n    <div style=\"display:flex; gap: 12px; justify-content: flex-end; margin-top:10px;\">\n      <div class=\"navigation-btn\" onclick=\"navigateImage3('prev')\" style=\"width:40px; height:40px; border:1px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">‹</span>\n      </div>\n\n      <div class=\"navigation-btn\" onclick=\"navigateImage3('next')\" style=\"width:40px; height:40px; border:1px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">›</span>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n<style>\n.left-container {\n  width: 40%;\n}\n\n@media (min-width: 720px) and (max-width: 1020px) {\n  .left-container {\n    width: 100% !important;\n  }\n}\n</style>\n\n<script>\n  const images3 = [\n    \"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/life31-min.png?v=1745542325\",\n    \"https://lordsofsun.myshopify.com/cdn/shop/files/life2-min.jpg\"\n  ];\n  let currentIndex3 = 0;\n\n  function navigateImage3(direction) {\n    if (direction === 'prev') {\n      currentIndex3 = (currentIndex3 - 1 + images3.length) % images3.length;\n    } else {\n      currentIndex3 = (currentIndex3 + 1) % images3.length;\n    }\n    document.getElementById('slider-image-3').src = images3[currentIndex3];\n  }\n</script>"
+          }
+        },
+        "image_4ET3tM": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/los-origin.png",
+            "image_size": 50,
+            "image_size_mobile": 250,
+            "enable_corner_radius": true
+          }
+        },
+        "image_XxpCba": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_size": 500,
+            "image_size_mobile": 250,
+            "enable_corner_radius": true
+          }
+        },
+        "image_jjjjUq": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_size": 500,
+            "image_size_mobile": 250,
+            "enable_corner_radius": true
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "RONY SEIKALY",
+            "heading_font_size": 4,
+            "heading_tag": "h2"
+          }
+        },
+        "overline": {
+          "type": "overline",
+          "settings": {
+            "text": "@ronyseikaly"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.”</p>",
+            "text_font_size": 3,
+            "text_width": "75%",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_DpVDCw",
+        "image_4ET3tM",
+        "image_XxpCba",
+        "image_jjjjUq",
+        "heading",
+        "overline",
+        "text"
+      ],
+      "custom_css": [
+        ".media-with-text__content-blocks {padding: 0; display: flex; flex-direction: column; justify-content: space-between;}",
+        "@media (min-width: 1250px) {.content-block-wrapper {margin-top: 15%; }}",
+        "@media (min-width: 1350px) {.content-block-wrapper {margin-top: 20%; }}",
+        "@media (min-width: 720px) {.media-with-text__content-blocks-inner {max-width: 100%; padding-left: 5%; }}",
+        ".fs-overline {font-size: 1.3rem; color: #989385;}",
+        ".image {border-radius: 10px;}"
+      ],
+      "name": "RONY SEIKALY",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/life2-min.jpg",
+        "aspect_ratio": "portrait-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "bottom",
+        "container_color_scheme": "scheme_1",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "image_with_text_igTQQ8": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_pfzzbF": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display: flex; gap: 1.25rem; padding-right: 10%;\">\n  <div style=\"width:100%;\">\n    <img id=\"slider-image-4\" style=\"width:100%; margin-bottom:20px; border-radius:15px;\" src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/life32-min.png?v=1745542399\">\n    \n    <div style=\"display:flex; gap: 12px; justify-content: flex-end; margin-top:10px;\">\n      <div onclick=\"navigateImage4('prev')\" class=\"navigation-btn\" style=\"width:40px; height:40px; border:1px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">‹</span>\n      </div>\n      <div onclick=\"navigateImage4('next')\" class=\"navigation-btn\" style=\"width:40px; height:40px; border:1px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center;\">\n        <span style=\"font-size:20px;\">›</span>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"left-container\" style=\"width:40%; display:flex; align-items:center;\">\n    <span style=\"font-size: var(--font-size-body-100); font-weight:var(--font-weight-body); line-height: 18px; display: block; font-family: 'Hanken Grotesk', sans-serif;text-align:left\">\n      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque\n    </span> \n  </div>\n</div>\n\n<style>\n.left-container {\n  width: 40%;\n}\n\n@media (min-width: 720px) and (max-width: 1020px) {\n  .left-container {\n    width: 100% !important;\n  }\n}\n</style>\n\n<script>\n  const images4 = [\n    \"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/life32-min.png?v=1745542399\",\n    \"https://lordsofsun.myshopify.com/cdn/shop/files/LIFE3-min.jpg\"\n  ];\n  let currentIndex4 = 0;\n\n  function navigateImage4(direction) {\n    if (direction === 'prev') {\n      currentIndex4 = (currentIndex4 - 1 + images4.length) % images4.length;\n    } else {\n      currentIndex4 = (currentIndex4 + 1) % images4.length;\n    }\n    document.getElementById('slider-image-4').src = images4[currentIndex4];\n  }\n</script>"
+          }
+        },
+        "heading_BNM9Cx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Justin Barth",
+            "heading_font_size": 4,
+            "heading_tag": "h2"
+          }
+        },
+        "overline_4F9Rnc": {
+          "type": "overline",
+          "settings": {
+            "text": "@justinbarth_"
+          }
+        },
+        "text_Mw374M": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.”</p>",
+            "text_font_size": 3,
+            "text_width": "75%",
+            "text_alignment": "right"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_pfzzbF",
+        "heading_BNM9Cx",
+        "overline_4F9Rnc",
+        "text_Mw374M"
+      ],
+      "custom_css": [
+        "@media (min-width: 1250px) {.content-block-wrapper {margin-top: 15%; }}",
+        "@media (min-width: 1350px) {.content-block-wrapper {margin-top: 20%; }}",
+        "@media (min-width: 720px) {.media-with-text__content-blocks-inner {max-width: 100%; }}",
+        ".fs-overline {font-size: 1.3rem; color: #989385;}",
+        ".image {border-radius: 10px;}"
+      ],
+      "name": "JUSTIN BARTH",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "image": "shopify://shop_images/LIFE3-min.jpg",
+        "aspect_ratio": "portrait-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "right",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "right",
+        "text_alignment_vertical": "bottom",
+        "container_color_scheme": "scheme_1",
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "slideshow_EXhFMC": {
+      "type": "slideshow",
+      "blocks": {
+        "image_DKFpta": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHARE-min.jpg",
+            "content_max_width": 1000,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "",
+            "heading": "SHARE YOUR LOS MOMENT",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "@LORDSOFSUN",
+            "text_font_size": 8,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        },
+        "video_GeHKUN": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "Overline",
+            "heading": "Video slide",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "Tell your brand's story through images",
+            "text_font_size": 3,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        },
+        "image_cArfcN": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_max_width": 700,
+            "text_position": "center_center",
+            "mobile_text_position": "center_center",
+            "overline": "Overline",
+            "heading": "Image slide",
+            "heading_font_size": 7,
+            "heading_tag": "h2",
+            "text": "Tell your brand's story through images",
+            "text_font_size": 3,
+            "button_1_link": "",
+            "button_1_label": "",
+            "button_1_style": "solid",
+            "button_2_link": "",
+            "button_2_label": "",
+            "button_2_style": "solid",
+            "navigation_buttons": "",
+            "overlay_color_scheme": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_DKFpta",
+        "video_GeHKUN",
+        "image_cArfcN"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_autoplay": true,
+        "time_between_slides": 6,
+        "custom_desktop_height": "550px",
+        "custom_mobile_height": "650px",
+        "pagination_alignment": "right",
+        "mobile_pagination_alignment": "center",
+        "pagination_background": "#000000",
+        "pagination_foreground": "#ffffff",
+        "pagination_background_opacity": 60,
+        "navigation_cursor_background": "#ffffff",
+        "navigation_cursor_foreground": "#000000",
+        "enable_text_animation": true,
+        "slide_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "image_with_texts_9azTWj": {
+      "type": "image-with-texts",
+      "blocks": {
+        "overline_bfH8PY": {
+          "type": "overline",
+          "settings": {
+            "text": "Overline"
+          }
+        },
+        "heading_wF6tCk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hea",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_iGtYnQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_font_size": 3,
+            "text_width": "100%",
+            "text_alignment": "center"
+          }
+        },
+        "button_QLRDHX": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "Button",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "overline_bfH8PY",
+        "heading_wF6tCk",
+        "text_iGtYnQ",
+        "button_QLRDHX"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Rectangle_9.png",
+        "aspect_ratio": "natural",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "right",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "center",
+        "container_color_scheme": "",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    }
+  },
+  "order": [
+    "main_page",
+    "slideshow_1",
+    "rich_text",
+    "image_with_text_DpT7D8",
+    "image_with_text_c4een9",
+    "image_with_text_3",
+    "image_with_text_igTQQ8",
+    "slideshow_EXhFMC",
+    "image_with_texts_9azTWj"
+  ]
+}

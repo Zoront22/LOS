@@ -1,0 +1,34 @@
+<div id="wishlist-products"></div>
+
+<style>
+  #wishlist-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 2rem;
+    padding: 2rem;
+    justify-content: center;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const handles = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const container = document.getElementById('wishlist-products');
+
+    if (handles.length === 0) {
+      container.innerHTML = '<p>Your wishlist is empty.</p>';
+      return;
+    }
+
+    for (const handle of handles) {
+      try {
+        const res = await fetch(`/products/${handle}?view=card`);
+        const html = await res.text();
+        container.innerHTML += html;
+      } catch (error) {
+        console.error('Error loading wishlist product:', handle, error);
+      }
+    }
+  });
+</script>

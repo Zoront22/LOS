@@ -1,0 +1,71 @@
+{%- liquid
+  comment
+    Renders a string for a product grid promo tile image's 'sizes' attribute.
+
+    Required parameters:
+      - grid_width: { String } The width of the grid. Can be:
+        - 'full-width-padded'
+        - 'page-width'
+      - grid_columns: { Number } The number of columns in the grid that the promo tile is part of.
+      - grid_columns_tablet: { Number } The number of columns in the grid that the promo tile is
+          part of, at the 'tablet' breakpoint.
+      - grid_columns_desktop: { Number } The number of columns in the grid that the promo tile is
+          part of, at the 'small-desktop' breakpoint (and above).
+      - tile_columns: { Number } The number of columns that the promo tile will span.
+      - tile_columns_tablet: { Number } The number of columns that the promo tile will span, at the
+          'tablet' breakpoint.
+      - tile_columns_desktop: { Number } The number of columns that the promo tile will span, at the
+          'small-desktop' breakpoint (and above).
+  endcomment
+
+  # Desktop
+  capture viewport
+    if grid_width == 'page-width'
+      echo 'min(1600px, 100vw)'
+    else
+      echo '100vw'
+    endif
+  endcapture
+
+  assign num_gaps = grid_columns_desktop | minus: 1
+
+  capture grid_gap_small_desktop
+    case grid_columns_desktop
+      when 2
+        echo '24px'
+      when 3
+        echo '28px'
+      when 4
+        echo '28px'
+    endcase
+  endcapture
+
+  capture grid_gap_desktop
+    case grid_columns_desktop
+      when 2
+        echo '28px'
+      when 3
+        echo '28px'
+      when 4
+        echo '28px'
+    endcase
+  endcapture
+
+  capture desktop_sizes_template
+    echo '(min-width: 1440px) calc(([[vp]] - (2 * 40px) - ([[ng]] * [[ggd]])) / [[gcd]]) * [[tcd]]), '
+    echo '(min-width: 1024px) calc((([[vp]] - (2 * 32px) - ([[ng]] * [[ggsd]])) / [[gcd]]) * [[tcd]]), '
+  endcapture
+
+  assign desktop_sizes_template = desktop_sizes_template | replace: '[[gcd]]', grid_columns_desktop | replace: '[[tcd]]', tile_columns_desktop
+  echo desktop_sizes_template | replace: '[[vp]]', viewport | replace: '[[ng]]', num_gaps | replace: '[[ggsd]]', grid_gap_small_desktop | replace: '[[ggd]]', grid_gap_desktop
+
+  # Tablet
+  if tile_columns_tablet == 2
+    echo '(min-width: 720px) calc(100vw - (2 * 20px) - 20px), '
+  else
+    echo '(min-width: 720px) calc(100vw - (2 * 20px) - (2 * 20px)), '
+  endif
+
+  # Mobile
+  echo 'calc(100vw - (2 * 20px))'
+-%}

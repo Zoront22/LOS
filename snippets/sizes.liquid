@@ -1,0 +1,49 @@
+{% liquid
+  comment
+    Renders a string for the 'sizes' parameter of an image (for use with the 'image.liquid' snippet). Returns
+    '100vw' by defualt.
+
+    Note: Refer to 'breakpoints.css' for breakpoint pixel values.
+
+    Optional parameters:
+      - desktop_width: { String } The CSS length value to use for desktop screens.
+      - small_desktop_width: { String } The CSS length value to use for small desktop screens.
+      - tablet_width: { String } The CSS length value to use for tablet screens.
+      - mobile_width: { String } The CSS length value to use for mobile screens.
+      - remove_gutters: { Boolean }: Whether the theme-wide gutters should be subtracted from the computed size.
+  endcomment
+
+  if desktop_width
+    if remove_gutters
+      echo '(min-width: 1440px) calc([[dw]] - (32px * 2)),' | replace: '[[dw]]', desktop_width
+    else
+      echo '(min-width: 1440px) [[dw]],' | replace: '[[dw]]', desktop_width
+    endif
+  endif
+
+  if small_desktop_width
+    if remove_gutters
+      echo '(min-width: 1024px) calc([[sdw]] - (32px * 2)),' | replace: '[[sdw]]', small_desktop_width
+    else
+      echo '(min-width: 1024px) [[sdw]],' | replace: '[[sdw]]', small_desktop_width
+    endif
+  endif
+
+  if tablet_width
+    if remove_gutters
+      echo '(min-width: 720px) calc([[tw]] - (20px * 2)),' | replace: '[[tw]]', tablet_width
+    else
+      echo '(min-width: 720px) [[tw]],' | replace: '[[tw]]', tablet_width
+    endif
+  endif
+
+  if mobile_width
+    if remove_gutters
+      echo '(max-width: 719.9px) calc([[mw]] - (20px * 2)),' | replace: '[[mw]]', mobile_width
+    else
+      echo '(max-width: 719.9px) [[mw]],' | replace: '[[mw]]', mobile_width
+    endif
+  endif
+
+  echo '100vw'
+%}

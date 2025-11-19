@@ -1,0 +1,273 @@
+{% comment %} Hero Phrase {% endcomment %}
+
+<section id="shopify-section-{{ section.id }}" class="hero-phrase" aria-label="{{ section.settings.title }}">
+  <div class="hero-phrase__wrap">
+    <div class="hero-phrase__content">
+      {% if section.settings.use_richtext %}
+        <div class="hero-phrase__title rte">
+          {{ section.settings.rich_title }}
+        </div>
+      {% else %}
+        <h2 class="hero-phrase__title">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      <p class="hero-phrase__subtitle">{{ section.settings.subtitle }}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@300;400;700&display=swap');
+    /* Hero Phrase Section Styles (For this stay only)*/
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.bg_color }};
+      width: 100%;
+    }
+
+    #shopify-section-{{ section.id }} .hero-phrase__wrap {
+      max-width: {{ section.settings.max_width }}px;
+      height: {{ section.settings.section_height }}px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      box-sizing: border-box;
+    }
+
+    /* Title Styles */
+    #shopify-section-{{ section.id }} .hero-phrase__content {
+      max-width: 90%;
+    }
+
+    #shopify-section-{{ section.id }} .hero-phrase__title {
+      width: 1057px;
+      height: 82px;
+      position: relative;
+      top: 30px;
+      left: -0.5px;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+
+    /* Title Styles */
+    #shopify-section-{{ section.id }} .hero-phrase__title,
+    #shopify-section-{{ section.id }} .hero-phrase__title.rte h1,
+    #shopify-section-{{ section.id }} .hero-phrase__title.rte h2 {
+      font-family: "Bebas Neue", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-weight: 700;
+      font-style: normal;
+      font-size: {{ section.settings.title_size }}px;
+      line-height: {{ section.settings.title_line_height }};
+      letter-spacing: {{ section.settings.title_letter_spacing }};
+      margin: 0 0 8px 0;
+      text-transform: none;
+      color: {{ section.settings.title_color }};
+    }
+
+      /* Subtitle Styles */
+
+    #shopify-section-{{ section.id }} .hero-phrase__subtitle {
+      width: 677px;
+      height: 71px;
+      position: relative;
+      top: 71px;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+
+    #shopify-section-{{ section.id }} .hero-phrase__subtitle {
+      font-family: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-weight: 300;
+      font-style: normal;
+      font-size: {{ section.settings.subtitle_size }}px;
+      line-height: {{ section.settings.subtitle_line_height }};
+      margin: 0;
+      color: {{ section.settings.subtitle_color }};
+    }
+
+  /* ---------- Responsive adjustments ---------- */
+
+    /* Large desktop (between max_width and ~1400px) */
+    @media (max-width: 1400px) {
+      /* Reduce wrap max-width so content no se encime en pantallas algo más pequeñas */
+      #shopify-section-{{ section.id }} .hero-phrase__wrap {
+        max-width: calc({{ section.settings.max_width }}px * 0.9);
+        padding: 0 20px;
+      }
+
+      /* Mantener medidas pero reducir ligeramente */
+      #shopify-section-{{ section.id }} .hero-phrase__title {
+        width: 920px;
+        height: 72px;
+        top: 26px;
+        left: 0;
+        font-size: clamp(26px, 5vw, calc({{ section.settings.title_size }}px * 0.92));
+      }
+
+      #shopify-section-{{ section.id }} .hero-phrase__subtitle {
+        width: 600px;
+        height: 64px;
+        top: 120px;
+        font-size: clamp(13px, 2.2vw, calc({{ section.settings.subtitle_size }}px * 0.95));
+      }
+    }
+
+    /* Tablet and small laptops */
+    @media (max-width: 900px) {
+      #shopify-section-{{ section.id }} .hero-phrase__wrap {
+        height: auto;
+        padding: 36px 18px;
+        align-items: flex-start;
+      }
+
+      /* Hacemos título fluid y menos absoluto */
+      #shopify-section-{{ section.id }} .hero-phrase__title {
+        width: 85%;
+        height: auto;
+        top: 12px;
+        left: 0;
+        transform: none;
+        font-size: clamp(22px, 7vw, calc({{ section.settings.title_size }}px * 0.6));
+        line-height: 0.95;
+      }
+
+      /* Subtítulo se coloca debajo y con padding/margin para separación */
+      #shopify-section-{{ section.id }} .hero-phrase__subtitle {
+        width: 85%;
+        height: auto;
+        top: 12px;
+        margin-top: 12px;
+        font-size: clamp(14px, 3.6vw, calc({{ section.settings.subtitle_size }}px * 0.9));
+        line-height: 1.35;
+      }
+    }
+
+    /* Small screens / Mobile */
+    @media (max-width: 420px) {
+      #shopify-section-{{ section.id }} .hero-phrase__wrap {
+        padding: 28px 16px;
+      }
+
+      #shopify-section-{{ section.id }} .hero-phrase__title {
+        width: 100%;
+        left: 0;
+        top: 8px;
+        font-size: clamp(20px, 8.5vw, calc({{ section.settings.title_size }}px * 0.45));
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      #shopify-section-{{ section.id }} .hero-phrase__subtitle {
+        width: 100%;
+        top: 6px;
+        margin-top: 8px;
+        font-size: clamp(12px, 4.8vw, calc({{ section.settings.subtitle_size }}px * 0.8));
+        line-height: 1.4;
+      }
+    }
+
+    /* Safety: evitar que el título desborde en cualquier viewport */
+    #shopify-section-{{ section.id }} .hero-phrase__title,
+    #shopify-section-{{ section.id }} .hero-phrase__subtitle {
+      word-break: break-word;
+      hyphens: auto;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Hero Phrase",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_phrase",
+      "label": "Hero Phrase",
+      "default": "WEDNESDAY IN MIAMI"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_title",
+      "label": "Hero Phrase (Rich Text)",
+      "default": "<h2>WEDNESDAY IN MIAMI</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "use_richtext",
+      "label": "Use Rich Text for Subtitle",
+      "default": "<h2>WEDNESDAY IN MIAMI</h2>"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Complementary text",
+      "default": "Experience a day with our friends"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Color de fondo",
+      "default": "#EFEAE2"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color del título",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Color del subtítulo",
+      "default": "#222222"
+    },
+    {
+      "type": "number",
+      "id": "max_width",
+      "label": "Ancho máximo (px)",
+      "default": 1728
+    },
+    {
+      "type": "number",
+      "id": "section_height",
+      "label": "Altura de la sección (px)",
+      "default": 480
+    },
+    {
+      "type": "number",
+      "id": "title_size",
+      "label": "Tamaño del título (px)",
+      "default": 132
+    },
+    {
+      "type": "text",
+      "id": "title_line_height",
+      "label": "Line-height del título (ej. 0.89 o 89%)",
+      "default": "0.89"
+    },
+    {
+      "type": "text",
+      "id": "title_letter_spacing",
+      "label": "Letter-spacing del título (ej. 0% o 0.02em)",
+      "default": "0%"
+    },
+    {
+      "type": "number",
+      "id": "subtitle_size",
+      "label": "Tamaño del subtítulo (px)",
+      "default": 38
+    },
+    {
+      "type": "text",
+      "id": "subtitle_line_height",
+      "label": "Line-height del subtítulo (ej. 1.3 o 130%)",
+      "default": "1.3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Phrase",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

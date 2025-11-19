@@ -1,0 +1,243 @@
+:root{
+  --js-mobile:(max-width: 719.9px);
+  --js-tablet:(min-width: 720px);
+  --js-below-small-desktop:(max-width: 1023.9px);
+  --js-small-desktop:(min-width: 1024px);
+  --js-desktop:(min-width: 1440px);
+  --js-max-page-width:(min-width: 1600px);
+}
+.media-with-text-inner{
+  background:transparent;
+  color:var(--color-text);
+  display:flex;
+}
+.media-with-text__media-wrapper {
+  position: relative;
+}
+
+@media (max-width: 1023.9px){
+.media-with-text-inner{
+    gap:var(--spacing-500)
+}
+
+    .media-with-text--container-has-own-color-scheme .media-with-text-inner{
+      gap:0;
+    }
+  }
+.media-with-text--mobile-media-position-above .media-with-text-inner{
+    flex-direction:column-reverse;
+  }
+.media-with-text--mobile-media-position-below .media-with-text-inner{
+    flex-direction:column;
+  }
+@media (min-width: 720px){
+.media-with-text-inner{
+    align-items:flex-start;
+}
+
+    .media-with-text--desktop-media-position-left .media-with-text-inner{
+      flex-direction:row-reverse;
+    }
+
+    .media-with-text--desktop-media-position-right .media-with-text-inner{
+      flex-direction:row;
+    }
+  }
+.media-with-text--container-has-own-color-scheme .media-with-text-inner{
+    background:var(--color-background-gradient, var(--color-background));
+    border-radius:var(--radius-image);
+    overflow:hidden;
+  }
+.media-with-text__media-wrapper:has(.media-with-text__media-image--mobile) .media-with-text__media-image--desktop{
+    display:none;
+  }
+@media (min-width: 720px){
+.media-with-text__media-wrapper:has(.media-with-text__media-image--mobile) .media-with-text__media-image--desktop{
+      display:block
+  }
+    }
+@media (min-width: 720px){
+.media-with-text__media-wrapper:has(.media-with-text__media-image--mobile) .media-with-text__media-image--mobile{
+      display:none
+  }
+    }
+@media (min-width: 720px){
+.media-with-text--media-has-breathing-room .media-with-text__media .current-video__container, .media-with-text--media-has-breathing-room .media-with-text__media video, .media-with-text--media-has-breathing-room .media-with-text__media .image{
+        border-radius:var(--radius-image)
+    }
+      }
+.media-with-text:not(.media-with-text--container-has-own-color-scheme) .media-with-text__media .current-video__container, .media-with-text:not(.media-with-text--container-has-own-color-scheme) .media-with-text__media video, .media-with-text:not(.media-with-text--container-has-own-color-scheme) .media-with-text__media .image{
+      border-radius:var(--radius-image);
+    }
+@media (max-width: 719.9px){
+.media-with-text__media background-video,
+  .media-with-text__media .current-video__container{
+      aspect-ratio:var(
+        --background-video-aspect-ratio-mobile,
+        var(--background-video-aspect-ratio)
+      )
+  }
+    }
+@media (min-width: 720px){
+.media-with-text__content-blocks{
+    display:flex;
+    align-self:stretch;
+    justify-content:center;
+    width:calc(100% - var(--desktop-media-width))
+}
+
+    .media-with-text--desktop-content-vertical-align-center .media-with-text__content-blocks{
+      align-items:center;
+    }
+
+    .media-with-text--desktop-content-vertical-align-bottom .media-with-text__content-blocks{
+      align-items:flex-start;
+    }
+
+    .media-with-text__content-blocks .media-with-text__content-blocks-inner{
+      max-width:min(var(--desktop-content-width), 100%);
+    }
+  }
+@media (min-width: 1024px){
+.media-with-text__content-blocks{
+    padding:var(--spacing-500)
+}
+
+    .media-with-text--desktop-media-position-right:not(
+        .media-with-text--container-has-own-color-scheme
+      )
+      .media-with-text__content-blocks{
+      padding-left:0;
+        padding-top: 0;
+    }
+
+    .media-with-text--desktop-media-position-left:not(
+        .media-with-text--container-has-own-color-scheme
+      )
+      .media-with-text__content-blocks{
+      padding-right:0;
+        padding-top: 0;
+    }
+  }
+@media (max-width: 1023.9px){
+.media-with-text--container-has-own-color-scheme .media-with-text__content-blocks{
+      padding:var(--spacing-350) var(--spacing-300)
+  }
+    }
+@media (min-width: 720px){
+.media-with-text__media-wrapper{
+    width:var(--desktop-media-width)
+}
+
+    .media-with-text__media-wrapper .media-with-text__media{
+      padding:var(--desktop-media-breathing-room);
+    }
+  }
+
+
+  .product-display {
+    position: absolute;
+    bottom: 6.5%;
+    left: 6.5%;
+    width: 90%;
+    max-width: 400px;
+    z-index: 2;
+  }
+  .product-display .product-card {
+    opacity: 0;
+  }
+  .product-display .became-visible .product-card {
+    animation: fadeIn .5s ease-out forwards;
+    animation-fill-mode: forwards;
+    /* transform-origin: bottom left; */
+  }
+  
+  @keyframes cardExpand {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+      visibility: visible ;
+    }
+    50% {
+      transform: scale(0.7);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      visibility: visible ;
+    }
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.5rem 1.75rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-card a {
+    text-decoration: none;
+    color: inherit;
+    display: contents; /* This makes the anchor tag's children behave as direct children of the grid */
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  
+  .product-card-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+  
+  .product-card-content h3 {
+    margin: 0;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 30px;
+  }
+  
+  .product-card-content .product-vendor {
+    font-size: 13px;
+    font-family: Hanken Grotesk;
+    font-weight: 300;
+    color: #919191;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  
+  .product-card-content p {
+    font-size: 23px;
+    font-family: Hanken Grotesk;
+    font-weight: 300;
+    color: #000000;
+    text-align: left !important;
+    margin-top: auto !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+  } 
+
+  .media-with-text__watcher.became-visible img{
+    animation-name: none !important;
+    /* animation-duration: 1.5s !important;
+    animation-timing-function: var(--ease-out-quart);
+    animation-fill-mode: backwards; */
+  }
+
+  .media-with-text__watcher img{
+    animation-name: none !important
+  }

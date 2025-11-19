@@ -1,0 +1,520 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_overview": {
+      "type": "main-product--default",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+            "bottom_padding": 12
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "bottom_padding": 15
+          }
+        },
+        "sku": {
+          "type": "sku",
+          "settings": {
+            "text_size": "small",
+            "bottom_padding": 20
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_discount": true,
+            "discount_format": "percent-off",
+            "show_shop_pay": false,
+            "show_sale_badge": true,
+            "show_sold_out_badge": false,
+            "badge_alignment": "above",
+            "sale_badge_format": "sale",
+            "bottom_padding": 32
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "title": "",
+            "text_size": "medium",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false,
+            "bottom_padding": 24
+          }
+        },
+        "variant-selector": {
+          "type": "variant-selector",
+          "settings": {
+            "selector_style": "chips",
+            "chip_layout": "4_column",
+            "popup_option_name": "SIZE",
+            "icon": "clothing-ruler",
+            "popup_link_text": "Popup link text",
+            "popup_page_content": "",
+            "bottom_padding": 32
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity-selector",
+          "name": "Quantity selector",
+          "settings": {
+            "show_label": true,
+            "bottom_padding": 32
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "add_to_cart_btn_style": "outline",
+            "show_dynamic_checkout": false,
+            "show_pickup_availability": true,
+            "bottom_padding": 15
+          }
+        },
+        "liquid_iHtKUP": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .features-container {\n    display: flex;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n    align-items: flex-start;\n    width: 100%;\n    gap: 0.5rem;\n    font-family: 'Hanken Grotesk', sans-serif;\n  }\n\n  .features-container .heading {\n    font-weight: 600;\n    font-size: 1.1875rem;\n    text-transform: uppercase;\n    white-space: nowrap;\n    flex: 0 0 auto;\n    align-self: center;\n    margin-right: 0.5rem;\n  }\n\n  .feature-item {\n    text-align: center;\n    flex: 1 1 7rem;\n    min-width: 3rem;\n    max-width: 12rem;\n  }\n\n  .feature-item img {\n    display: block;\n    width: 4.5rem;\n    height: 4.5rem;\n    margin: 0.625rem auto;\n  }\n\n  .feature-item span {\n    display: block;\n    font-size: 0.6875rem;\n    line-height: 0.8125rem;\n    text-transform: uppercase;\n  }\n\n \n@media (max-width: 1024px) {\n  .features-container {\n     display: none !important;\n  }\n}\n  @media (max-width: 650px) {\n    .feature-item {\n      flex: 0 0 7rem;\n    }\n  }\n</style>\n\n<div class=\"features-container\">\n  <div class=\"heading\">The details</div>\n  <div class=\"feature-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/DETAIL1.png\" alt=\"Elasticated waistband\">\n    <span>Elasticated waistband with internal drawcord</span>\n  </div>\n  <div class=\"feature-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/DETAIL3.png\" alt=\"Back patch pocket\">\n    <span>Back patch<br>pocket</span>\n  </div>\n  <div class=\"feature-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/DETAIL2.png\" alt=\"Broderie anglaise\">\n    <span>Broderie<br>anglaise</span>\n  </div>\n</div>",
+            "bottom_padding": 36
+          }
+        },
+        "collapsible_row_1": {
+          "type": "collapsible-row",
+          "settings": {
+            "expand_by_default": false,
+            "heading": "THE DETAILS",
+            "content": "",
+            "content_page": "",
+            "custom_liquid": "<style>\n  .details-container {\n    display: flex;\n    margin: 0px;\n    padding: 0px;\n    gap: 20px;\n  }\n@media screen and (min-width: 1024px) {\n  .product-block.has-accordion {\n    display: none;\n  }\n}\n\n  .details-item {\n    margin: 0px;\n    text-align: center;\n    width: 110px;\n  }\n\n  .details-item img {\n    height: 72px;\n    width: 72px;\n    margin: 10px auto;\n  }\n\n  .details-item span {\n    font-size: 11px;\n    text-transform: uppercase;\n    line-height: 13px;\n    text-align: center;\n    display: block;\n  }\n</style>\n\n<div class=\"details-container\">\n  <div class=\"details-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/DETAIL1.png\">\n    <span>\n      Elasticated waistband <br>\n      with internal drawcord\n    </span>\n  </div>\n\n  <div class=\"details-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/DETAIL3.png\">\n    <span>\n      Back patch<br> \n      pocket\n    </span>\n  </div>\n\n  <div class=\"details-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0695/3982/3771/files/DETAIL2.png\">\n    <span>\n      Broderie <br> \n      anglaise\n    </span>\n  </div>\n</div>",
+            "bottom_padding": 1
+          }
+        },
+        "divider_qVMNNn": {
+          "type": "divider",
+          "settings": {
+            "thickness": 1,
+            "space_above": 0,
+            "space_below": 0,
+            "space_above_mobile": 0,
+            "space_below_mobile": 0
+          }
+        },
+        "inventory-status": {
+          "type": "inventory-status",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "when-inventory-low",
+            "show_inventory_transfer": false,
+            "bottom_padding": 24
+          }
+        },
+        "icon_with_text_1": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "icon": "payment-security-credit-card",
+            "text": "Secure payment",
+            "link": "",
+            "bottom_padding": 12
+          }
+        },
+        "icon_with_text_2": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "icon": "communications-international-language",
+            "text": "Worldwide shipping",
+            "link": "",
+            "bottom_padding": 12
+          }
+        },
+        "icon_with_text_3": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "icon": "shipping-delivery-return-package",
+            "text": "Easy returns",
+            "link": "",
+            "bottom_padding": 32
+          }
+        },
+        "collapsible_row_2": {
+          "type": "collapsible-row",
+          "disabled": true,
+          "settings": {
+            "expand_by_default": false,
+            "heading": "Collapsible row",
+            "content": "",
+            "content_page": "",
+            "custom_liquid": "",
+            "bottom_padding": 48
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "enable_os_sharing": false,
+            "bottom_padding": 24
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "sku",
+        "price",
+        "description",
+        "variant-selector",
+        "quantity-selector",
+        "buy-buttons",
+        "liquid_iHtKUP",
+        "collapsible_row_1",
+        "divider_qVMNNn",
+        "inventory-status",
+        "icon_with_text_1",
+        "icon_with_text_2",
+        "icon_with_text_3",
+        "collapsible_row_2",
+        "share"
+      ],
+      "custom_css": [
+        ".chip {border-radius: 50px;}",
+        ".chip.chip--selected {background-color: #ffce00; color: black; border: none !important; box-shadow: none;}",
+        ".label-text,.quantity-label {text-transform: uppercase; font-size: 14px; font-weight: bold; letter-spacing: 2px;}",
+        ".label-value {text-transform: uppercase; font-size: 14px; letter-spacing: 2px;}",
+        ".product-details__vendor a {text-transform: uppercase; font-size: 14px;}",
+        ".btn.btn--style-icon {--icon-button-size: 29px;}",
+        ".btn--style-icon .icon {width: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "sticky_effect_container": "product_details",
+        "media_position_desktop": "left",
+        "gallery_layout_desktop": "stacked",
+        "media_thumbnail_size": 75,
+        "media_gallery_size_desktop": 55,
+        "media_aspect_ratio": "natural",
+        "enable_video_autoplay": false,
+        "enable_image_zoom": true,
+        "media_gallery_size_mobile": "full_width",
+        "enable_slider_looping": true,
+        "enable_variant_media_grouping": false,
+        "enable_sticky_add_to_cart_desktop": false,
+        "enable_sticky_add_to_cart_mobile": false,
+        "enable_gift_card_recipient": true,
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "overline": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "text": "Overline"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rich text",
+            "heading_font_size": 3,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text_font_size": 3
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "Button",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "overline",
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme_1",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "multi_column": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_1": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": false,
+            "image": "shopify://shop_images/Ratio_frame_9272f864-5da6-4182-80ee-fbbad0e5af96.png",
+            "heading": "[01]  Performance compression",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_2": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": false,
+            "image": "shopify://shop_images/Ratio_frame_1.png",
+            "heading": "[02]  stretch fabric for unrestricted movement",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_3": {
+          "type": "column-item",
+          "settings": {
+            "display_media": true,
+            "media_full_height": false,
+            "image": "shopify://shop_images/3-min.png",
+            "heading": "[03]  Sensory nodes",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. </p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_1",
+        "column_item_2",
+        "column_item_3"
+      ],
+      "custom_css": [
+        ".multi-column-item__heading {font-size: 30px !important;}",
+        ".image {border-radius: 10px;}",
+        ".multi-column-item__text {font-size: 18px;}",
+        ".multi-column__item-media {width: 85%;}",
+        ".multi-column__item-text-wrapper {align-items: baseline !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_5",
+        "section_header_heading": "FEATURES",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Learn more",
+        "column_spacing": "large",
+        "column_count_desktop": "3",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 1,
+        "heading_mobile_font_size": 1,
+        "item_title_heading_tag": "h4",
+        "text_font_size": 2,
+        "button_style": "solid",
+        "media_aspect_ratio": "portrait",
+        "media_position": "above_content",
+        "width": "full-width-padded",
+        "top_padding": 30,
+        "bottom_padding": 60
+      }
+    },
+    "image_hero_wJdmik": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_rjKcYW": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOREM MEETS MOVEMENT",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        },
+        "text_T77rwB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_font_size": 3
+          }
+        },
+        "button_XRFp7p": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_link": "",
+            "button_label": "",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rjKcYW",
+        "text_T77rwB",
+        "button_XRFp7p"
+      ],
+      "custom_css": [
+        "{border-top: 8px solid #ffce00;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Group_633249-min.jpg",
+        "background_link": "",
+        "custom_desktop_height": "550px",
+        "custom_mobile_height": "450px",
+        "content_width": 730,
+        "text_position_desktop": "center_center",
+        "text_position_mobile": "center_center",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 20,
+        "enable_text_animation": true,
+        "image_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper {border-radius: 10px;}",
+        ".btn-wrapper.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "FROM THE DROP",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop all",
+        "collection": "frontpage",
+        "max_products": 3,
+        "column_count_desktop": "3",
+        "column_count_mobile": "1",
+        "show_slider_indicator": true,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "recommended_products": {
+      "type": "recommended-products",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_header_heading": "Recommended products",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "max_products": 8,
+        "column_count_desktop": "3",
+        "column_count_mobile": "2",
+        "show_slider_indicator": true,
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "multi_column_fGUVNr": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_mQJAm4": {
+          "type": "column-item",
+          "settings": {
+            "display_media": false,
+            "media_full_height": true,
+            "heading": "need help fiNDINg something?",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_WMBGEm": {
+          "type": "column-item",
+          "settings": {
+            "display_media": false,
+            "media_full_height": true,
+            "heading": "",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar <strong>vivamus fringilla lacus nec metus bibendum egestas.</strong></p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_mQJAm4",
+        "column_item_WMBGEm"
+      ],
+      "custom_css": [
+        "h3 {color: #989385;}",
+        "p {color: black;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "color_scheme": "scheme-8187da2a-8d08-43a2-a64b-cc92776a9b04",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Learn more",
+        "column_spacing": "medium",
+        "column_count_desktop": "2",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 3,
+        "button_style": "solid",
+        "media_aspect_ratio": "natural",
+        "media_position": "above_content",
+        "width": "page-width",
+        "top_padding": 40,
+        "bottom_padding": 40
+      }
+    }
+  },
+  "order": [
+    "product_overview",
+    "rich_text",
+    "multi_column",
+    "image_hero_wJdmik",
+    "featured_collection",
+    "recommended_products",
+    "multi_column_fGUVNr"
+  ]
+}

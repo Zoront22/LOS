@@ -1,0 +1,38 @@
+{% liquid
+  comment
+    Renders a text block.
+
+    Required parameters:
+      - block: { Object } The associated block object.
+      - animate: { Boolean } Apply animation class to potentially animate
+  endcomment
+
+  if block.settings.text != blank
+    assign text_class = 'content-block content-block--text ff-body rte'
+    if animate
+      assign text_class = text_class | append: ' animation-content'
+    endif
+
+    capture text_size_class
+      render 'settings-text-size', type: 'text', size: block.settings.text_font_size
+    endcapture
+
+    assign text_class = text_class | append: ' ' | append: text_size_class
+    assign text_width = block.settings.text_width | default: '100%'
+
+    assign alignment_style = 'justify-content: center;'
+    if block.settings.text_alignment == 'left'
+      assign alignment_style = 'justify-content: flex-start;'
+    elsif block.settings.text_alignment == 'right'
+      assign alignment_style = 'justify-content: flex-end;'
+    endif
+  endif
+-%}
+
+{% if block.settings.text != blank -%}
+  <div class="text-block-wrapper" style="display: flex; {{ alignment_style }}">
+    <div class="{{ text_class }}" style="width: {{ text_width }};" {{ block.shopify_attributes }}>
+      {{ block.settings.text }}
+    </div>
+  </div>
+{%- endif %}

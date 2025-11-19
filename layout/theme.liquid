@@ -1,0 +1,125 @@
+<!doctype html>
+
+<!--
+  --------------------------------------------------------------------
+  #  Eclipse v3.0.0
+  #  Documentation: https://help.fluorescent.co/eclipse
+  #  Purchase: https://themes.shopify.com/themes/eclipse
+  #  A product by Fluorescent: https://fluorescent.co/
+  --------------------------------------------------------------------
+-->
+
+{% liquid
+  if settings.corner_rounding_card > 0
+    assign cards_are_rounded = true
+  else
+    assign cards_are_rounded = false
+  endif
+
+  if settings.corner_rounding_image_thumbnail > 0
+    assign image_thumbnails_are_rounded = true
+  else
+    assign image_thumbnails_are_rounded = false
+  endif
+%}
+
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <!-- Google Fonts: Bebas Neue & Hanken Grotesk -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Estilos para navegación activa -->
+    {{ 'navigation-active.css' | asset_url | stylesheet_tag }}
+
+    {%- liquid
+      render 'standard-page-meta'
+      render 'standard-link-elements'
+      render 'standard-title-tag'
+      render 'social-meta-tags'
+
+      # TODO: Investigate the order of these - does setup happen first so that the document classes
+      # can be dealt with as soon as possible? We're thinking that setting vars should be first so
+      # that fonts can be handled right away and poossibly avoid a flash.
+      #
+      # We might need to break things up in addition to reordering.
+      render 'theme-setup'
+      render 'theme-setting-vars'
+      render 'theme-globals'
+
+      if request.design_mode
+        render 'inline-scripts', load_all: true
+      endif
+
+      echo content_for_header
+    -%}
+
+    <style>
+      @media screen and (min-width: 1024px) {
+        .js.do-anim
+        .navigation:not(.navigation--drawer).dropdown-breakpoint
+        .submenu__item--primary:hover
+        > .submenu__link {
+          overflow: hidden;
+          position: relative;
+          background-color: transparent;
+          cursor: url('{{ "cursor-arrow.png" | asset_url }}'), auto;
+        }
+      }
+     a:hover {
+        cursor: url('{{ "cursor-arrow.png" | asset_url }}'), auto;
+      }
+      button:hover{
+        cursor: url('{{ "cursor-arrow.png" | asset_url }}'), auto;
+      }
+      .navigation-btn {
+        cursor: url('{{ "cursor-arrow.png" | asset_url }}'), auto;
+      }
+    </style>
+  </head>
+
+  <body class="template-{{ request.page_type | handle }} image-thumbnails-are-rounded--{{ image_thumbnails_are_rounded }} cards-are-rounded--{{ cards_are_rounded }}">
+    <a href="#main" class="header__skip-to-content btn btn--style-outline" tabindex="1">
+      {{ 'general.accessibility.skip_to_content' | t }}
+    </a>
+
+    <div class="page">
+      {% if settings.enable_page_transitions -%}
+        {% render 'page-transition-overlay' %}
+      {%- endif %}
+
+      {% sections 'header-group' %}
+      {% sections 'overlay-group' %}
+
+      <div class="header-overlay" data-header-overlay>
+        <div class="header-overlay__inner"></div>
+      </div>
+
+      <main id="main" class="main">
+        {{ content_for_layout }}
+      </main>
+
+      {% sections 'footer-group' %}
+
+      {% render 'flash-alert' %}
+    </div>
+  </body>
+
+  <script defer="defer" src="{{ 'global-disclosure.js' | asset_url }}"></script>
+
+  {%- comment -%}
+    Suggested approach to defer non-critical CSS.
+      - https://web.dev/articles/defer-non-critical-css
+  {%- endcomment -%}
+  <link
+    rel="preload"
+    fetchpriority="low"
+    href="{{ 'theme-deferred.css' | asset_url }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript><link rel="stylesheet" href="{{ 'theme-deferred.css' | asset_url }}"></noscript>
+</html>

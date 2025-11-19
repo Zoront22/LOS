@@ -1,0 +1,99 @@
+{%- liquid
+  comment
+    Renders a string for an image's 'sizes' attribute depending on the 'type' of image.
+
+    Required parameters:
+      - type: { String } The "type" of image. Can be:
+        - 'banner'
+        - 'grid'
+        - 'video'
+      - if type == 'banner':
+        - banner_width: { String } The width of the banner. Can be:
+          - 'narrow'
+          - 'wide'
+          - 'page-width'
+          - 'full-width-padded'
+          - 'full-width'
+      - if type == 'grid'
+        - columns: { Number } The number of columns in the grid that the image is part of.
+        - tablet_columns: { Number } The number of columns in the grid that the image is
+            part of, at the 'tablet' breakpoint.
+        - desktop_columns: { Number } The number of columns in the grid that the image is
+            part of, at the 'small-desktop' breakpoint (and above).
+      - if type == 'video'
+        - video_width: { String } The width of the video. Can be:
+          - 'narrow'
+          - 'wide'
+          - 'page-width'
+          - 'full-width-padded'
+          - 'full-width'
+  endcomment
+
+  case type
+    when 'banner'
+      case banner_width
+        when 'narrow'
+          echo '(min-width: 800px) 800px, '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'wide'
+          echo '(min-width: 1200px) 1200px, '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'page-width'
+          echo '(min-width: 1600px) 1600px, '
+          echo '(min-width: 1440px) calc(100vw - (2 * 40px)), '
+          echo '(min-width: 1024px) calc(100vw - (2 * 32px)), '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'full-width-padded'
+          echo '(min-width: 1440px) calc(100vw - (2 * 40px)), '
+          echo '(min-width: 1024px) calc(100vw - (2 * 32px)), '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'full-width'
+          echo '100vw'
+      endcase
+    when 'grid'
+      case desktop_columns
+        when 2
+          echo '(min-width: 1440px) calc((100vw - (2 * 40px) - 28px) / 2), '
+          echo '(min-width: 1024px) calc((100vw - (2 * 32px) - 24px) / 2), '
+        when 3
+          echo '(min-width: 1440px) calc((100vw - (2 * 40px) - (2 * 28px)) / 3), '
+          echo '(min-width: 1024px) calc((100vw - (2 * 32px) - (2 * 28px)) / 3), '
+        when 4
+          echo '(min-width: 1440px) calc((100vw - (2 * 40px) - (3 * 28px)) / 4), '
+          echo '(min-width: 1024px) calc((100vw - (2 * 32px) - (3 * 28px)) / 4), '
+      endcase
+
+      if tablet_columns == 1
+        echo '(min-width: 720px) calc((100vw - (2 * 20px) - 20px)), '
+      elsif tablet_columns == 2
+        echo '(min-width: 720px) calc((100vw - (2 * 20px) - 20px) / 2), '
+      else
+        echo '(min-width: 720px) calc((100vw - (2 * 20px) - (2 * 20px)) / 3), '
+      endif
+
+      if columns == 1
+        echo 'calc(100vw - (2 * 20px))'
+      else
+        echo 'calc((100vw - (2 * 20px) - 16px) / 2)'
+      endif
+    when 'video'
+      case video_width
+        when 'narrow'
+          echo '(min-width: 800px) 800px, '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'wide'
+          echo '(min-width: 1200px) 1200px, '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'page-width'
+          echo '(min-width: 1600px) calc(1600px - (2 * 40px)), '
+          echo '(min-width: 1024px) calc(100vw - (2 * 32px)), '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'full-width-padded'
+          echo '(min-width: 1440px) calc(100vw - (2 * 40px)), '
+          echo '(min-width: 1024px) calc(100vw - (2 * 32px)), '
+          echo 'calc(100vw - (2 * 20px))'
+        when 'full-width'
+          echo '100vw'
+      endcase
+  endcase
+-%}

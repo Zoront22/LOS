@@ -1,0 +1,310 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:groups.footer_group.name",
+  "sections": {
+    "multi_column_Rh9BmM": {
+      "type": "multi-column",
+      "blocks": {
+        "column_item_zNNfNc": {
+          "type": "column-item",
+          "settings": {
+            "display_media": false,
+            "media_full_height": true,
+            "heading": "need help fiNDINg something?",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "column_item_AtzRJU": {
+          "type": "column-item",
+          "settings": {
+            "display_media": false,
+            "media_full_height": true,
+            "heading": "",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae <strong>pellentesque sem placerat.</strong></p>",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_item_zNNfNc",
+        "column_item_AtzRJU"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {color: #989385;}",
+        "p {color: black;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_2",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Learn more",
+        "column_spacing": "medium",
+        "column_count_desktop": "2",
+        "column_count_mobile": "1",
+        "enable_slider_on_desktop": false,
+        "enable_slider_on_mobile": false,
+        "show_slider_indicator": false,
+        "text_alignment": "left",
+        "heading_font_size": 2,
+        "heading_mobile_font_size": 2,
+        "item_title_heading_tag": "h3",
+        "text_font_size": 2,
+        "button_style": "solid",
+        "media_aspect_ratio": "natural",
+        "media_position": "above_content",
+        "width": "page-width",
+        "top_padding": 20,
+        "bottom_padding": 20
+      }
+    },
+    "newsletter_dQ9dbd": {
+      "type": "newsletter",
+      "blocks": {
+        "overline_CQc76Q": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "text": "df"
+          }
+        },
+        "text_haHbrW": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>d</p>",
+            "text_font_size": 3
+          }
+        },
+        "heading_aP6g8a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our MAILING LIST",
+            "heading_font_size": 6,
+            "heading_tag": "h2"
+          }
+        },
+        "email_form_AJjHTd": {
+          "type": "email-form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "overline_CQc76Q",
+        "text_haHbrW",
+        "heading_aP6g8a",
+        "email_form_AJjHTd"
+      ],
+      "custom_css": [
+        ".newsletter .newsletter-form__email-input {background: transparent; border-left: none; border-right: none; border-top: none; border-radius: 0;}",
+        ".newsletter .newsletter-content {display: flex; flex-direction: row; width: 100%; align-items: center;}",
+        ".content-block-wrapper--heading {margin-bottom: 0px; width: 100%; justify-content: start; align-items: center;}",
+        "@media screen and (min-width: 591px) {.newsletter-email-form {display: flex; margin-top: 0; margin-bottom: 0; justify-content: flex-end; width: 200%; }}",
+        ".block-div {width: 100%;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "content_max_width": 1000,
+        "banner_height_type": "adapt",
+        "custom_desktop_height": "350px",
+        "custom_mobile_height": "450px",
+        "text_alignment": "center_center",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 41,
+        "image_animation": "iris",
+        "width": "page-width",
+        "top_padding": 30,
+        "bottom_padding": 50
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "links_QFHUtx": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 20,
+            "mobile_width": "50",
+            "collapsible_row_on_mobile": false,
+            "heading": "Help",
+            "show_heading_on_desktop": true,
+            "menu": "footer"
+          }
+        },
+        "links_1": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 20,
+            "mobile_width": "50",
+            "collapsible_row_on_mobile": false,
+            "heading": "Lords of Sun",
+            "show_heading_on_desktop": true,
+            "menu": "footer-menu-2"
+          }
+        },
+        "links_2": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 20,
+            "mobile_width": "50",
+            "collapsible_row_on_mobile": false,
+            "heading": "LOS Community",
+            "show_heading_on_desktop": true,
+            "menu": "footer-menu-3"
+          }
+        }
+      },
+      "block_order": [
+        "links_QFHUtx",
+        "links_1",
+        "links_2"
+      ],
+      "custom_css": [
+        ".footer__block--links ul,.footer__block {row-gap: 0px;}",
+        "@media screen and (min-width: 1050px) {.footer__blocks {padding-top: 1.5rem; }}",
+        " /* .footer-block__content,.ff-heading {font-family: Nunito Sans;}",
+        " */.fs-body-75 {font-size: var(--font-size-body-50);}",
+        ".subfooter-icon img {width: 1.5rem;}",
+        ".footer-block__heading {text-transform: none !important; font-family: \"Hanken Grotesk\", sans-serif; font-weight: 700; font-size: 16px; line-height: 150%; letter-spacing: -0.011em;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-f2e06f15-44bb-48f8-b65b-a2ad11083c96",
+        "footer_alignment": "left",
+        "column_gap": 40,
+        "column_heading_text_style": "heading",
+        "show_language_selector": true,
+        "show_country_selector": true,
+        "show_country_flag": true,
+        "country_selector_label": "currency",
+        "show_payment_icons": true,
+        "additional_copyright_text": "",
+        "subfooter_links": "footer-menu",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "custom_links_with_icons_nLfpgT": {
+      "type": "custom-links-with-icons",
+      "blocks": {
+        "link_item_cgKPnN": {
+          "type": "link_item",
+          "settings": {
+            "text": "Copyright 2025",
+            "url": ""
+          }
+        },
+        "link_item_J8FPRK": {
+          "type": "link_item",
+          "settings": {
+            "text": "Privacy Policy",
+            "url": ""
+          }
+        },
+        "link_item_dajML7": {
+          "type": "link_item",
+          "settings": {
+            "text": "Cookie Policy",
+            "url": ""
+          }
+        },
+        "link_item_BQGxKF": {
+          "type": "link_item",
+          "settings": {
+            "text": "Terms & Conditions",
+            "url": ""
+          }
+        },
+        "link_item_K9pgNQ": {
+          "type": "link_item",
+          "settings": {
+            "text": "",
+            "url": ""
+          }
+        },
+        "link_item_PjKFRN": {
+          "type": "link_item",
+          "settings": {
+            "text": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_item_cgKPnN",
+        "link_item_J8FPRK",
+        "link_item_dajML7",
+        "link_item_BQGxKF",
+        "link_item_K9pgNQ",
+        "link_item_PjKFRN"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Links with Icons",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "image_hero_GRwLH9": {
+      "type": "image-hero",
+      "blocks": {
+        "image_gYxyFf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LOS_Logo_1.png",
+            "image_size": 1000,
+            "image_size_mobile": 1000,
+            "enable_corner_radius": false
+          }
+        }
+      },
+      "block_order": [
+        "image_gYxyFf"
+      ],
+      "custom_css": [
+        "img {opacity: 100%;}",
+        ".content-block {background-color: #00274e; padding: 0px;}",
+        ".banner__overlay {opacity: 100%; background-color: #00274e;}",
+        "@media (max-width: 750px) {.section-inner--width-full-width .banner {height: 10rem; }}",
+        ".content-block--image {width: 100%;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "background_link": "",
+        "custom_desktop_height": "350px",
+        "custom_mobile_height": "250px",
+        "content_width": 1000,
+        "text_position_desktop": "center_center",
+        "text_position_mobile": "center_center",
+        "overlay_color_scheme": "scheme-af49b6fd-419e-4c1a-98ca-6f605c7fec11",
+        "overlay_opacity": 100,
+        "enable_text_animation": false,
+        "image_animation": "none",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    }
+  },
+  "order": [
+    "multi_column_Rh9BmM",
+    "newsletter_dQ9dbd",
+    "footer",
+    "custom_links_with_icons_nLfpgT",
+    "image_hero_GRwLH9"
+  ]
+}
