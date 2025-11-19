@@ -125,6 +125,46 @@
         "bottom_padding": 30
       }
     },
+    "hero-phrase-1": {
+      "type": "hero-phrase",
+      "settings": {
+        "hero_phrase": "WEDNESDAY IN MIAMI",
+        "rich_title": "<h2>WEDNESDAY IN MIAMI</h2>",
+        "use_richtext": "<h2>WEDNESDAY IN MIAMI</h2>",
+        "subtitle": "Experience a day with our friends",
+        "bg_color": "#efeae2",
+        "title_color": "#000000",
+        "subtitle_color": "#222222",
+        "max_width": 1728,
+        "section_height": 480,
+        "title_size": 132,
+        "title_line_height": "0.89",
+        "title_letter_spacing": "0%",
+        "subtitle_size": 38.8,
+        "subtitle_line_height": "1.3"
+      }
+    },
+    "hero-img-phrase": {
+      "type": "hero-img-phrase",
+      "custom_css": [],
+      "settings": {
+        "bg_image": "shopify://shop_images/ebcb5fb70a4bc23d4ff7ac7e51e25f1387a48623.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "section_height": 740,
+        "content_width": 581,
+        "content_height": 228,
+        "content_top": 277,
+        "content_left": 133,
+        "title_time": "8AM:",
+        "title_highlight": "BEACH",
+        "title_size": 112,
+        "title_color": "#fffcf9",
+        "subtitle_size": 27,
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "subtitle_color": "#ffffff"
+      }
+    },
     "image_with_text": {
       "type": "image-with-text",
       "blocks": {
@@ -169,6 +209,7 @@
         "button",
         "button_qWKfbH"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,p,button {text-align: center; margin: auto;}",
         "button {font-weight: bold;}",
@@ -230,6 +271,7 @@
         "text_xjNiAM",
         "button_j9p7yL"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,p,button {text-align: center; margin: auto;}",
         "button {font-weight: bold;}",
@@ -298,6 +340,7 @@
         "text_xb7FKL",
         "button_pWpdeg"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,p,button {text-align: center; margin: auto;}",
         "button {font-weight: bold;}",
@@ -361,6 +404,7 @@
         "text_A9FnrX",
         "button_qQ7E47"
       ],
+      "disabled": true,
       "custom_css": [
         "h2,p,button {text-align: center; margin: auto;}",
         "button {font-weight: bold;}",
@@ -386,6 +430,45 @@
         "width": "page-width",
         "top_padding": 0,
         "bottom_padding": 0
+      }
+    },
+    "featured_collection_FGKCKC": {
+      "type": "featured-collection",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "collection": "frontpage",
+        "max_products": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_slider_indicator": false,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 80
+      }
+    },
+    "hero_img_phrase_pqmifT": {
+      "type": "hero-img-phrase",
+      "settings": {
+        "bg_image": "shopify://shop_images/1e8b13fc96b31d6974d9f804c265eec499d6834e.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "section_height": 731,
+        "content_width": 581,
+        "content_height": 228,
+        "content_top": 277,
+        "content_left": 133,
+        "title_time": "12PM:",
+        "title_highlight": "SUNSET HARBOR",
+        "title_size": 112,
+        "title_color": "#fffcf9",
+        "subtitle_size": 27,
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "subtitle_color": "#ffffff"
       }
     },
     "multi_column_x3gxBA": {
@@ -446,6 +529,7 @@
         "column_item_9Ky8zf",
         "column_item_Peq68W"
       ],
+      "disabled": true,
       "custom_css": [
         ".section-header {display: flex; flex-direction: column; align-items: center;}",
         ".section-inner {background: linear-gradient( to bottom, #dfd5c5 0%, #dfd5c5 5%, white 5%, white 40%, #dfd5c5 40%, #dfd5c5 100% );}",
@@ -492,6 +576,7 @@
       "block_order": [
         "button_DhQefq"
       ],
+      "disabled": true,
       "custom_css": [
         "button {font-weight: bold;}"
       ],
@@ -504,20 +589,48 @@
         "bottom_padding": 50
       }
     },
-    "hero-phrase-1": {
-      "type": "hero-phrase",
+    "featured_collection_VCLngg": {
+      "type": "featured-collection",
       "settings": {
-        "title": "WEDNESDAY IN MIAMI",
-        "subtitle": "Experience a day with our friends",
-        "bg_color": "#EFEAE2",
-        "title_size": 132,
-        "subtitle_size": 38.79,
-        "max_width": 1728,
-        "section_height": 480
+        "color_scheme": "scheme_1",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "collection": "frontpage",
+        "max_products": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_slider_indicator": false,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 80
       }
     },
     "main": {
-      "type": "main-collection-banner"
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "heading_font_size": 7,
+        "heading_mobile_font_size": 7,
+        "show_collection_description": true,
+        "show_product_count": true,
+        "content_max_width": 500,
+        "show_banner_image": false,
+        "banner_height_type": "adapt",
+        "custom_desktop_height": "450px",
+        "custom_mobile_height": "350px",
+        "text_alignment": "center_center",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 20,
+        "enable_text_animation": true,
+        "image_animation": "iris",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 20
+      }
     },
     "featured_collection_84hhUq": {
       "type": "featured-collection",
@@ -565,6 +678,39 @@
         "width": "full-width-padded",
         "top_padding": 60,
         "bottom_padding": 80
+      }
+    },
+    "collection_list": {
+      "type": "collection-list",
+      "disabled": true,
+      "custom_css": [
+        "{border-bottom: 24px solid #8acfd0;}",
+        ".image {border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme_5",
+        "section_header_heading": "EXPLORE OUR DROPS",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "selected_collections": [
+          "new-arrivals",
+          "sun-sand-25",
+          "liquid-chrome",
+          "line-drawings"
+        ],
+        "layout": "slider",
+        "show_slider_indicator": false,
+        "column_count_desktop": "3",
+        "column_count_mobile": "1",
+        "image_source": "collection_image",
+        "image_aspect_ratio": "portrait",
+        "collection_item_color_scheme": "scheme_4",
+        "overlay_opacity": 20,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
       }
     },
     "video_hero": {
@@ -625,38 +771,6 @@
         "width": "full-width",
         "top_padding": 0,
         "bottom_padding": 0
-      }
-    },
-    "collection_list": {
-      "type": "collection-list",
-      "custom_css": [
-        "{border-bottom: 24px solid #8acfd0;}",
-        ".image {border-radius: 10px;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme_5",
-        "section_header_heading": "EXPLORE OUR DROPS",
-        "section_header_heading_tag": "h2",
-        "section_header_text": "",
-        "section_header_link_url": "",
-        "section_header_link_label": "Shop All",
-        "selected_collections": [
-          "new-arrivals",
-          "sun-sand-25",
-          "liquid-chrome",
-          "line-drawings"
-        ],
-        "layout": "slider",
-        "show_slider_indicator": false,
-        "column_count_desktop": "3",
-        "column_count_mobile": "1",
-        "image_source": "collection_image",
-        "image_aspect_ratio": "portrait",
-        "collection_item_color_scheme": "scheme_4",
-        "overlay_opacity": 20,
-        "width": "full-width-padded",
-        "top_padding": 60,
-        "bottom_padding": 60
       }
     },
     "multi_column": {
@@ -907,17 +1021,21 @@
     "slideshow",
     "featured_collection_1",
     "scrolling_content",
+    "hero-phrase-1",
+    "hero-img-phrase",
     "image_with_text",
     "image_with_text_e3MGnq",
     "video_with_text_BARfFA",
     "image_with_text_Rtii4q",
+    "featured_collection_FGKCKC",
+    "hero_img_phrase_pqmifT",
     "multi_column_x3gxBA",
     "rich_text_n4ergL",
-    "hero-phrase-1",
+    "featured_collection_VCLngg",
     "main",
     "featured_collection_84hhUq",
-    "video_hero",
     "collection_list",
+    "video_hero",
     "multi_column",
     "multi_column_bpzjRj",
     "newsletter_ykiteA",

@@ -1,0 +1,147 @@
+{% comment %}
+  Sección: hero-beach
+{% endcomment %}
+
+<section
+  id="shopify-section-{{ section.id }}"
+  class="hero-beach"
+  aria-label="{{ section.settings.title_time }} {{ section.settings.title_highlight }}"
+>
+  <link href="{{ 'hero-img-phrase.css' | asset_url }}" rel="stylesheet">
+
+  <div
+    class="hero-beach__wrap"
+    style="background-image: url({{ section.settings.bg_image | img_url: '2048x' }}); height: {{ section.settings.section_height }}px;"
+  >
+    <div
+      class="hero-beach__overlay"
+      style="background-color: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity }};"
+    ></div>
+
+    <div
+      class="hero-beach__content"
+      style="width: {{ section.settings.content_width }}px; height: {{ section.settings.content_height }}px; top: {{ section.settings.content_top }}px; left: {{ section.settings.content_left }}px;"
+    >
+      <h2
+        class="hero-beach__title"
+        style="font-size: {{ section.settings.title_size }}px; color: {{ section.settings.title_color }};"
+      >
+        <span class="hero-beach__time">{{ section.settings.title_time }}</span>
+        <span class="hero-beach__highlight">{{ section.settings.title_highlight }}</span>
+      </h2>
+
+      <p
+        class="hero-beach__subtitle"
+        style="font-size: {{ section.settings.subtitle_size }}px; color: {{ section.settings.subtitle_color }};"
+      >
+        {{ section.settings.subtitle }}
+      </p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Beach",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Imagen de fondo"
+    },
+
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Color overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "number",
+      "id": "overlay_opacity",
+      "label": "Opacidad overlay (0-1)"
+    },
+
+    {
+      "type": "number",
+      "id": "section_height",
+      "label": "Altura sección (px)",
+      "default": 740
+    },
+
+    {
+      "type": "number",
+      "id": "content_width",
+      "label": "Ancho caja de texto (px)",
+      "default": 581
+    },
+    {
+      "type": "number",
+      "id": "content_height",
+      "label": "Altura caja de texto (px)",
+      "default": 228
+    },
+    {
+      "type": "number",
+      "id": "content_top",
+      "label": "Top caja de texto (px)",
+      "default": 277
+    },
+    {
+      "type": "number",
+      "id": "content_left",
+      "label": "Left caja de texto (px)",
+      "default": 133
+    },
+
+    {
+      "type": "text",
+      "id": "title_time",
+      "label": "Parte 1 del título (ej. 8AM:)",
+      "default": "8AM:"
+    },
+    {
+      "type": "text",
+      "id": "title_highlight",
+      "label": "Parte destacada del título (ej. BEACH)",
+      "default": "BEACH"
+    },
+    {
+      "type": "number",
+      "id": "title_size",
+      "label": "Tamaño título (px)",
+      "default": 112
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color del título",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "number",
+      "id": "subtitle_size",
+      "label": "Tamaño subtítulo (px)",
+      "default": 27
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Texto complementario",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Color subtítulo",
+      "default": "#FFFFFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Beach",
+      "category": "Banner"
+    }
+  ]
+}
+{% endschema %}
