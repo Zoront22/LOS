@@ -1,9 +1,6 @@
 {% comment %}
   sections/featured-products-sideimage.liquid
   Sección: Featured products + imagen lateral
-  - Usa product pickers para los 2 productos y un image_picker para la imagen lateral.
-  - Exporta variables CSS inline (widths, gaps, paddings, tamaños de fuente) para que el CSS externo sea genérico.
-  - No incluye 'default' en image_picker (evita errores de schema).
 {% endcomment %}
 
 <section
@@ -55,7 +52,7 @@
                   <span class="color-swatch" title="{{ color_val }}" style="background-color: #eee;"></span>
                 {% endfor %}
               {% else %}
-                <!-- si no hay opción color, mostrar hasta 3 swatches por variante (placeholder) -->
+                <!-- si no hay opción color -->
                 {% assign color_variants = section.settings.product_1.variants | slice: 0, 3 %}
                 {% for v in color_variants %}
                   <span class="color-swatch" style="background-color: #ddd;"></span>
