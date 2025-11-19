@@ -1,0 +1,238 @@
+{% comment %}
+  sections/featured-products-sideimage.liquid
+  Sección: Featured products + imagen lateral
+  - Usa product pickers para los 2 productos y un image_picker para la imagen lateral.
+  - Exporta variables CSS inline (widths, gaps, paddings, tamaños de fuente) para que el CSS externo sea genérico.
+  - No incluye 'default' en image_picker (evita errores de schema).
+{% endcomment %}
+
+<section
+  id="shopify-section-{{ section.id }}"
+  class="featured-sideimage"
+  aria-label="Featured products with side image"
+  style="
+    --container-width: {{ section.settings.container_width | default: 1536 }}px;
+    --section-padding: {{ section.settings.padding | default: 96 }}px;
+    --gap: {{ section.settings.gap | default: 42 }}px;
+    --card-width: {{ section.settings.card_width | default: 360 }}px;
+    --card-img-width: {{ section.settings.card_img_width | default: 372 }}px;
+    --card-img-height: {{ section.settings.card_img_height | default: 521 }}px;
+    --card-info-height: {{ section.settings.card_info_height | default: 110 }}px;
+    --hero-width: {{ section.settings.hero_width | default: 747 }}px;
+    --section-height: {{ section.settings.section_height | default: 854 }}px;
+    --title-fs: {{ section.settings.title_font_size | default: 32 }}px;
+    --price-fs: {{ section.settings.price_font_size | default: 23 }}px;
+  "
+>
+  <link href="{{ 'featured-products-sideimage.css' | asset_url }}" rel="stylesheet">
+
+  <div class="featured-sideimage__inner">
+    <div class="featured-sideimage__left">
+      <div class="product-card" data-product-position="1">
+        <a href="{{ section.settings.product_1.url | default: '#' }}" class="product-card__media">
+          {% if section.settings.product_1 and section.settings.product_1.featured_image %}
+            <img
+              src="{{ section.settings.product_1.featured_image | image_url: width: section.settings.card_img_width }}"
+              alt="{{ section.settings.product_1.title }}"
+              width="{{ section.settings.card_img_width }}"
+              height="{{ section.settings.card_img_height }}"
+              loading="lazy"
+            >
+          {% endif %}
+        </a>
+
+        <div class="product-card__info" style="height: var(--card-info-height);">
+          <div class="product-card__colors">
+            {% if section.settings.product_1 and section.settings.product_1.variants.size > 0 %}
+              {% assign colors_option_index = null %}
+              {% for option in section.settings.product_1.options_with_values %}
+                {% raw %}{% assign opt_name = option.name | downcase %} {% if opt_name contains 'color' %}{% endraw %}
+              {% endfor %}
+              {% if colors_option_index != null %}
+                {% assign color_variants = section.settings.product_1.variants | slice: 0, 5 %}
+                {% for v in color_variants %}
+                  {% assign color_val = v.options[colors_option_index] %}
+                  <span class="color-swatch" title="{{ color_val }}" style="background-color: #eee;"></span>
+                {% endfor %}
+              {% else %}
+                <!-- si no hay opción color, mostrar hasta 3 swatches por variante (placeholder) -->
+                {% assign color_variants = section.settings.product_1.variants | slice: 0, 3 %}
+                {% for v in color_variants %}
+                  <span class="color-swatch" style="background-color: #ddd;"></span>
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+          </div>
+
+          <h3 class="product-card__title">
+            {% if section.settings.product_1 %}{{ section.settings.product_1.title }}{% else %}Product title{% endif %}
+          </h3>
+
+          <div class="product-card__price">
+            {% if section.settings.product_1 %}
+              {% assign p = section.settings.product_1 %}
+              {% if p.price %}
+                <span class="price-amount">{{ p.price | money }}</span>
+              {% else %}
+                <span class="price-amount">-</span>
+              {% endif %}
+            {% else %}
+              <span class="price-amount">$0.00</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 (misma estructura) -->
+      <div class="product-card" data-product-position="2">
+        <a href="{{ section.settings.product_2.url | default: '#' }}" class="product-card__media">
+          {% if section.settings.product_2 and section.settings.product_2.featured_image %}
+            <img
+              src="{{ section.settings.product_2.featured_image | image_url: width: section.settings.card_img_width }}"
+              alt="{{ section.settings.product_2.title }}"
+              width="{{ section.settings.card_img_width }}"
+              height="{{ section.settings.card_img_height }}"
+              loading="lazy"
+            >
+          {% endif %}
+        </a>
+
+        <div class="product-card__info" style="height: var(--card-info-height);">
+          <div class="product-card__colors">
+            {% if section.settings.product_2 and section.settings.product_2.variants.size > 0 %}
+              {% assign colors_option_index = null %}
+              {% for option in section.settings.product_2.options_with_values %}
+                {% raw %}{% assign opt_name = option.name | downcase %} {% if opt_name contains 'color' %}{% endraw %}
+              {% endfor %}
+              {% if colors_option_index != null %}
+                {% assign color_variants = section.settings.product_2.variants | slice: 0, 5 %}
+                {% for v in color_variants %}
+                  {% assign color_val = v.options[colors_option_index] %}
+                  <span class="color-swatch" title="{{ color_val }}" style="background-color: #eee;"></span>
+                {% endfor %}
+              {% else %}
+                {% assign color_variants = section.settings.product_2.variants | slice: 0, 3 %}
+                {% for v in color_variants %}
+                  <span class="color-swatch" style="background-color: #ddd;"></span>
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+          </div>
+
+          <h3 class="product-card__title">
+            {% if section.settings.product_2 %}{{ section.settings.product_2.title }}{% else %}Product title{% endif %}
+          </h3>
+
+          <div class="product-card__price">
+            {% if section.settings.product_2 %}
+              {% assign p2 = section.settings.product_2 %}
+              {% if p2.price %}
+                <span class="price-amount">{{ p2.price | money }}</span>
+              {% else %}
+                <span class="price-amount">-</span>
+              {% endif %}
+            {% else %}
+              <span class="price-amount">$0.00</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right hero image -->
+    <div class="featured-sideimage__hero">
+      {% if section.settings.hero_image %}
+        <img
+          src="{{ section.settings.hero_image | image_url: width: 1200 }}"
+          alt="{{ section.settings.hero_alt | escape }}"
+          width="{{ section.settings.hero_width }}"
+          height="auto"
+          loading="lazy"
+        >
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured products",
+  "settings": [
+    { "type": "product", "id": "product_1", "label": "Producto 1" },
+    { "type": "product", "id": "product_2", "label": "Producto 2" },
+    { "type": "image_picker", "id": "hero_image", "label": "Imagen lateral (hero)" },
+    { "type": "text", "id": "hero_alt", "label": "Alt text imagen lateral", "default": "Hero image" },
+
+    {
+      "type": "number",
+      "id": "container_width",
+      "label": "Ancho del layout (px)",
+      "default": 1536
+    },
+    {
+      "type": "number",
+      "id": "section_height",
+      "label": "Altura de sección (px)",
+      "default": 855
+    },
+    {
+      "type": "number",
+      "id": "padding",
+      "label": "Padding sección (px)",
+      "default": 96
+    },
+    {
+      "type": "number",
+      "id": "gap",
+      "label": "Gap entre columnas (px)",
+      "default": 42
+    },
+
+    {
+      "type": "number",
+      "id": "card_width",
+      "label": "Ancho tarjeta producto (px)",
+      "default": 360
+    },
+    {
+      "type": "number",
+      "id": "card_img_width",
+      "label": "Imagen producto width (px)",
+      "default": 372
+    },
+    {
+      "type": "number",
+      "id": "card_img_height",
+      "label": "Imagen producto height (px)",
+      "default": 521
+    },
+    {
+      "type": "number",
+      "id": "card_info_height",
+      "label": "Altura bloque info (px)",
+      "default": 110
+    },
+
+    {
+      "type": "number",
+      "id": "hero_width",
+      "label": "Ancho imagen lateral (px)",
+      "default": 747
+    },
+
+    {
+      "type": "number",
+      "id": "title_font_size",
+      "label": "Tamaño título (px)",
+      "default": 32
+    },
+    {
+      "type": "number",
+      "id": "price_font_size",
+      "label": "Tamaño precio (px)",
+      "default": 23
+    }
+  ],
+  "presets": [{ "name": "Featured products - side image", "category": "Products" }]
+}
+{% endschema %}

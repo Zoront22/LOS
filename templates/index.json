@@ -144,9 +144,8 @@
         "subtitle_line_height": "1.3"
       }
     },
-    "hero-img-phrase": {
+    "hero_img_phrase_gzHHEh": {
       "type": "hero-img-phrase",
-      "custom_css": [],
       "settings": {
         "bg_image": "shopify://shop_images/ebcb5fb70a4bc23d4ff7ac7e51e25f1387a48623.jpg",
         "overlay_color": "#000000",
@@ -457,7 +456,7 @@
         "bg_image": "shopify://shop_images/1e8b13fc96b31d6974d9f804c265eec499d6834e.jpg",
         "overlay_color": "#000000",
         "overlay_opacity": 0.1,
-        "section_height": 731,
+        "section_height": 740,
         "content_width": 581,
         "content_height": 228,
         "content_top": 277,
@@ -608,6 +607,84 @@
         "bottom_padding": 80
       }
     },
+    "hero_img_phrase_ma89Tc": {
+      "type": "hero-img-phrase",
+      "settings": {
+        "bg_image": "shopify://shop_images/192326141fa29033f470c526d25d5cbdf16625d6.png",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "section_height": 740,
+        "content_width": 581,
+        "content_height": 228,
+        "content_top": 277,
+        "content_left": 133,
+        "title_time": "4PM:",
+        "title_highlight": "PALM ISLAND",
+        "title_size": 112,
+        "title_color": "#fffcf9",
+        "subtitle_size": 27,
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "subtitle_color": "#ffffff"
+      }
+    },
+    "featured_collection_MymFaX": {
+      "type": "featured-collection",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "collection": "frontpage",
+        "max_products": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_slider_indicator": false,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 80
+      }
+    },
+    "hero_img_phrase_eUqHnr": {
+      "type": "hero-img-phrase",
+      "settings": {
+        "bg_image": "shopify://shop_images/d677aa045fbe2636f907b2c60a51348ddc84eb42.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "section_height": 740,
+        "content_width": 581,
+        "content_height": 228,
+        "content_top": 277,
+        "content_left": 133,
+        "title_time": "8PM:",
+        "title_highlight": "DINNER @ AMARA",
+        "title_size": 112,
+        "title_color": "#fffcf9",
+        "subtitle_size": 27,
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "subtitle_color": "#ffffff"
+      }
+    },
+    "featured_collection_BhKR4i": {
+      "type": "featured-collection",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop All",
+        "collection": "frontpage",
+        "max_products": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "2",
+        "show_slider_indicator": false,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 80
+      }
+    },
     "main": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -630,54 +707,6 @@
         "width": "page-width",
         "top_padding": 50,
         "bottom_padding": 20
-      }
-    },
-    "featured_collection_84hhUq": {
-      "type": "featured-collection",
-      "blocks": {
-        "promotion_tile_qUcWxX": {
-          "type": "promotion-tile",
-          "settings": {
-            "min_height": 300,
-            "image": "shopify://shop_images/los_life_promo.png",
-            "link": "",
-            "heading": "explore the los life",
-            "heading_font_size": 3,
-            "text": "",
-            "text_font_size": 3,
-            "text_alignment": "top_left",
-            "button_label": "Shop now",
-            "button_style": "solid",
-            "button_placement": "bottom-anchored",
-            "overlay_color_scheme": "scheme_4",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "promotion_tile_qUcWxX"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "button {font-weight: bold;}",
-        ".price {display: none;}",
-        ".product-item__title {display: none;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme_3",
-        "section_header_heading": "THE LOS LIFE",
-        "section_header_heading_tag": "h2",
-        "section_header_text": "",
-        "section_header_link_url": "",
-        "section_header_link_label": "Shop All",
-        "collection": "",
-        "max_products": 4,
-        "column_count_desktop": "3",
-        "column_count_mobile": "2",
-        "show_slider_indicator": false,
-        "width": "full-width-padded",
-        "top_padding": 60,
-        "bottom_padding": 80
       }
     },
     "collection_list": {
@@ -754,7 +783,7 @@
         ".content-block-wrapper--heading {width: 100%;}"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme_1",
         "video": "shopify://files/videos/aaf1c4e3776e11821483d5d5fc29da717e58a9ab.mp4",
         "video_focal_point": "center",
         "mobile_video_focal_point": "center",
@@ -1022,7 +1051,7 @@
     "featured_collection_1",
     "scrolling_content",
     "hero-phrase-1",
-    "hero-img-phrase",
+    "hero_img_phrase_gzHHEh",
     "image_with_text",
     "image_with_text_e3MGnq",
     "video_with_text_BARfFA",
@@ -1032,8 +1061,11 @@
     "multi_column_x3gxBA",
     "rich_text_n4ergL",
     "featured_collection_VCLngg",
+    "hero_img_phrase_ma89Tc",
+    "featured_collection_MymFaX",
+    "hero_img_phrase_eUqHnr",
+    "featured_collection_BhKR4i",
     "main",
-    "featured_collection_84hhUq",
     "collection_list",
     "video_hero",
     "multi_column",
