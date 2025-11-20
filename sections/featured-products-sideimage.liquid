@@ -1,12 +1,17 @@
 {% comment %}
   sections/featured-products-sideimage.liquid
-  Sección: Featured products + imagen lateral
+  Sección: Featured products con 2 hero images y 4 productos
+  Estructura:
+  - Row 1: product_1 + product_2 (izq) | hero_image_1 (der)
+  - Row 2: hero_image_2 (izq) | product_3 + product_4 (der)
+
+  Mantiene medidas via variables CSS inyectadas inline.
 {% endcomment %}
 
 <section
   id="shopify-section-{{ section.id }}"
-  class="featured-sideimage"
-  aria-label="Featured products with side image"
+  class="featured-sideimage two-heroes"
+  aria-label="{{ section.settings.aria_label | default: 'Featured products' }}"
   style="
     --container-width: {{ section.settings.container_width | default: 1536 }}px;
     --section-padding: {{ section.settings.padding | default: 96 }}px;
@@ -16,6 +21,7 @@
     --card-img-height: {{ section.settings.card_img_height | default: 521 }}px;
     --card-info-height: {{ section.settings.card_info_height | default: 110 }}px;
     --hero-width: {{ section.settings.hero_width | default: 747 }}px;
+    --hero-height: {{ section.settings.hero_height | default: 652 }}px;
     --section-height: {{ section.settings.section_height | default: 854 }}px;
     --title-fs: {{ section.settings.title_font_size | default: 32 }}px;
     --price-fs: {{ section.settings.price_font_size | default: 23 }}px;
@@ -23,142 +29,376 @@
 >
   <link href="{{ 'featured-products-sideimage.css' | asset_url }}" rel="stylesheet">
 
-  <div class="featured-sideimage__inner">
-    <div class="featured-sideimage__left">
-      <div class="product-card" data-product-position="1">
-        <a href="{{ section.settings.product_1.url | default: '#' }}" class="product-card__media">
-          {% if section.settings.product_1 and section.settings.product_1.featured_image %}
-            <img
-              src="{{ section.settings.product_1.featured_image | image_url: width: section.settings.card_img_width }}"
-              alt="{{ section.settings.product_1.title }}"
-              width="{{ section.settings.card_img_width }}"
-              height="{{ section.settings.card_img_height }}"
-              loading="lazy"
+  <div
+    class="featured-sideimage__container"
+    style="max-width: var(--container-width); padding: 0 var(--section-padding); margin: 0 auto;"
+  >
+    <!-- ROW 1: products left, hero right -->
+    <div class="fpsi-row fpsi-row--hero-right" style="gap: var(--gap);">
+      <div class="fpsi-products fpsi-products--left">
+        <div class="product-grid">
+          {% comment %} Product 1 card {% endcomment %}
+          <article class="product-card" data-position="1">
+            <a
+              class="product-card__media"
+              href="{% if section.settings.product_1 %}{{ section.settings.product_1.url }}{% else %}#{% endif %}"
+              aria-label="View product"
             >
-          {% endif %}
-        </a>
-
-        <div class="product-card__info" style="height: var(--card-info-height);">
-          <div class="product-card__colors">
-            {% if section.settings.product_1 and section.settings.product_1.variants.size > 0 %}
-              {% assign colors_option_index = null %}
-              {% for option in section.settings.product_1.options_with_values %}
-                {% raw %}{% assign opt_name = option.name | downcase %} {% if opt_name contains 'color' %}{% endraw %}
-              {% endfor %}
-              {% if colors_option_index != null %}
-                {% assign color_variants = section.settings.product_1.variants | slice: 0, 5 %}
-                {% for v in color_variants %}
-                  {% assign color_val = v.options[colors_option_index] %}
-                  <span class="color-swatch" title="{{ color_val }}" style="background-color: #eee;"></span>
-                {% endfor %}
-              {% else %}
-                <!-- si no hay opción color -->
-                {% assign color_variants = section.settings.product_1.variants | slice: 0, 3 %}
-                {% for v in color_variants %}
-                  <span class="color-swatch" style="background-color: #ddd;"></span>
-                {% endfor %}
+              {% if section.settings.product_1 and section.settings.product_1.featured_image %}
+                {% assign img1 = section.settings.product_1.featured_image %}
+                <img
+                  src="{{ img1 | img_url: '372x521' }}"
+                  srcset="{{ img1 | img_url: '372x521' }} 372w, {{ img1 | img_url: '744x1042' }} 744w, {{ img1 | img_url: '1116x1563' }} 1116w"
+                  sizes="(max-width:420px) 100vw, (max-width:900px) 45vw, 372px"
+                  alt="{{ img1.alt | default: section.settings.product_1.title | escape }}"
+                  width="372"
+                  height="521"
+                  loading="lazy"
+                >
               {% endif %}
-            {% endif %}
-          </div>
+            </a>
 
-          <h3 class="product-card__title">
-            {% if section.settings.product_1 %}{{ section.settings.product_1.title }}{% else %}Product title{% endif %}
-          </h3>
+            <div class="product-card__info" style="height: var(--card-info-height);">
+              <div class="product-card__colors">
+                {% if section.settings.product_1 and section.settings.product_1.variants.size > 0 %}
+                  {% assign colors_option_index = null %}
+                  {% for option in section.settings.product_1.options_with_values %}
+                    {% assign opt_name = option.name | downcase %}
+                    {% if opt_name contains 'color' %}
+                      {% assign colors_option_index = forloop.index0 %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if colors_option_index != null %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      {% assign color_val = v.options[colors_option_index] %}
+                      <span
+                        class="color-swatch"
+                        title="{{ color_val }}"
+                        aria-hidden="true"
+                        style="background-color:#eee"
+                      ></span>
+                    {% endfor %}
+                  {% else %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      <span class="color-swatch" aria-hidden="true" style="background-color:#ddd"></span>
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}
+              </div>
 
-          <div class="product-card__price">
-            {% if section.settings.product_1 %}
-              {% assign p = section.settings.product_1 %}
-              {% if p.price %}
-                <span class="price-amount">{{ p.price | money }}</span>
-              {% else %}
-                <span class="price-amount">-</span>
+              <h3 class="product-card__title">
+                {% if section.settings.product_1 -%}
+                  {{- section.settings.product_1.title -}}
+                {%- else -%}
+                  Product title
+                {%- endif %}
+              </h3>
+
+              <div class="product-card__price">
+                {% if section.settings.product_1 %}
+                  {% assign v1 = section.settings.product_1.selected_or_first_available_variant %}
+                  {% if v1 and v1.price %}
+                    <span class="price-amount">{{ v1.price | money }}</span>
+                  {% else %}
+                    <span class="price-amount">-</span>
+                  {% endif %}
+                {% else %}
+                  <span class="price-amount">$0.00</span>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+
+          {% comment %} Product 2 card {% endcomment %}
+          <article class="product-card" data-position="2">
+            <a
+              class="product-card__media"
+              href="{% if section.settings.product_2 %}{{ section.settings.product_2.url }}{% else %}#{% endif %}"
+              aria-label="View product"
+            >
+              {% if section.settings.product_2 and section.settings.product_2.featured_image %}
+                {% assign img2 = section.settings.product_2.featured_image %}
+                <img
+                  src="{{ img2 | img_url: '372x521' }}"
+                  srcset="{{ img2 | img_url: '372x521' }} 372w, {{ img2 | img_url: '744x1042' }} 744w, {{ img2 | img_url: '1116x1563' }} 1116w"
+                  sizes="(max-width:420px) 100vw, (max-width:900px) 45vw, 372px"
+                  alt="{{ img2.alt | default: section.settings.product_2.title | escape }}"
+                  width="372"
+                  height="521"
+                  loading="lazy"
+                >
               {% endif %}
-            {% else %}
-              <span class="price-amount">$0.00</span>
-            {% endif %}
-          </div>
+            </a>
+
+            <div class="product-card__info" style="height: var(--card-info-height);">
+              <div class="product-card__colors">
+                {% if section.settings.product_2 and section.settings.product_2.variants.size > 0 %}
+                  {% assign colors_option_index = null %}
+                  {% for option in section.settings.product_2.options_with_values %}
+                    {% assign opt_name = option.name | downcase %}
+                    {% if opt_name contains 'color' %}
+                      {% assign colors_option_index = forloop.index0 %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if colors_option_index != null %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      {% assign color_val = v.options[colors_option_index] %}
+                      <span
+                        class="color-swatch"
+                        title="{{ color_val }}"
+                        aria-hidden="true"
+                        style="background-color:#eee"
+                      ></span>
+                    {% endfor %}
+                  {% else %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      <span class="color-swatch" aria-hidden="true" style="background-color:#ddd"></span>
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}
+              </div>
+
+              <h3 class="product-card__title">
+                {% if section.settings.product_2 -%}
+                  {{- section.settings.product_2.title -}}
+                {%- else -%}
+                  Product title
+                {%- endif %}
+              </h3>
+
+              <div class="product-card__price">
+                {% if section.settings.product_2 %}
+                  {% assign v2 = section.settings.product_2.selected_or_first_available_variant %}
+                  {% if v2 and v2.price %}
+                    <span class="price-amount">{{ v2.price | money }}</span>
+                  {% else %}
+                    <span class="price-amount">-</span>
+                  {% endif %}
+                {% else %}
+                  <span class="price-amount">$0.00</span>
+                {% endif %}
+              </div>
+            </div>
+          </article>
         </div>
       </div>
 
-      <!-- Product 2 (misma estructura) -->
-      <div class="product-card" data-product-position="2">
-        <a href="{{ section.settings.product_2.url | default: '#' }}" class="product-card__media">
-          {% if section.settings.product_2 and section.settings.product_2.featured_image %}
-            <img
-              src="{{ section.settings.product_2.featured_image | image_url: width: section.settings.card_img_width }}"
-              alt="{{ section.settings.product_2.title }}"
-              width="{{ section.settings.card_img_width }}"
-              height="{{ section.settings.card_img_height }}"
-              loading="lazy"
+      <div class="fpsi-hero fpsi-hero--right" style="width: var(--hero-width);">
+        {% if section.settings.hero_image_1 %}
+          {% assign h1 = section.settings.hero_image_1 %}
+          <img
+            src="{{ h1 | img_url: '747x652' }}"
+            srcset="{{ h1 | img_url: '747x652' }} 747w, {{ h1 | img_url: '1494x1304' }} 1494w"
+            sizes="(max-width:900px) 50vw, 747px"
+            alt="{{ section.settings.hero_alt_1 | escape }}"
+            width="747"
+            height="652"
+            loading="lazy"
+            style="border-radius:10px;"
+          >
+        {% endif %}
+      </div>
+    </div>
+    <!-- end row 1 -->
+
+    <!-- ROW 2: hero left, products right -->
+    <div class="fpsi-row fpsi-row--hero-left" style="gap: var(--gap); margin-top: var(--gap);">
+      <div class="fpsi-hero fpsi-hero--left" style="width: var(--hero-width);">
+        {% if section.settings.hero_image_2 %}
+          {% assign h2 = section.settings.hero_image_2 %}
+          <img
+            src="{{ h2 | img_url: '747x652' }}"
+            srcset="{{ h2 | img_url: '747x652' }} 747w, {{ h2 | img_url: '1494x1304' }} 1494w"
+            sizes="(max-width:900px) 50vw, 747px"
+            alt="{{ section.settings.hero_alt_2 | escape }}"
+            width="747"
+            height="652"
+            loading="lazy"
+            style="border-radius:10px;"
+          >
+        {% endif %}
+      </div>
+
+      <div class="fpsi-products fpsi-products--right">
+        <div class="product-grid">
+          {% comment %} Product 3 card {% endcomment %}
+          <article class="product-card" data-position="3">
+            <a
+              class="product-card__media"
+              href="{% if section.settings.product_3 %}{{ section.settings.product_3.url }}{% else %}#{% endif %}"
+              aria-label="View product"
             >
-          {% endif %}
-        </a>
-
-        <div class="product-card__info" style="height: var(--card-info-height);">
-          <div class="product-card__colors">
-            {% if section.settings.product_2 and section.settings.product_2.variants.size > 0 %}
-              {% assign colors_option_index = null %}
-              {% for option in section.settings.product_2.options_with_values %}
-                {% raw %}{% assign opt_name = option.name | downcase %} {% if opt_name contains 'color' %}{% endraw %}
-              {% endfor %}
-              {% if colors_option_index != null %}
-                {% assign color_variants = section.settings.product_2.variants | slice: 0, 5 %}
-                {% for v in color_variants %}
-                  {% assign color_val = v.options[colors_option_index] %}
-                  <span class="color-swatch" title="{{ color_val }}" style="background-color: #eee;"></span>
-                {% endfor %}
-              {% else %}
-                {% assign color_variants = section.settings.product_2.variants | slice: 0, 3 %}
-                {% for v in color_variants %}
-                  <span class="color-swatch" style="background-color: #ddd;"></span>
-                {% endfor %}
+              {% if section.settings.product_3 and section.settings.product_3.featured_image %}
+                {% assign img3 = section.settings.product_3.featured_image %}
+                <img
+                  src="{{ img3 | img_url: '372x521' }}"
+                  srcset="{{ img3 | img_url: '372x521' }} 372w, {{ img3 | img_url: '744x1042' }} 744w"
+                  sizes="(max-width:420px) 100vw, (max-width:900px) 45vw, 372px"
+                  alt="{{ img3.alt | default: section.settings.product_3.title | escape }}"
+                  width="372"
+                  height="521"
+                  loading="lazy"
+                >
               {% endif %}
-            {% endif %}
-          </div>
+            </a>
 
-          <h3 class="product-card__title">
-            {% if section.settings.product_2 %}{{ section.settings.product_2.title }}{% else %}Product title{% endif %}
-          </h3>
+            <div class="product-card__info" style="height: var(--card-info-height);">
+              <div class="product-card__colors">
+                {% if section.settings.product_3 and section.settings.product_3.variants.size > 0 %}
+                  {% assign colors_option_index = null %}
+                  {% for option in section.settings.product_3.options_with_values %}
+                    {% assign opt_name = option.name | downcase %}
+                    {% if opt_name contains 'color' %}
+                      {% assign colors_option_index = forloop.index0 %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if colors_option_index != null %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      {% assign color_val = v.options[colors_option_index] %}
+                      <span
+                        class="color-swatch"
+                        title="{{ color_val }}"
+                        aria-hidden="true"
+                        style="background-color:#eee"
+                      ></span>
+                    {% endfor %}
+                  {% else %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      <span class="color-swatch" aria-hidden="true" style="background-color:#ddd"></span>
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}
+              </div>
 
-          <div class="product-card__price">
-            {% if section.settings.product_2 %}
-              {% assign p2 = section.settings.product_2 %}
-              {% if p2.price %}
-                <span class="price-amount">{{ p2.price | money }}</span>
-              {% else %}
-                <span class="price-amount">-</span>
+              <h3 class="product-card__title">
+                {% if section.settings.product_3 -%}
+                  {{- section.settings.product_3.title -}}
+                {%- else -%}
+                  Product title
+                {%- endif %}
+              </h3>
+
+              <div class="product-card__price">
+                {% if section.settings.product_3 %}
+                  {% assign v3 = section.settings.product_3.selected_or_first_available_variant %}
+                  {% if v3 and v3.price %}
+                    <span class="price-amount">{{ v3.price | money }}</span>
+                  {% else %}
+                    <span class="price-amount">-</span>
+                  {% endif %}
+                {% else %}
+                  <span class="price-amount">$0.00</span>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+
+          {% comment %} Product 4 card {% endcomment %}
+          <article class="product-card" data-position="4">
+            <a
+              class="product-card__media"
+              href="{% if section.settings.product_4 %}{{ section.settings.product_4.url }}{% else %}#{% endif %}"
+              aria-label="View product"
+            >
+              {% if section.settings.product_4 and section.settings.product_4.featured_image %}
+                {% assign img4 = section.settings.product_4.featured_image %}
+                <img
+                  src="{{ img4 | img_url: '372x521' }}"
+                  srcset="{{ img4 | img_url: '372x521' }} 372w, {{ img4 | img_url: '744x1042' }} 744w"
+                  sizes="(max-width:420px) 100vw, (max-width:900px) 45vw, 372px"
+                  alt="{{ img4.alt | default: section.settings.product_4.title | escape }}"
+                  width="372"
+                  height="521"
+                  loading="lazy"
+                >
               {% endif %}
-            {% else %}
-              <span class="price-amount">$0.00</span>
-            {% endif %}
-          </div>
+            </a>
+
+            <div class="product-card__info" style="height: var(--card-info-height);">
+              <div class="product-card__colors">
+                {% if section.settings.product_4 and section.settings.product_4.variants.size > 0 %}
+                  {% assign colors_option_index = null %}
+                  {% for option in section.settings.product_4.options_with_values %}
+                    {% assign opt_name = option.name | downcase %}
+                    {% if opt_name contains 'color' %}
+                      {% assign colors_option_index = forloop.index0 %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if colors_option_index != null %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      {% assign color_val = v.options[colors_option_index] %}
+                      <span
+                        class="color-swatch"
+                        title="{{ color_val }}"
+                        aria-hidden="true"
+                        style="background-color:#eee"
+                      ></span>
+                    {% endfor %}
+                  {% else %}
+                    {% assign color_variants_p1 = section.settings.product_1.variants | slice: 0, 3 %}
+                    {% for v in color_variants_p1 %}
+                      <span class="color-swatch" aria-hidden="true" style="background-color:#ddd"></span>
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}
+              </div>
+
+              <h3 class="product-card__title">
+                {% if section.settings.product_4 -%}
+                  {{- section.settings.product_4.title -}}
+                {%- else -%}
+                  Product title
+                {%- endif %}
+              </h3>
+
+              <div class="product-card__price">
+                {% if section.settings.product_4 %}
+                  {% assign v4 = section.settings.product_4.selected_or_first_available_variant %}
+                  {% if v4 and v4.price %}
+                    <span class="price-amount">{{ v4.price | money }}</span>
+                  {% else %}
+                    <span class="price-amount">-</span>
+                  {% endif %}
+                {% else %}
+                  <span class="price-amount">$0.00</span>
+                {% endif %}
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
-
-    <!-- Right hero image -->
-    <div class="featured-sideimage__hero">
-      {% if section.settings.hero_image %}
-        <img
-          src="{{ section.settings.hero_image | image_url: width: 1200 }}"
-          alt="{{ section.settings.hero_alt | escape }}"
-          width="{{ section.settings.hero_width }}"
-          height="auto"
-          loading="lazy"
-        >
-      {% endif %}
-    </div>
+    <!-- end row 2 -->
   </div>
+  <!-- container -->
 </section>
 
 {% schema %}
 {
   "name": "Featured products",
   "settings": [
+    { "type": "text", "id": "aria_label", "label": "Aria label", "default": "Featured products with side images" },
+
     { "type": "product", "id": "product_1", "label": "Producto 1" },
     { "type": "product", "id": "product_2", "label": "Producto 2" },
-    { "type": "image_picker", "id": "hero_image", "label": "Imagen lateral (hero)" },
-    { "type": "text", "id": "hero_alt", "label": "Alt text imagen lateral", "default": "Hero image" },
+    { "type": "product", "id": "product_3", "label": "Producto 3" },
+    { "type": "product", "id": "product_4", "label": "Producto 4" },
+
+    { "type": "image_picker", "id": "hero_image_1", "label": "Imagen lateral 1" },
+    { "type": "text", "id": "hero_alt_1", "label": "Alt text lateral 1", "default": "Hero image 1" },
+    { "type": "image_picker", "id": "hero_image_2", "label": "Imagen lateral 2" },
+    { "type": "text", "id": "hero_alt_2", "label": "Alt text lateral 2", "default": "Hero image 2" },
 
     {
       "type": "number",
@@ -170,7 +410,7 @@
       "type": "number",
       "id": "section_height",
       "label": "Altura de sección (px)",
-      "default": 855
+      "default": 854
     },
     {
       "type": "number",
@@ -216,6 +456,12 @@
       "label": "Ancho imagen lateral (px)",
       "default": 747
     },
+    {
+      "type": "number",
+      "id": "hero_height",
+      "label": "Alto imagen lateral (px)",
+      "default": 652
+    },
 
     {
       "type": "number",
@@ -230,6 +476,6 @@
       "default": 23
     }
   ],
-  "presets": [{ "name": "Featured products - side image", "category": "Products" }]
+  "presets": [{ "name": "Featured products - two heroes", "category": "Products" }]
 }
 {% endschema %}

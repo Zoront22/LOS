@@ -1,34 +1,47 @@
 /* assets/featured-products-sideimage.css
-   CSS para sections/featured-products-sideimage.liquid
-   - Usa variables CSS declaradas inline en el elemento section.
-   - Responsive: desktop (fila), tablet/mobile (stack).
+   CSS para sections/featured-products-sideimage.liquid (versión 2 heroes + 4 productos)
+   Usa variables CSS pasadas inline desde el section.
 */
 
-/* Import de fuentes (si tu tema ya las gestiona, retira el @import) */
+/* Mueve la importación de fonts a theme.liquid si ya las cargas globalmente */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@300;400;600&display=swap");
 
-.featured-sideimage {
+.featured-sideimage.two-heroes {
     box-sizing: border-box;
     width: 100%;
-    padding: var(--section-padding);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
-.featured-sideimage__inner {
-    max-width: var(--container-width);
+.featured-sideimage__container {
     margin: 0 auto;
-    display: flex;
-    gap: var(--gap);
-    align-items: flex-start;
-    justify-content: space-between;
     box-sizing: border-box;
 }
 
-/* Left column (dos productos) */
-.featured-sideimage__left {
+/* Cada row: layout grid, se ajusta para hero derecho o izquierdo */
+.fpsi-row {
+    display: grid;
+    grid-template-columns: 1fr var(--hero-width);
+    gap: var(--gap);
+    align-items: start;
+    box-sizing: border-box;
+}
+
+/* Row where hero sits on the left */
+.fpsi-row--hero-left {
+    grid-template-columns: var(--hero-width) 1fr;
+}
+
+/* Left or right product column (contains product-grid) */
+.fpsi-products {
+    box-sizing: border-box;
+}
+
+/* Product grid: two product cards stacked horizontally (two columns) */
+.product-grid {
     display: flex;
     gap: 32px;
-    width: calc(100% - var(--hero-width) - var(--gap));
-    box-sizing: border-box;
+    align-items: flex-start;
 }
 
 /* Product card */
@@ -40,6 +53,7 @@
     box-sizing: border-box;
 }
 
+/* Product image */
 .product-card__media img {
     width: var(--card-img-width);
     height: var(--card-img-height);
@@ -48,21 +62,19 @@
     display: block;
 }
 
-/* Info block below image */
+/* Info block */
 .product-card__info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 8px;
     box-sizing: border-box;
 }
 
-/* Colors swatches row */
+/* Swatches row */
 .product-card__colors {
     display: flex;
     gap: 8px;
     width: 85px;
-    /* según medida solicitada */
     align-items: center;
 }
 
@@ -74,102 +86,73 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Title (Bebas Neue) */
+/* Title */
 .product-card__title {
     font-family: "Bebas Neue", system-ui, sans-serif;
     font-weight: 400;
     font-size: var(--title-fs);
     line-height: 1.5;
     margin: 0;
-    text-transform: none;
 }
 
-/* Price (Hanken Grotesk light) */
-.product-card__price .price-amount {
+/* Price */
+.price-amount {
     font-family: "Hanken Grotesk", system-ui, sans-serif;
     font-weight: 300;
     font-size: var(--price-fs);
-    line-height: 1.5;
     color: #111;
 }
 
-/* Right hero image */
-.featured-sideimage__hero {
-    width: var(--hero-width);
-    display: block;
-    box-sizing: border-box;
-}
-
-.featured-sideimage__hero img {
+/* Hero images */
+.fpsi-hero img {
     width: 100%;
-    height: 652px;
-    /* según medida dada */
+    height: var(--hero-height);
     object-fit: cover;
     border-radius: 10px;
     display: block;
 }
 
-/* ---------------- Responsive ---------------- */
+/* Responsive rules */
 @media (max-width: 1200px) {
-    .featured-sideimage__inner {
-        gap: calc(var(--gap) * 0.7);
-    }
-
     .product-card__media img {
         width: calc(var(--card-img-width) * 0.9);
         height: calc(var(--card-img-height) * 0.9);
     }
 
-    .featured-sideimage__hero img {
-        height: 520px;
+    .fpsi-hero img {
+        height: calc(var(--hero-height) * 0.85);
     }
 }
 
 @media (max-width: 900px) {
-    .featured-sideimage__inner {
-        flex-direction: column;
-        align-items: stretch;
+    .fpsi-row {
+        display: block;
     }
 
-    .featured-sideimage__left {
-        width: 100%;
-        order: 1;
-        gap: 24px;
-        padding-bottom: 12px;
-    }
-
-    .featured-sideimage__hero {
-        width: 100%;
-        order: 2;
-    }
-
-    .featured-sideimage__hero img {
-        height: auto;
-        aspect-ratio: 16/9;
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 
     .product-card {
-        width: calc(50% - 8px);
-    }
-
-    .product-card__media img {
         width: 100%;
-        height: auto;
     }
 
-    /* acomodar tarjetas en dos columnas dentro del left (grid) */
-    .featured-sideimage__left {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .fpsi-hero {
+        width: 100%;
+        margin: 28px 0;
+    }
+
+    .fpsi-hero img {
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
     }
 }
 
 @media (max-width: 420px) {
-    .product-card {
-        width: 100%;
-    }
-
-    .featured-sideimage__left {
+    .product-grid {
         grid-template-columns: 1fr;
     }
 
@@ -177,7 +160,7 @@
         font-size: 20px;
     }
 
-    .product-card__price .price-amount {
+    .price-amount {
         font-size: 16px;
     }
 }
