@@ -19,7 +19,7 @@
 }
 
 /* Inner grid container - we keep visual two-column but individual elements are positioned with absolute rules below */
-.collapsible-left-product-details .collapsible-left__inner {
+.collapsible-left__inner {
     width: 100% !important;
     height: 100% !important;
     box-sizing: border-box !important;
@@ -27,7 +27,7 @@
 }
 
 /* ACCORDION GROUP (LEFT) - exact box you requested */
-.collapsible-left-product-details .collapsible-left__accordion {
+.collapsible-left__accordion {
     position: absolute !important;
     top: 1160px !important;
     /* as provided */
@@ -41,7 +41,7 @@
 }
 
 /* The small label "PRODUCT DETAILS" will be placed to the right of the accordion area per requested coords */
-.collapsible-left-product-details .collapsible-left__small-label {
+.collapsible-left__small-label {
     position: absolute !important;
     top: 1205px !important;
     left: 986px !important;
@@ -62,7 +62,7 @@
 }
 
 /* BIG TITLE "TOP QUALITY STRETCH..." (right column) */
-.collapsible-left-product-details .collapsible-left__title-wrap {
+.collapsible-left__title-wrap {
     position: absolute !important;
     top: 1240px !important;
     left: 986px !important;
@@ -74,7 +74,7 @@
     padding: 0 !important;
 }
 
-.collapsible-left-product-details .collapsible-left__title {
+.collapsible-left__title {
     font-family: "Bebas Neue", system-ui, sans-serif !important;
     font-weight: 700 !important;
     font-size: 62px !important;
@@ -87,7 +87,7 @@
 }
 
 /* Description (lorem) - right column */
-.collapsible-left-product-details .collapsible-left__description {
+.collapsible-left__description {
     position: absolute !important;
     top: 1396px !important;
     left: 986px !important;
@@ -106,7 +106,7 @@
 }
 
 /* Accordion rows (using native <details>) */
-.collapsible-left-product-details .collapsible-row {
+.collapsible-row {
     width: 100% !important;
     box-sizing: border-box !important;
     margin: 0 !important;
@@ -114,7 +114,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
 }
 
-.collapsible-left-product-details .collapsible-row__summary {
+.collapsible-row__summary {
     list-style: none !important;
     display: flex !important;
     align-items: center !important;
@@ -125,7 +125,7 @@
     margin: 0 !important;
 }
 
-.collapsible-left-product-details .collapsible-row__title {
+.collapsible-row__title {
     font-family: "Hanken Grotesk", system-ui, sans-serif !important;
     font-weight: 400 !important;
     font-size: 18px !important;
@@ -134,7 +134,7 @@
 }
 
 /* the circular + button at the right of summary */
-.collapsible-left-product-details .collapsible-row__button {
+.collapsible-row__button {
     width: 44px !important;
     height: 44px !important;
     min-width: 44px !important;
@@ -149,7 +149,7 @@
 }
 
 /* fallback icon text if the theme doesn't provide an icon */
-.collapsible-left-product-details .collapsible-row__button::after {
+.collapsible-row__button::after {
     content: "+" !important;
     font-size: 22px !important;
     color: #222 !important;
@@ -158,12 +158,12 @@
 }
 
 /* open state: change icon */
-.collapsible-left-product-details .collapsible-row[open] .collapsible-row__button::after {
+.collapsible-row[open] .collapsible-row__button::after {
     content: "−" !important;
 }
 
 /* content inside detail */
-.collapsible-left-product-details .collapsible-row__content {
+.collapsible-row__content {
     padding: 12px 12px 20px 12px !important;
     font-family: "Hanken Grotesk", system-ui, sans-serif !important;
     font-size: 15px !important;
@@ -172,7 +172,7 @@
 }
 
 /* Images inside this section should look like the reference (rounded + subtle shadow) */
-.collapsible-left-product-details img {
+img {
     border-radius: 10px !important;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02) !important;
     object-fit: cover !important;
@@ -196,7 +196,7 @@
 
     /* accordion flow: full width and top */
 
-    .collapsible-left-product-details .collapsible-left__accordion {
+    .collapsible-left__accordion {
         position: relative !important;
         top: auto !important;
         left: auto !important;
@@ -206,7 +206,7 @@
     }
 
     /* small label flows above title */
-    .collapsible-left-product-details .collapsible-left__small-label {
+    .collapsible-left__small-label {
         position: relative !important;
         top: auto !important;
         left: auto !important;
@@ -218,7 +218,7 @@
     }
 
     /* title scales for mobile */
-    .collapsible-left-product-details .collapsible-left__title {
+    .collapsible-left__title {
         position: relative !important;
         font-size: 36px !important;
         line-height: 42px !important;
@@ -227,7 +227,7 @@
     }
 
     /* description scales */
-    .collapsible-left-product-details .collapsible-left__description {
+    .collapsible-left__description {
         position: relative !important;
         width: 100% !important;
         height: auto !important;
@@ -237,15 +237,15 @@
     }
 
     /* smaller toggle size */
-    .collapsible-left-product-details .collapsible-row__button {
+    .collapsible-row__button {
         width: 40px !important;
         height: 40px !important;
     }
 }
 
 /* enforce box-sizing for safety */
-.collapsible-left-product-details *,
-.collapsible-left-product-details *::before,
-.collapsible-left-product-details *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box !important;
 }
