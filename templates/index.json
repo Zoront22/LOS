@@ -164,6 +164,25 @@
         "subtitle_color": "#ffffff"
       }
     },
+    "collapsible_product_details": {
+      "type": "collapsible-product-details",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_heading": "Product Details",
+        "section_heading_tag": "h2",
+        "details_background_color": "#f9f5ef",
+        "details_border_color": "#e1d7c8",
+        "details_text_color": "#000000",
+        "summary_font_size": 4,
+        "summary_mobile_font_size": 4,
+        "content_font_size": 3,
+        "content_mobile_font_size": 3,
+        "width": "page-width",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
     "image_with_text": {
       "type": "image-with-text",
       "blocks": {
@@ -685,30 +704,30 @@
         "bottom_padding": 80
       }
     },
-    "main": {
-      "type": "main-collection-banner",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "heading_font_size": 7,
-        "heading_mobile_font_size": 7,
-        "show_collection_description": true,
-        "show_product_count": true,
-        "content_max_width": 500,
-        "show_banner_image": false,
-        "banner_height_type": "adapt",
-        "custom_desktop_height": "450px",
-        "custom_mobile_height": "350px",
-        "text_alignment": "center_center",
-        "overlay_color_scheme": "",
-        "overlay_opacity": 20,
-        "enable_text_animation": true,
-        "image_animation": "iris",
-        "width": "page-width",
-        "top_padding": 50,
-        "bottom_padding": 20
-      }
-    },
+    // "main": {
+    //   "type": "main-collection-banner",
+    //   "disabled": true,
+    //   "settings": {
+    //     "color_scheme": "",
+    //     "heading_font_size": 7,
+    //     "heading_mobile_font_size": 7,
+    //     "show_collection_description": true,
+    //     "show_product_count": true,
+    //     "content_max_width": 500,
+    //     "show_banner_image": false,
+    //     "banner_height_type": "adapt",
+    //     "custom_desktop_height": "450px",
+    //     "custom_mobile_height": "350px",
+    //     "text_alignment": "center_center",
+    //     "overlay_color_scheme": "",
+    //     "overlay_opacity": 20,
+    //     "enable_text_animation": true,
+    //     "image_animation": "iris",
+    //     "width": "page-width",
+    //     "top_padding": 50,
+    //     "bottom_padding": 20
+    //   }
+    // },
     "collection_list": {
       "type": "collection-list",
       "disabled": true,
@@ -1052,6 +1071,7 @@
     "scrolling_content",
     "hero-phrase-1",
     "hero_img_phrase_gzHHEh",
+    "collapsible_product_details",
     "image_with_text",
     "image_with_text_e3MGnq",
     "video_with_text_BARfFA",
@@ -1065,7 +1085,7 @@
     "featured_collection_MymFaX",
     "hero_img_phrase_eUqHnr",
     "featured_collection_BhKR4i",
-    "main",
+    // "main",
     "collection_list",
     "video_hero",
     "multi_column",
