@@ -1,6 +1,7 @@
 /* Scoped to this section instance only */
 .collapsible-left-product-details {
-    position: relative !important;
+    /* position: relative !important; */
+    display: flex !important;
     box-sizing: border-box !important;
 
     /* Section requested measurements */
@@ -22,13 +23,14 @@
 .collapsible-left__inner {
     width: 100% !important;
     height: 100% !important;
+    display: flex !important;
     box-sizing: border-box !important;
-    position: relative !important;
+    /* position: relative !important; */
 }
 
 /* ACCORDION GROUP (LEFT) - exact box you requested */
 .collapsible-left__accordion {
-    position: absolute !important;
+    /* position: absolute !important; */
     top: 1160px !important;
     /* as provided */
     left: 89px !important;
@@ -42,7 +44,7 @@
 
 /* The small label "PRODUCT DETAILS" will be placed to the right of the accordion area per requested coords */
 .collapsible-left__small-label {
-    position: absolute !important;
+    /* position: absolute !important; */
     top: 1205px !important;
     left: 986px !important;
     /* right column start */
@@ -63,7 +65,7 @@
 
 /* BIG TITLE "TOP QUALITY STRETCH..." (right column) */
 .collapsible-left__title-wrap {
-    position: absolute !important;
+    /* position: absolute !important; */
     top: 1240px !important;
     left: 986px !important;
     /* right column */
@@ -88,7 +90,7 @@
 
 /* Description (lorem) - right column */
 .collapsible-left__description {
-    position: absolute !important;
+    /* position: absolute !important; */
     top: 1396px !important;
     left: 986px !important;
     /* align with right column */
@@ -186,7 +188,8 @@ img {
 
     /* section becomes fluid and resets absolutes to normal flow */
     .collapsible-left-product-details {
-        position: relative !important;
+        /* position: relative !important; */
+        display: flex !important;
         width: 100% !important;
         height: auto !important;
         left: 0 !important;
@@ -244,8 +247,8 @@ img {
 }
 
 /* enforce box-sizing for safety */
-*,
-*::before,
-*::after {
+.collapsible-left-product-details *,
+.collapsible-left-product-details *::before,
+.collapsible-left-product-details *::after {
     box-sizing: border-box !important;
 }
