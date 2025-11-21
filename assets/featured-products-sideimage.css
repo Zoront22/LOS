@@ -1,6 +1,6 @@
 /* assets/featured-products-sideimage.css
    CSS para sections/featured-products-sideimage.liquid (versión 2 heroes + 4 productos)
-   Usa variables CSS pasadas inline desde el section.
+   variables CSS incluidas en sections/featured-products-sideimage.liquid
 */
 
 /* Mueve la importación de fonts a theme.liquid si ya las cargas globalmente */
@@ -46,7 +46,8 @@
 
 /* Product card */
 .product-card {
-    width: var(--card-width);
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -55,7 +56,7 @@
 
 /* Product image */
 .product-card__media img {
-    width: var(--card-img-width);
+    width: 100%;
     height: var(--card-img-height);
     object-fit: cover;
     border-radius: 10px;
@@ -115,7 +116,6 @@
 /* Responsive rules */
 @media (max-width: 1200px) {
     .product-card__media img {
-        width: calc(var(--card-img-width) * 0.9);
         height: calc(var(--card-img-height) * 0.9);
     }
 
