@@ -315,6 +315,7 @@
         "column_item_2",
         "column_item_3"
       ],
+      "disabled": true,
       "custom_css": [
         ".multi-column-item__heading {font-size: 30px !important;}",
         ".image {border-radius: 10px;}",
@@ -346,6 +347,16 @@
         "width": "full-width-padded",
         "top_padding": 30,
         "bottom_padding": 60
+      }
+    },
+    "collapsible_product_details_rtcLMN": {
+      "type": "collapsible-product-details",
+      "name": "Collapsible left — Product details",
+      "settings": {
+        "group_label": "",
+        "small_label": "PRODUCT DETAILS",
+        "title": "TOP QUALITY STRETCH FABRIC FOR UNRESTRICTED MOVEMENT",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>"
       }
     },
     "image_hero_wJdmik": {
@@ -382,16 +393,51 @@
         "text_T77rwB",
         "button_XRFp7p"
       ],
+      "disabled": true,
       "custom_css": [
         "{border-top: 8px solid #ffce00;}"
       ],
       "settings": {
         "color_scheme": "",
-        "image": "shopify://shop_images/Group_633249-min.jpg",
+        "image": "shopify://shop_images/4e310ce0db3f4e5ca195ab6fb12fc3b7f44791bf.jpg",
         "background_link": "",
         "custom_desktop_height": "550px",
         "custom_mobile_height": "450px",
         "content_width": 730,
+        "text_position_desktop": "center_center",
+        "text_position_mobile": "center_center",
+        "overlay_color_scheme": "",
+        "overlay_opacity": 20,
+        "enable_text_animation": true,
+        "image_animation": "iris",
+        "width": "full-width",
+        "top_padding": 0,
+        "bottom_padding": 0
+      }
+    },
+    "image_hero_rhEtTW": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_Kwc8Ap": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOREM MEETS MOVEMENT",
+            "heading_font_size": 8,
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kwc8Ap"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/4e310ce0db3f4e5ca195ab6fb12fc3b7f44791bf.jpg",
+        "background_link": "",
+        "custom_desktop_height": "650px",
+        "custom_mobile_height": "450px",
+        "content_width": 500,
         "text_position_desktop": "center_center",
         "text_position_mobile": "center_center",
         "overlay_color_scheme": "",
@@ -414,7 +460,26 @@
       ],
       "settings": {
         "color_scheme": "scheme_1",
-        "section_header_heading": "FROM THE DROP",
+        "section_header_heading": "MORE FROM THE BEACH",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "Shop all",
+        "collection": "frontpage",
+        "max_products": 3,
+        "column_count_desktop": "3",
+        "column_count_mobile": "1",
+        "show_slider_indicator": true,
+        "width": "full-width-padded",
+        "top_padding": 60,
+        "bottom_padding": 60
+      }
+    },
+    "featured_collection_xEDfRY": {
+      "type": "featured-collection",
+      "settings": {
+        "color_scheme": "scheme_1",
+        "section_header_heading": "RECENTLY VIEWED",
         "section_header_heading_tag": "h2",
         "section_header_text": "",
         "section_header_link_url": "",
@@ -476,10 +541,7 @@
         "column_item_mQJAm4",
         "column_item_WMBGEm"
       ],
-      "custom_css": [
-        "h3 {color: #989385;}",
-        "p {color: black;}"
-      ],
+      "disabled": true,
       "name": "t:sections.multi_column.presets.name",
       "settings": {
         "color_scheme": "scheme-8187da2a-8d08-43a2-a64b-cc92776a9b04",
@@ -512,8 +574,11 @@
     "product_overview",
     "rich_text",
     "multi_column",
+    "collapsible_product_details_rtcLMN",
     "image_hero_wJdmik",
+    "image_hero_rhEtTW",
     "featured_collection",
+    "featured_collection_xEDfRY",
     "recommended_products",
     "multi_column_fGUVNr"
   ]
