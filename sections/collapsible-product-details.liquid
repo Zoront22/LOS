@@ -12,6 +12,19 @@
 
 <section id="shopify-section-{{ section.id }}" class="section collapsible-left-product-details">
   <div class="collapsible-left__inner">
+    <!-- RIGHT: Product details content -->
+    <div class="collapsible-left__content">
+      <div class="collapsible-left__small-label">{{ section.settings.small_label }}</div>
+
+      <div class="collapsible-left__title-wrap">
+        <h2 class="collapsible-left__title">{{ section.settings.title | escape }}</h2>
+      </div>
+
+      <div class="collapsible-left__description rte">
+        {{ section.settings.description }}
+      </div>
+    </div>
+
     <!-- LEFT: Accordion group -->
     <div class="collapsible-left__accordion" role="region" aria-label="Product details accordion">
       <div class="collapsible-left__group-heading">
@@ -69,19 +82,6 @@
           </div>
         </details>
       {% endif %}
-    </div>
-
-    <!-- RIGHT: Product details content -->
-    <div class="collapsible-left__content">
-      <div class="collapsible-left__small-label">{{ section.settings.small_label }}</div>
-
-      <div class="collapsible-left__title-wrap">
-        <h2 class="collapsible-left__title">{{ section.settings.title | escape }}</h2>
-      </div>
-
-      <div class="collapsible-left__description rte">
-        {{ section.settings.description }}
-      </div>
     </div>
   </div>
 </section>
