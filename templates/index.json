@@ -167,273 +167,11 @@
     "collapsible_product_details": {
       "type": "collapsible-product-details",
       "disabled": true,
-      "settings": {}
-    },
-    "image_with_text": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "WATER",
-            "heading_font_size": 8,
-            "heading_tag": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
-            "text_font_size": 5,
-            "text_width": "75%",
-            "text_alignment": "center"
-          }
-        },
-        "button": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_link": "shopify://pages/copy-of-los-origins",
-            "button_label": "SHOP WATER",
-            "button_style": "outline"
-          }
-        },
-        "button_qWKfbH": {
-          "type": "button",
-          "settings": {
-            "button_link": "shopify://collections/waller-collection",
-            "button_label": "SHOP WATER",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button",
-        "button_qWKfbH"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2,p,button {text-align: center; margin: auto;}",
-        "button {font-weight: bold;}",
-        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
-        ".block-div {display: flex; justify-content: center;}",
-        ".content-block--text {width: 70%;}"
-      ],
       "settings": {
-        "color_scheme": "scheme_1",
-        "image": "shopify://shop_images/water.png",
-        "aspect_ratio": "landscape-alt",
-        "mobile_aspect_ratio": "natural",
-        "media_link": "",
-        "desktop_media_width": 50,
-        "desktop_media_position": "right",
-        "mobile_media_position": "above",
-        "media_breathing_room": 0,
-        "product": "st-tropez-circuit-short",
-        "desktop_content_width": 500,
-        "text_alignment": "left",
-        "text_alignment_vertical": "center",
-        "container_color_scheme": "scheme_1",
-        "width": "page-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "image_with_text_e3MGnq": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_Hm4YQm": {
-          "type": "heading",
-          "settings": {
-            "heading": "EARTH",
-            "heading_font_size": 8,
-            "heading_tag": "h2"
-          }
-        },
-        "text_xjNiAM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
-            "text_font_size": 5,
-            "text_width": "75%",
-            "text_alignment": "center"
-          }
-        },
-        "button_j9p7yL": {
-          "type": "button",
-          "settings": {
-            "button_link": "",
-            "button_label": "SHOP EARTH",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Hm4YQm",
-        "text_xjNiAM",
-        "button_j9p7yL"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2,p,button {text-align: center; margin: auto;}",
-        "button {font-weight: bold;}",
-        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
-        ".block-div {display: flex; justify-content: center;}",
-        ".content-block--text {width: 70%;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme_1",
-        "image": "shopify://shop_images/earth.png",
-        "aspect_ratio": "landscape-alt",
-        "mobile_aspect_ratio": "natural",
-        "media_link": "",
-        "desktop_media_width": 50,
-        "desktop_media_position": "left",
-        "mobile_media_position": "above",
-        "media_breathing_room": 0,
-        "product": "st-tropez-circuit-short",
-        "desktop_content_width": 500,
-        "text_alignment": "left",
-        "text_alignment_vertical": "center",
-        "container_color_scheme": "scheme_1",
-        "width": "page-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "video_with_text_BARfFA": {
-      "type": "video-with-text",
-      "blocks": {
-        "overline_dFAmTU": {
-          "type": "overline",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_dkfkJL": {
-          "type": "heading",
-          "settings": {
-            "heading": "COURT",
-            "heading_font_size": 8,
-            "heading_tag": "h2"
-          }
-        },
-        "text_xb7FKL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
-            "text_font_size": 5,
-            "text_width": "75%",
-            "text_alignment": "center"
-          }
-        },
-        "button_pWpdeg": {
-          "type": "button",
-          "settings": {
-            "button_link": "",
-            "button_label": "SHOP COURT",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "overline_dFAmTU",
-        "heading_dkfkJL",
-        "text_xb7FKL",
-        "button_pWpdeg"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2,p,button {text-align: center; margin: auto;}",
-        "button {font-weight: bold;}",
-        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
-        ".block-div {display: flex; justify-content: center;}",
-        ".content-block--text {width: 70%;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme_1",
-        "video": "shopify://files/videos/71878ce79dbe50f3515d80c44f494d3eba3a4fea.mp4",
-        "video_focal_point": "center",
-        "mobile_video_focal_point": "center",
-        "aspect_ratio": "landscape-alt",
-        "mobile_aspect_ratio": "natural",
-        "media_link": "",
-        "desktop_media_width": 50,
-        "desktop_media_position": "right",
-        "mobile_media_position": "above",
-        "media_breathing_room": 0,
-        "product": "st-tropez-circuit-short",
-        "desktop_content_width": 500,
-        "text_alignment": "left",
-        "text_alignment_vertical": "center",
-        "container_color_scheme": "",
-        "width": "page-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "image_with_text_Rtii4q": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_4teR7M": {
-          "type": "heading",
-          "settings": {
-            "heading": "club",
-            "heading_font_size": 8,
-            "heading_tag": "h2"
-          }
-        },
-        "text_A9FnrX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>",
-            "text_font_size": 5,
-            "text_width": "75%",
-            "text_alignment": "center"
-          }
-        },
-        "button_qQ7E47": {
-          "type": "button",
-          "settings": {
-            "button_link": "",
-            "button_label": "SHOP CLUB",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "heading_4teR7M",
-        "text_A9FnrX",
-        "button_qQ7E47"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2,p,button {text-align: center; margin: auto;}",
-        "button {font-weight: bold;}",
-        ".media-with-text__media .current-video__container,.media-with-text__media video,.media-with-text__media .image {border-radius: 0px !important;}",
-        ".block-div {display: flex; justify-content: center;}",
-        ".content-block--text {width: 70%;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme_1",
-        "image": "shopify://shop_images/club.png",
-        "aspect_ratio": "landscape-alt",
-        "mobile_aspect_ratio": "natural",
-        "media_link": "",
-        "desktop_media_width": 50,
-        "desktop_media_position": "left",
-        "mobile_media_position": "above",
-        "media_breathing_room": 0,
-        "product": "st-tropez-circuit-short",
-        "desktop_content_width": 500,
-        "text_alignment": "left",
-        "text_alignment_vertical": "center",
-        "container_color_scheme": "scheme_1",
-        "width": "page-width",
-        "top_padding": 0,
-        "bottom_padding": 0
+        "group_label": "Product details",
+        "small_label": "PRODUCT DETAILS",
+        "title": "TOP QUALITY STRETCH FABRIC FOR UNRESTRICTED MOVEMENT",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>"
       }
     },
     "featured_collection_FGKCKC": {
@@ -453,6 +191,31 @@
         "width": "full-width-padded",
         "top_padding": 60,
         "bottom_padding": 80
+      }
+    },
+    "rich_text_VmRLhY": {
+      "type": "rich-text",
+      "blocks": {
+        "button_EpwbiF": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/sun-sand-25",
+            "button_label": "SHOP BEACH",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_EpwbiF"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 50,
+        "bottom_padding": 50
       }
     },
     "hero_img_phrase_pqmifT": {
@@ -612,6 +375,31 @@
         "bottom_padding": 80
       }
     },
+    "rich_text_FwC9Cj": {
+      "type": "rich-text",
+      "blocks": {
+        "button_LXyyiD": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/frontpage",
+            "button_label": "SHOP SUNSET HARBOR",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_LXyyiD"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
     "hero_img_phrase_ma89Tc": {
       "type": "hero-img-phrase",
       "settings": {
@@ -651,6 +439,31 @@
         "bottom_padding": 80
       }
     },
+    "rich_text_83iXVY": {
+      "type": "rich-text",
+      "blocks": {
+        "button_6C3ziF": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/frontpage",
+            "button_label": "SHOP PALM ISLAND",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_6C3ziF"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
     "hero_img_phrase_eUqHnr": {
       "type": "hero-img-phrase",
       "settings": {
@@ -688,6 +501,31 @@
         "width": "full-width-padded",
         "top_padding": 60,
         "bottom_padding": 80
+      }
+    },
+    "rich_text_JdfqYF": {
+      "type": "rich-text",
+      "blocks": {
+        "button_UXt6Rr": {
+          "type": "button",
+          "settings": {
+            "button_link": "shopify://collections/frontpage",
+            "button_label": "SHOP DINNER @ AMARA",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_UXt6Rr"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "text_alignment": "center",
+        "top_padding": 50,
+        "bottom_padding": 50
       }
     },
     "collection_list": {
@@ -1034,19 +872,19 @@
     "hero-phrase-1",
     "hero_img_phrase_gzHHEh",
     "collapsible_product_details",
-    "image_with_text",
-    "image_with_text_e3MGnq",
-    "video_with_text_BARfFA",
-    "image_with_text_Rtii4q",
     "featured_collection_FGKCKC",
+    "rich_text_VmRLhY",
     "hero_img_phrase_pqmifT",
     "multi_column_x3gxBA",
     "rich_text_n4ergL",
     "featured_collection_VCLngg",
+    "rich_text_FwC9Cj",
     "hero_img_phrase_ma89Tc",
     "featured_collection_MymFaX",
+    "rich_text_83iXVY",
     "hero_img_phrase_eUqHnr",
     "featured_collection_BhKR4i",
+    "rich_text_JdfqYF",
     "collection_list",
     "video_hero",
     "multi_column",
