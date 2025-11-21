@@ -1,10 +1,5 @@
 {%- comment -%}
   Section: collapsible-product-details
-  Renders a two-column layout with the accordion on the LEFT and the product details content on the RIGHT.
-  - All styles are scoped to the rendered section id (#shopify-section-{{ section.id }}) so other instances are unaffected.
-  - Desktop uses the exact measurements you provided (applied with !important).
-  - Mobile (≤ 420px) switches to a single-column responsive layout optimized for iPhone.
-  - Uses native <details>/<summary> for accessible accordion behavior (no external JS required).
 {%- endcomment -%}
 {%- liquid
   echo 'collapsible-product-details.css' | asset_url | stylesheet_tag
@@ -12,7 +7,7 @@
 
 <section id="shopify-section-{{ section.id }}" class="section collapsible-left-product-details">
   <div class="collapsible-left__inner">
-    <!-- RIGHT: Product details content -->
+    <!-- LEFT: Product details content -->
     <div class="collapsible-left__content">
       <div class="collapsible-left__small-label">{{ section.settings.small_label }}</div>
 
@@ -25,7 +20,7 @@
       </div>
     </div>
 
-    <!-- LEFT: Accordion group -->
+    <!-- RIGHT: Accordion group -->
     <div class="collapsible-left__accordion" role="region" aria-label="Product details accordion">
       <div class="collapsible-left__group-heading">
         {{ section.settings.group_label }}
