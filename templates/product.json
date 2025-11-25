@@ -449,15 +449,29 @@
         "bottom_padding": 0
       }
     },
-    "featured_collection": {
+    "featured_collection_paginated_gdDWJc": {
+      "type": "featured-collection-paginated",
+      "name": "Featured Collection Paginated",
+      "settings": {
+        "color_scheme": "",
+        "section_header_heading": "MORE FROM THE COLLECTION",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "",
+        "collection": "category-collection",
+        "max_products": 8,
+        "products_per_page": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "1",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "featured_collection_xEDfRY": {
       "type": "featured-collection",
-      "custom_css": [
-        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
-        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
-        ".product-item__image-wrapper {border-radius: 10px;}",
-        ".btn-wrapper.btn-wrapper--align-left {justify-content: flex-end;}",
-        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}"
-      ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme_1",
         "section_header_heading": "MORE FROM THE BEACH",
@@ -465,9 +479,9 @@
         "section_header_text": "",
         "section_header_link_url": "",
         "section_header_link_label": "Shop all",
-        "collection": "frontpage",
-        "max_products": 3,
-        "column_count_desktop": "3",
+        "collection": "category-collection",
+        "max_products": 6,
+        "column_count_desktop": "4",
         "column_count_mobile": "1",
         "show_slider_indicator": true,
         "width": "full-width-padded",
@@ -475,8 +489,16 @@
         "bottom_padding": 60
       }
     },
-    "featured_collection_xEDfRY": {
+    "featured_collection": {
       "type": "featured-collection",
+      "custom_css": [
+        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.5rem;}",
+        ".product-item__price {flex-direction: column; display: flex; align-items: flex-start;}",
+        ".product-item__image-wrapper {border-radius: 10px;}",
+        ".btn-wrapper.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".btn-wrapper,.btn-wrapper--align-left {justify-content: flex-end;}",
+        ".featured-collection {background-color: #efeae2;}"
+      ],
       "settings": {
         "color_scheme": "scheme_1",
         "section_header_heading": "RECENTLY VIEWED",
@@ -485,8 +507,8 @@
         "section_header_link_url": "",
         "section_header_link_label": "Shop all",
         "collection": "frontpage",
-        "max_products": 3,
-        "column_count_desktop": "3",
+        "max_products": 4,
+        "column_count_desktop": "4",
         "column_count_mobile": "1",
         "show_slider_indicator": true,
         "width": "full-width-padded",
@@ -577,8 +599,9 @@
     "collapsible_product_details_rtcLMN",
     "image_hero_wJdmik",
     "image_hero_rhEtTW",
-    "featured_collection",
+    "featured_collection_paginated_gdDWJc",
     "featured_collection_xEDfRY",
+    "featured_collection",
     "recommended_products",
     "multi_column_fGUVNr"
   ]

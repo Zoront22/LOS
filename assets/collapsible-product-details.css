@@ -3,53 +3,38 @@
     /* position: relative !important; */
     display: flex !important;
     box-sizing: border-box !important;
+    justify-content: center !important;
 
     /* Section requested measurements */
-    width: 1531px !important;
-    height: 348px !important;
-    opacity: 1 !important;
-
-    /* Page offsets you requested (note: theme layout may influence absolute placement).
-     These are applied to the section to approximate your design. */
-    left: 89px !important;
-    top: 1160px !important;
-
     margin: 0 auto !important;
     padding: 0 !important;
-    overflow: visible !important;
+}
+.collapsible-left__content{
+    width: 40% !important;
 }
 
 /* Inner grid container - we keep visual two-column but individual elements are positioned with absolute rules below */
 .collapsible-left__inner {
+    padding: 50px 72px !important;
     width: 100% !important;
     height: 100% !important;
     display: flex !important;
     box-sizing: border-box !important;
+    justify-content: space-between !important;
     /* position: relative !important; */
 }
 
 /* ACCORDION GROUP (LEFT) - exact box you requested */
 .collapsible-left__accordion {
-    /* position: absolute !important; */
-    top: 1160px !important;
-    /* as provided */
-    left: 89px !important;
+   
     /* Place accordion on the left side at the same left offset */
-    width: 634px !important;
-    height: 342px !important;
-    opacity: 1 !important;
-    box-sizing: border-box !important;
-    padding: 0 !important;
+    width: 40% !important;
 }
 
 /* The small label "PRODUCT DETAILS" will be placed to the right of the accordion area per requested coords */
 .collapsible-left__small-label {
     /* position: absolute !important; */
-    top: 1205px !important;
-    left: 986px !important;
     /* right column start */
-    width: 502px !important;
-    height: 35px !important;
     font-family: "Hanken Grotesk", system-ui, sans-serif !important;
     font-weight: 600 !important;
     font-size: 14px !important;
@@ -66,11 +51,8 @@
 /* BIG TITLE "TOP QUALITY STRETCH..." (right column) */
 .collapsible-left__title-wrap {
     /* position: absolute !important; */
-    top: 1240px !important;
-    left: 986px !important;
     /* right column */
-    width: 675px !important;
-    height: 137px !important;
+    width: 100% !important;
     box-sizing: border-box !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -90,12 +72,8 @@
 
 /* Description (lorem) - right column */
 .collapsible-left__description {
-    /* position: absolute !important; */
-    top: 1396px !important;
-    left: 986px !important;
     /* align with right column */
-    width: 575px !important;
-    height: 112px !important;
+    width: 100% !important;
     box-sizing: border-box !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -113,7 +91,10 @@
     box-sizing: border-box !important;
     margin: 0 !important;
     padding: 0 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.06) !important;
+}
+.collapsible-row:first-of-type {
+    border-top: 2.5px solid rgba(0, 0, 0, 0.06) !important;
 }
 
 .collapsible-row__summary {
@@ -142,7 +123,7 @@
     min-width: 44px !important;
     min-height: 44px !important;
     border-radius: 50% !important;
-    background: #efeae2 !important;
+    background: none !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -175,12 +156,12 @@
 
 /* Images inside this section should look like the reference (rounded + subtle shadow) */
 img {
-    border-radius: 10px !important;
+    /* border-radius: 10px !important; */
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02) !important;
     object-fit: cover !important;
     display: block !important;
     max-width: 100% !important;
-    height: auto !important;
+    /* height: auto !important; */
 }
 
 /* Responsive for iPhone */

@@ -25,9 +25,8 @@
     }
 
     #shopify-section-{{ section.id }} .hero-phrase__wrap {
-      max-width: {{ section.settings.max_width }}px;
+      margin-left:133px;
       height: {{ section.settings.section_height }}px;
-      margin: 0 auto;
       display: flex;
       align-items: center;
       padding: 0 24px;
@@ -37,16 +36,14 @@
     /* Title Styles */
     #shopify-section-{{ section.id }} .hero-phrase__content {
       max-width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     #shopify-section-{{ section.id }} .hero-phrase__title {
-      width: 1057px;
-      height: 82px;
-      position: relative;
-      top: 30px;
-      left: -0.5px;
-      transform: rotate(0deg);
-      opacity: 1;
+
     }
 
     /* Title Styles */
@@ -59,7 +56,7 @@
       font-size: {{ section.settings.title_size }}px;
       line-height: {{ section.settings.title_line_height }};
       letter-spacing: {{ section.settings.title_letter_spacing }};
-      margin: 0 0 8px 0;
+      margin: 0;
       text-transform: none;
       color: {{ section.settings.title_color }};
     }
@@ -67,12 +64,7 @@
       /* Subtitle Styles */
 
     #shopify-section-{{ section.id }} .hero-phrase__subtitle {
-      width: 677px;
-      height: 71px;
-      position: relative;
-      top: 71px;
-      transform: rotate(0deg);
-      opacity: 1;
+      
     }
 
     #shopify-section-{{ section.id }} .hero-phrase__subtitle {
@@ -89,26 +81,19 @@
 
     /* Large desktop (between max_width and ~1400px) */
     @media (max-width: 1400px) {
-      /* Reduce wrap max-width so content no se encime en pantallas algo más pequeñas */
+      /* Reduce wrap max-width so content doesn't overlap on slightly smaller screens */
       #shopify-section-{{ section.id }} .hero-phrase__wrap {
         max-width: calc({{ section.settings.max_width }}px * 0.9);
         padding: 0 20px;
       }
 
-      /* Mantener medidas pero reducir ligeramente */
+      /* Keep measurements but reduce slightly */
       #shopify-section-{{ section.id }} .hero-phrase__title {
-        width: 920px;
-        height: 72px;
-        top: 26px;
-        left: 0;
-        font-size: clamp(26px, 5vw, calc({{ section.settings.title_size }}px * 0.92));
+
       }
 
       #shopify-section-{{ section.id }} .hero-phrase__subtitle {
-        width: 600px;
-        height: 64px;
-        top: 120px;
-        font-size: clamp(13px, 2.2vw, calc({{ section.settings.subtitle_size }}px * 0.95));
+
       }
     }
 
@@ -118,27 +103,22 @@
         height: auto;
         padding: 36px 18px;
         align-items: flex-start;
+        margin-left: 32px;
       }
 
-      /* Hacemos título fluid y menos absoluto */
-      #shopify-section-{{ section.id }} .hero-phrase__title {
-        width: 85%;
-        height: auto;
-        top: 12px;
-        left: 0;
-        transform: none;
-        font-size: clamp(22px, 7vw, calc({{ section.settings.title_size }}px * 0.6));
-        line-height: 0.95;
+      /* Make title fluid and less absolute */
+      #shopify-section-{{ section.id }} .hero-phrase__title,
+      #shopify-section-{{ section.id }} .hero-phrase__title.rte h1,
+      #shopify-section-{{ section.id }} .hero-phrase__title.rte h2 {
+        font-size: 64px;
+
       }
 
-      /* Subtítulo se coloca debajo y con padding/margin para separación */
+      /* Subtitle is placed below with padding/margin for separation */
       #shopify-section-{{ section.id }} .hero-phrase__subtitle {
         width: 85%;
-        height: auto;
-        top: 12px;
-        margin-top: 12px;
-        font-size: clamp(14px, 3.6vw, calc({{ section.settings.subtitle_size }}px * 0.9));
         line-height: 1.35;
+        font-size: 22px;
       }
     }
 
@@ -150,23 +130,17 @@
 
       #shopify-section-{{ section.id }} .hero-phrase__title {
         width: 100%;
-        left: 0;
-        top: 8px;
-        font-size: clamp(20px, 8.5vw, calc({{ section.settings.title_size }}px * 0.45));
         line-height: 1;
         letter-spacing: 0;
       }
 
       #shopify-section-{{ section.id }} .hero-phrase__subtitle {
         width: 100%;
-        top: 6px;
-        margin-top: 8px;
-        font-size: clamp(12px, 4.8vw, calc({{ section.settings.subtitle_size }}px * 0.8));
         line-height: 1.4;
       }
     }
 
-    /* Safety: evitar que el título desborde en cualquier viewport */
+    /* Safety: prevent title from overflowing on any viewport */
     #shopify-section-{{ section.id }} .hero-phrase__title,
     #shopify-section-{{ section.id }} .hero-phrase__subtitle {
       word-break: break-word;

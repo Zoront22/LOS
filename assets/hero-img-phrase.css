@@ -48,7 +48,7 @@
 
 /* title */
 .hero-beach__time {
-    margin-right: 8px;
+    
     font-weight: 700;
 }
 
@@ -56,6 +56,8 @@
 .hero-beach__highlight {
     font-weight: 700;
     display: inline-block;
+    font-family: "Bebas Neue", system-ui, sans-serif;
+    color: #FFFCF9B2;
 }
 
 /* SUBTITLE - Hanken Grotesk semibold */

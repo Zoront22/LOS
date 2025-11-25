@@ -90,10 +90,10 @@
         "title_time": "8AM:",
         "title_highlight": "BEACH",
         "title_size": 112,
-        "title_color": "#FFFFFF",
+        "title_color": "#ffffff",
         "subtitle_size": 27,
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "subtitle_color": "#FFFFFF"
+        "subtitle_color": "#ffffff"
       }
     },
     "featured_products_sideimage_fXK8YV": {
@@ -125,6 +125,10 @@
     },
     "featured_collection_c7UgDc": {
       "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".section-inner {background-color: #efeae2;}"
+      ],
       "name": "t:sections.featured_collection.presets.name",
       "settings": {
         "color_scheme": "",
@@ -135,7 +139,7 @@
         "section_header_link_label": "Shop now",
         "collection": "sun-sand-25",
         "max_products": 8,
-        "column_count_desktop": "3",
+        "column_count_desktop": "4",
         "column_count_mobile": "1",
         "show_slider_indicator": true,
         "width": "page-width",
@@ -349,6 +353,29 @@
         "top_padding": 50,
         "bottom_padding": 50
       }
+    },
+    "featured_collection_paginated_j4k4az": {
+      "type": "featured-collection-paginated",
+      "custom_css": [
+        ".section-inner {background-color: #efeae2;}"
+      ],
+      "name": "Featured Collection Paginated",
+      "settings": {
+        "color_scheme": "",
+        "section_header_heading": "MORE FROM THE COLLECTION",
+        "section_header_heading_tag": "h2",
+        "section_header_text": "",
+        "section_header_link_url": "",
+        "section_header_link_label": "",
+        "collection": "sun-sand-25",
+        "max_products": 8,
+        "products_per_page": 4,
+        "column_count_desktop": "4",
+        "column_count_mobile": "1",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
     }
   },
   "order": [
@@ -360,6 +387,7 @@
     "product_grid",
     "slideshow_kLLzNC",
     "product_grid_2",
-    "newsletter_kLdFbG"
+    "newsletter_kLdFbG",
+    "featured_collection_paginated_j4k4az"
   ]
 }
