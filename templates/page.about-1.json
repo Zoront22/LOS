@@ -37,7 +37,7 @@
         "heading_kawYN9"
       ],
       "custom_css": [
-        "h1 {color: #dbd5c2; font-size: 215px !important;}",
+        "h1 {color: #dbd5c2; font-size: 215px;}",
         "@media (max-width: 719.9px) {h1 {font-size: 60px; }}"
       ],
       "settings": {

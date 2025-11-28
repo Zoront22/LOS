@@ -1,0 +1,243 @@
+{%- liquid
+  echo 'section-partnership-wholesale.css' | asset_url | stylesheet_tag
+-%}
+
+<div
+  class="section partnership-wholesale"
+  style="
+    {% render 'settings-section-padding' %}
+    {% render 'color-scheme-to-vars', color_scheme: section.settings.color_scheme %}
+    --bg-color: {{ section.settings.bg_color }};
+  "
+>
+  <div class="section-inner section-inner--width-{{ section.settings.content_width }}">
+    <div class="partnership-wholesale__container">
+      <!-- Partnership Column -->
+      <div class="partnership-wholesale__column partnership-wholesale__column--partnership">
+        <div class="partnership-wholesale__image-wrapper">
+          {%- if section.settings.partnership_image != blank -%}
+            {%- render 'image',
+              image: section.settings.partnership_image,
+              aspect_ratio: section.settings.partnership_aspect_ratio,
+              class: "partnership-wholesale__image",
+              focal_point: 'image-presentation',
+              include_placeholder: true,
+              placeholder_name: 'detailed-apparel-1',
+              placeholder_natural_fallback_ratio: 'square',
+              sizes: 'calc(50vw - 20px)',
+              load_animation_effect: 'blur'
+            -%}
+          {%- endif -%}
+        </div>
+        <div class="partnership-wholesale__content">
+          <h2 class="partnership-wholesale__heading">{{ section.settings.partnership_heading }}</h2>
+          <div class="partnership-wholesale__text rte">
+            {{ section.settings.partnership_text }}
+          </div>
+          {%- if section.settings.partnership_button_label != blank -%}
+            <a
+              href="{{ section.settings.partnership_button_link }}"
+              class="partnership-wholesale__button"
+            >
+              {{ section.settings.partnership_button_label }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <!-- Wholesale Column -->
+      <div class="partnership-wholesale__column partnership-wholesale__column--wholesale">
+        <div class="partnership-wholesale__image-wrapper">
+          {%- if section.settings.wholesale_image != blank -%}
+            {%- render 'image',
+              image: section.settings.wholesale_image,
+              aspect_ratio: section.settings.wholesale_aspect_ratio,
+              class: "partnership-wholesale__image",
+              focal_point: 'image-presentation',
+              include_placeholder: true,
+              placeholder_name: 'detailed-apparel-1',
+              placeholder_natural_fallback_ratio: 'square',
+              sizes: 'calc(50vw - 20px)',
+              load_animation_effect: 'blur'
+            -%}
+          {%- endif -%}
+        </div>
+        <div class="partnership-wholesale__content">
+          <h2 class="partnership-wholesale__heading">{{ section.settings.wholesale_heading }}</h2>
+          <div class="partnership-wholesale__text rte">
+            {{ section.settings.wholesale_text }}
+          </div>
+          {%- if section.settings.wholesale_button_label != blank -%}
+            <a
+              href="{{ section.settings.wholesale_button_link }}"
+              class="partnership-wholesale__button"
+            >
+              {{ section.settings.wholesale_button_label }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Partnership Wholesale",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:shared.settings.color_scheme.label",
+      "default": "scheme_1"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Partnership Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "partnership_image",
+      "label": "Partnership Image"
+    },
+    {
+      "type": "select",
+      "id": "partnership_aspect_ratio",
+      "label": "Partnership Image Aspect Ratio",
+      "options": [
+        { "value": "natural", "label": "Natural" },
+        { "value": "square", "label": "Square (1:1)" },
+        { "value": "landscape", "label": "Landscape (4:3)" },
+        { "value": "portrait", "label": "Portrait (2:3)" },
+        { "value": "wide", "label": "Wide (16:9)" }
+      ],
+      "default": "natural"
+    },
+    {
+      "type": "text",
+      "id": "partnership_heading",
+      "label": "Partnership Heading",
+      "default": "PARTNERSHIP"
+    },
+    {
+      "type": "richtext",
+      "id": "partnership_text",
+      "label": "Partnership Text",
+      "default": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>"
+    },
+    {
+      "type": "text",
+      "id": "partnership_button_label",
+      "label": "Partnership Button Label",
+      "default": "READ MORE"
+    },
+    {
+      "type": "url",
+      "id": "partnership_button_link",
+      "label": "Partnership Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Wholesale Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "wholesale_image",
+      "label": "Wholesale Image"
+    },
+    {
+      "type": "select",
+      "id": "wholesale_aspect_ratio",
+      "label": "Wholesale Image Aspect Ratio",
+      "options": [
+        { "value": "natural", "label": "Natural" },
+        { "value": "square", "label": "Square (1:1)" },
+        { "value": "landscape", "label": "Landscape (4:3)" },
+        { "value": "portrait", "label": "Portrait (2:3)" },
+        { "value": "wide", "label": "Wide (16:9)" }
+      ],
+      "default": "natural"
+    },
+    {
+      "type": "text",
+      "id": "wholesale_heading",
+      "label": "Wholesale Heading",
+      "default": "WHOLESALE"
+    },
+    {
+      "type": "richtext",
+      "id": "wholesale_text",
+      "label": "Wholesale Text",
+      "default": "<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit</p>"
+    },
+    {
+      "type": "text",
+      "id": "wholesale_button_label",
+      "label": "Wholesale Button Label",
+      "default": "READ MORE"
+    },
+    {
+      "type": "url",
+      "id": "wholesale_button_link",
+      "label": "Wholesale Button Link"
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.content_layout.header.content"
+    },
+    {
+      "type": "select",
+      "id": "content_width",
+      "label": "t:shared.settings.content_layout.content_width.label",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:shared.settings.content_layout.content_width.options.page"
+        },
+        {
+          "value": "custom-width",
+          "label": "t:shared.settings.content_layout.content_width.options.custom"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_settings.header.content"
+    },
+    {
+      "type": "range",
+      "id": "top_padding",
+      "label": "t:shared.settings.section_settings.top_padding.label",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_padding",
+      "label": "t:shared.settings.section_settings.bottom_padding.label",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Partnership Wholesale"
+    }
+  ]
+}
+{% endschema %}
+

@@ -92,7 +92,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "menu": "main-menu",
+        "menu": "main-menu-copy",
         "show_search": true,
         "enable_sticky_header": true,
         "sticky_header_style": "delayed",

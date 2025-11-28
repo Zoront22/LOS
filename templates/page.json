@@ -21,547 +21,123 @@
         "bottom_padding": 50
       }
     },
-    "slideshow_ytaRCb": {
-      "type": "slideshow",
+    "image_with_text_VTwmyy": {
+      "type": "image-with-text",
       "blocks": {
-        "image_HegEji": {
-          "type": "image",
+        "heading_cpV7PV": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/b24a0d66bb4ce9acac21b846a1576e1caa004d6d_2.jpg",
-            "mobile_image": "shopify://shop_images/b24a0d66bb4ce9acac21b846a1576e1caa004d6d_2.jpg",
-            "content_max_width": 720,
-            "text_position": "bottom_center",
-            "mobile_text_position": "center_center",
-            "overline": "",
-            "heading": "Water",
-            "heading_font_size": 9,
-            "heading_tag": "h2",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
-            "text_font_size": 8,
-            "button_1_link": "",
-            "button_1_label": "",
-            "button_1_style": "solid",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "solid",
-            "navigation_buttons": "WATER|#, EARTH|#earth,COURT|#court,CLUB|#club",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "image_HegEji"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "enable_autoplay": false,
-        "time_between_slides": 6,
-        "custom_desktop_height": "750px",
-        "custom_mobile_height": "100vh",
-        "pagination_alignment": "center",
-        "mobile_pagination_alignment": "center",
-        "pagination_background": "#000000",
-        "pagination_foreground": "#ffffff",
-        "pagination_background_opacity": 60,
-        "navigation_cursor_background": "#ffffff",
-        "navigation_cursor_foreground": "#000000",
-        "enable_text_animation": true,
-        "slide_animation": "none",
-        "width": "full-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "featured_collection_bGifpb": {
-      "type": "featured-collection",
-      "blocks": {
-        "promotion_tile_eyH8HH": {
-          "type": "promotion-tile",
-          "disabled": true,
-          "settings": {
-            "min_height": 300,
-            "link": "",
-            "heading": "Promotion",
-            "heading_font_size": 3,
-            "text": "",
-            "text_font_size": 3,
-            "text_alignment": "top_left",
-            "button_label": "Shop now",
-            "button_style": "solid",
-            "button_placement": "bottom-anchored",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "promotion_tile_eyH8HH"
-      ],
-      "custom_css": [
-        ".product-item__title {margin: 0px; font-weight: 400; font-size: 1.2rem;}",
-        ".product-item__image-wrapper {border-radius: 10px;}",
-        ".featured-collection {padding-top: 100px;}"
-      ],
-      "name": "t:sections.featured_collection.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "section_header_heading": "",
-        "section_header_heading_tag": "h2",
-        "section_header_text": "",
-        "section_header_link_url": "shopify://collections/sun-sand-25",
-        "section_header_link_label": "",
-        "collection": "frontpage",
-        "max_products": 8,
-        "column_count_desktop": "4",
-        "column_count_mobile": "1",
-        "show_slider_indicator": false,
-        "width": "full-width-padded",
-        "top_padding": 50,
-        "bottom_padding": 0
-      }
-    },
-    "rich_text_DdrDhG": {
-      "type": "rich-text",
-      "blocks": {
-        "button_TgtchU": {
-          "type": "button",
-          "settings": {
-            "button_link": "shopify://collections/waller-collection",
-            "button_label": "SHOP ALL WATER",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "button_TgtchU"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "content_width": "custom-width",
-        "custom_width": 650,
-        "text_alignment": "center",
-        "top_padding": 0,
-        "bottom_padding": 50
-      }
-    },
-    "slideshow_EqmjPT": {
-      "type": "slideshow",
-      "blocks": {
-        "image_wzbwpt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ebcb5fb70a4bc23d4ff7ac7e51e25f1387a48623.jpg",
-            "mobile_image": "shopify://shop_images/ebcb5fb70a4bc23d4ff7ac7e51e25f1387a48623.jpg",
-            "content_max_width": 720,
-            "text_position": "center_center",
-            "mobile_text_position": "center_center",
-            "overline": "",
-            "heading": "EARTH",
-            "heading_font_size": 9,
-            "heading_tag": "h2",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
-            "text_font_size": 8,
-            "button_1_link": "",
-            "button_1_label": "",
-            "button_1_style": "solid",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "solid",
-            "navigation_buttons": "",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "image_wzbwpt"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "enable_autoplay": false,
-        "time_between_slides": 6,
-        "custom_desktop_height": "750px",
-        "custom_mobile_height": "100vh",
-        "pagination_alignment": "center",
-        "mobile_pagination_alignment": "center",
-        "pagination_background": "#000000",
-        "pagination_foreground": "#ffffff",
-        "pagination_background_opacity": 60,
-        "navigation_cursor_background": "#ffffff",
-        "navigation_cursor_foreground": "#000000",
-        "enable_text_animation": true,
-        "slide_animation": "none",
-        "width": "full-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "featured_collection_zxCdfd": {
-      "type": "featured-collection",
-      "blocks": {
-        "promotion_tile_DRR4jT": {
-          "type": "promotion-tile",
-          "disabled": true,
-          "settings": {
-            "min_height": 300,
-            "link": "",
-            "heading": "Promotion",
-            "heading_font_size": 3,
-            "text": "",
-            "text_font_size": 3,
-            "text_alignment": "top_left",
-            "button_label": "Shop now",
-            "button_style": "solid",
-            "button_placement": "bottom-anchored",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "promotion_tile_DRR4jT"
-      ],
-      "custom_css": [
-        ".featured-collection {padding-top: 100px;}"
-      ],
-      "name": "t:sections.featured_collection.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "section_header_heading": "",
-        "section_header_heading_tag": "h2",
-        "section_header_text": "",
-        "section_header_link_url": "shopify://collections/sun-sand-25",
-        "section_header_link_label": "",
-        "collection": "frontpage",
-        "max_products": 8,
-        "column_count_desktop": "4",
-        "column_count_mobile": "1",
-        "show_slider_indicator": false,
-        "width": "full-width-padded",
-        "top_padding": 50,
-        "bottom_padding": 0
-      }
-    },
-    "rich_text_xqE7xt": {
-      "type": "rich-text",
-      "blocks": {
-        "button_RqCB4P": {
-          "type": "button",
-          "settings": {
-            "button_link": "shopify://collections/new-arrivals",
-            "button_label": "SHOP ALL EARTH",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "button_RqCB4P"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "content_width": "custom-width",
-        "custom_width": 650,
-        "text_alignment": "center",
-        "top_padding": 0,
-        "bottom_padding": 50
-      }
-    },
-    "slideshow_Ja4hFV": {
-      "type": "slideshow",
-      "blocks": {
-        "image_wBWQgf": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/life32-min.png",
-            "mobile_image": "shopify://shop_images/life32-min.png",
-            "content_max_width": 600,
-            "text_position": "center_center",
-            "mobile_text_position": "center_center",
-            "overline": "",
-            "heading": "DROP THREE",
-            "heading_font_size": 7,
-            "heading_tag": "h2",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
-            "text_font_size": 3,
-            "button_1_link": "",
-            "button_1_label": "",
-            "button_1_style": "solid",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "solid",
-            "navigation_buttons": "",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
+            "heading": "CONTACT US",
+            "heading_font_size": 8,
+            "heading_tag": "h1"
           }
         },
-        "video_JbUrLf": {
-          "type": "video",
+        "text_PhwbbW": {
+          "type": "text",
           "settings": {
-            "video": "shopify://files/videos/6179956-uhd_2560_1440_25fps_1.mp4",
-            "video_focal_point": "center",
-            "mobile_video": "shopify://files/videos/6179956-uhd_2560_1440_25fps_1.mp4",
-            "mobile_video_focal_point": "center",
-            "content_max_width": 720,
-            "text_position": "center_center",
-            "mobile_text_position": "center_center",
-            "overline": "",
-            "heading": "COURT",
-            "heading_font_size": 9,
-            "heading_tag": "h2",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
-            "text_font_size": 8,
-            "button_1_link": "",
-            "button_1_label": "",
-            "button_1_style": "solid",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "solid",
-            "navigation_buttons": "",
-            "overlay_color_scheme": "scheme_4",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "image_wBWQgf",
-        "video_JbUrLf"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "enable_autoplay": false,
-        "time_between_slides": 6,
-        "custom_desktop_height": "750px",
-        "custom_mobile_height": "100vh",
-        "pagination_alignment": "center",
-        "mobile_pagination_alignment": "center",
-        "pagination_background": "#000000",
-        "pagination_foreground": "#ffffff",
-        "pagination_background_opacity": 60,
-        "navigation_cursor_background": "#ffffff",
-        "navigation_cursor_foreground": "#000000",
-        "enable_text_animation": true,
-        "slide_animation": "none",
-        "width": "full-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "featured_collection_wPhjAH": {
-      "type": "featured-collection",
-      "blocks": {
-        "promotion_tile_WzUgHX": {
-          "type": "promotion-tile",
-          "disabled": true,
-          "settings": {
-            "min_height": 300,
-            "link": "",
-            "heading": "Promotion",
-            "heading_font_size": 3,
-            "text": "",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar <strong>vivamus fringilla lacus nec metus bibendum egestas.</strong><br/></p>",
             "text_font_size": 3,
-            "text_alignment": "top_left",
-            "button_label": "Shop now",
-            "button_style": "solid",
-            "button_placement": "bottom-anchored",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
+            "text_width": "100%",
+            "text_alignment": "center"
+          }
+        },
+        "spacer_mE3pwB": {
+          "type": "spacer",
+          "settings": {
+            "space": 50,
+            "space_mobile": 1
+          }
+        },
+        "spacer_pmpDEf": {
+          "type": "spacer",
+          "settings": {
+            "space": 50,
+            "space_mobile": 1
+          }
+        },
+        "heading_HkUdKm": {
+          "type": "heading",
+          "settings": {
+            "heading": "We’re Available:",
+            "heading_font_size": 4,
+            "heading_tag": "h2"
+          }
+        },
+        "text_yfhdV4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mon–Fri: 8 a.m.–8 p.m. ET</p><p>Sat–Sun: 10 a.m.– 6:30 p.m. ET<br/></p>",
+            "text_font_size": 3,
+            "text_width": "100%",
+            "text_alignment": "center"
+          }
+        },
+        "divider_VdiGMq": {
+          "type": "divider",
+          "settings": {
+            "thickness": 1,
+            "space_above": 20,
+            "space_below": 0,
+            "space_above_mobile": 10,
+            "space_below_mobile": 0
+          }
+        },
+        "heading_rPTDQC": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to Contact Us:",
+            "heading_font_size": 4,
+            "heading_tag": "h3"
+          }
+        },
+        "text_QAERnB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/activity\" target=\"_blank\" title=\"Activity\"><strong>Live Chat</strong></a></p><p>Call Us   <a href=\"/pages/activity\" target=\"_blank\" title=\"Activity\"><strong>888-475-7674</strong></a></p><p>Text Us<strong> </strong><a href=\"/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\"><strong>1-315-562-0208</strong></a></p><p><a href=\"mailto:example@email.com\" target=\"_blank\" title=\"mailto:example@email.com\"><strong>Email Us</strong></a></p>",
+            "text_font_size": 3,
+            "text_width": "100%",
+            "text_alignment": "left"
           }
         }
       },
       "block_order": [
-        "promotion_tile_WzUgHX"
+        "heading_cpV7PV",
+        "text_PhwbbW",
+        "spacer_mE3pwB",
+        "spacer_pmpDEf",
+        "heading_HkUdKm",
+        "text_yfhdV4",
+        "divider_VdiGMq",
+        "heading_rPTDQC",
+        "text_QAERnB"
       ],
       "custom_css": [
-        ".featured-collection {padding-top: 100px;}"
+        "p {margin: 0;}"
       ],
-      "name": "t:sections.featured_collection.presets.name",
+      "name": "t:sections.image_with_text.presets.name",
       "settings": {
         "color_scheme": "",
-        "section_header_heading": "",
-        "section_header_heading_tag": "h2",
-        "section_header_text": "",
-        "section_header_link_url": "shopify://collections/sun-sand-25",
-        "section_header_link_label": "",
-        "collection": "frontpage",
-        "max_products": 8,
-        "column_count_desktop": "4",
-        "column_count_mobile": "1",
-        "show_slider_indicator": false,
-        "width": "full-width-padded",
+        "image": "shopify://shop_images/16d384c610d61ba53aa359694a731ca43c9a7e38.png",
+        "aspect_ratio": "landscape-alt",
+        "mobile_aspect_ratio": "natural",
+        "media_link": "",
+        "desktop_media_width": 50,
+        "desktop_media_position": "left",
+        "mobile_media_position": "above",
+        "media_breathing_room": 0,
+        "product": "",
+        "desktop_content_width": 500,
+        "text_alignment": "left",
+        "text_alignment_vertical": "top",
+        "container_color_scheme": "",
+        "width": "page-width",
         "top_padding": 50,
-        "bottom_padding": 0
-      }
-    },
-    "rich_text_rEcXr4": {
-      "type": "rich-text",
-      "blocks": {
-        "button_TeyB8E": {
-          "type": "button",
-          "settings": {
-            "button_link": "shopify://collections/liquid-chrome",
-            "button_label": "SHOP ALL COURT",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "button_TeyB8E"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "content_width": "custom-width",
-        "custom_width": 650,
-        "text_alignment": "center",
-        "top_padding": 0,
-        "bottom_padding": 50
-      }
-    },
-    "slideshow_6rnxib": {
-      "type": "slideshow",
-      "blocks": {
-        "image_a4jDDx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/485adcd248575c56579350c9a401333ccf0ca5cb.jpg",
-            "mobile_image": "shopify://shop_images/485adcd248575c56579350c9a401333ccf0ca5cb.jpg",
-            "content_max_width": 720,
-            "text_position": "center_center",
-            "mobile_text_position": "center_center",
-            "overline": "",
-            "heading": "CLUB",
-            "heading_font_size": 9,
-            "heading_tag": "h2",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
-            "text_font_size": 8,
-            "button_1_link": "",
-            "button_1_label": "",
-            "button_1_style": "solid",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "solid",
-            "navigation_buttons": "",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "image_a4jDDx"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "enable_autoplay": false,
-        "time_between_slides": 6,
-        "custom_desktop_height": "750px",
-        "custom_mobile_height": "100vh",
-        "pagination_alignment": "center",
-        "mobile_pagination_alignment": "center",
-        "pagination_background": "#000000",
-        "pagination_foreground": "#ffffff",
-        "pagination_background_opacity": 60,
-        "navigation_cursor_background": "#ffffff",
-        "navigation_cursor_foreground": "#000000",
-        "enable_text_animation": true,
-        "slide_animation": "none",
-        "width": "full-width",
-        "top_padding": 0,
-        "bottom_padding": 0
-      }
-    },
-    "featured_collection_nYwJhp": {
-      "type": "featured-collection",
-      "blocks": {
-        "promotion_tile_MWV84F": {
-          "type": "promotion-tile",
-          "disabled": true,
-          "settings": {
-            "min_height": 300,
-            "link": "",
-            "heading": "Promotion",
-            "heading_font_size": 3,
-            "text": "",
-            "text_font_size": 3,
-            "text_alignment": "top_left",
-            "button_label": "Shop now",
-            "button_style": "solid",
-            "button_placement": "bottom-anchored",
-            "overlay_color_scheme": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "promotion_tile_MWV84F"
-      ],
-      "custom_css": [
-        ".featured-collection {padding-top: 100px;}"
-      ],
-      "name": "t:sections.featured_collection.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "section_header_heading": "",
-        "section_header_heading_tag": "h2",
-        "section_header_text": "",
-        "section_header_link_url": "shopify://collections/sun-sand-25",
-        "section_header_link_label": "",
-        "collection": "frontpage",
-        "max_products": 8,
-        "column_count_desktop": "4",
-        "column_count_mobile": "1",
-        "show_slider_indicator": false,
-        "width": "full-width-padded",
-        "top_padding": 50,
-        "bottom_padding": 0
-      }
-    },
-    "rich_text_kEaR9B": {
-      "type": "rich-text",
-      "blocks": {
-        "button_jjGqcQ": {
-          "type": "button",
-          "settings": {
-            "button_link": "shopify://collections/line-drawings",
-            "button_label": "SHOP ALL CLUB",
-            "button_style": "outline"
-          }
-        }
-      },
-      "block_order": [
-        "button_jjGqcQ"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "content_width": "custom-width",
-        "custom_width": 650,
-        "text_alignment": "center",
-        "top_padding": 0,
         "bottom_padding": 50
       }
     }
   },
   "order": [
     "main",
-    "slideshow_ytaRCb",
-    "featured_collection_bGifpb",
-    "rich_text_DdrDhG",
-    "slideshow_EqmjPT",
-    "featured_collection_zxCdfd",
-    "rich_text_xqE7xt",
-    "slideshow_Ja4hFV",
-    "featured_collection_wPhjAH",
-    "rich_text_rEcXr4",
-    "slideshow_6rnxib",
-    "featured_collection_nYwJhp",
-    "rich_text_kEaR9B"
+    "image_with_text_VTwmyy"
   ]
 }

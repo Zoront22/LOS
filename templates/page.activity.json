@@ -44,7 +44,7 @@
             "button_2_link": "",
             "button_2_label": "",
             "button_2_style": "solid",
-            "navigation_buttons": "SUN AND SAND ‘25|#, DROP TWO|#drop-two,DROP THREE|#drop-three,DROP FOUR|#drop-four",
+            "navigation_buttons": "8 AM: Beach|#, 12 PM: Sunset Harbor|#drop-two,4 PM: Palm Island|#drop-three,8 PM: Dinner @ Amara|#drop-four",
             "overlay_color_scheme": "",
             "overlay_opacity": 20
           }

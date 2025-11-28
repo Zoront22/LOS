@@ -1,0 +1,217 @@
+{%- liquid
+  echo 'section-blog-posts-list.css' | asset_url | stylesheet_tag
+  echo 'component-pagination.css' | asset_url | stylesheet_tag
+  render 'inline-scripts', script_name: 'visibility-watcher'
+-%}
+
+{%- if section.settings.blog != blank -%}
+  {%- paginate section.settings.blog.articles by section.settings.articles_per_page -%}
+    <blog-posts-list
+      class="section blog-posts-list"
+      data-section-id="{{ section.id }}"
+      data-section-type="blog-posts-list"
+      style="
+        {% render 'settings-section-padding' %}
+        {% render 'color-scheme-to-vars', color_scheme: section.settings.color_scheme %}
+      "
+    >
+      <div class="section-inner section-inner--width-{{ section.settings.width }}">
+        <visibility-watcher class="blog-posts-list__content">
+          <div class="blog-posts-list__articles">
+            {%- for article in section.settings.blog.articles -%}
+              {%- render 'blog-posts-list-item',
+                article: article,
+                local_blog: section.settings.blog,
+                animation_index: forloop.index
+              -%}
+            {%- endfor -%}
+          </div>
+
+          {%- if paginate.pages > 1 -%}
+            <div class="blog-posts-list__pagination">
+              {% render 'pagination', paginate: paginate, type: 'general.pagination.blog_posts' %}
+            </div>
+          {%- endif -%}
+        </visibility-watcher>
+      </div>
+    </blog-posts-list>
+  {%- endpaginate -%}
+{%- else -%}
+  <blog-posts-list
+    class="section blog-posts-list"
+    data-section-id="{{ section.id }}"
+    data-section-type="blog-posts-list"
+    style="
+      {% render 'settings-section-padding' %}
+      {% render 'color-scheme-to-vars', color_scheme: section.settings.color_scheme %}
+    "
+  >
+    <div class="section-inner section-inner--width-{{ section.settings.width }}">
+      <visibility-watcher class="blog-posts-list__content">
+        <div class="blog-posts-list__articles">
+          {%- for i in (1..section.settings.articles_per_page) -%}
+            {%- render 'blog-posts-list-item',
+              animation_index: forloop.index
+            -%}
+          {%- endfor -%}
+        </div>
+      </visibility-watcher>
+    </div>
+  </blog-posts-list>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Blog posts (List)",
+  "tag": "section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "custom.overlay"
+    ]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:shared.settings.color_scheme.label",
+      "default": "scheme_1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blog_posts.settings.blog.header.content"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.blog_posts.settings.blog.blog.label"
+    },
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "label": "t:sections.main_blog.settings.general.articles_per_page.label",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "grid_image_aspect_ratio",
+      "label": "t:sections.blog_shared.settings.grid_image_aspect_ratio.label",
+      "options": [
+        {
+          "value": "natural",
+          "label": "t:shared.settings.aspect_ratio.options.natural"
+        },
+        {
+          "value": "portrait",
+          "label": "t:shared.settings.aspect_ratio.options.portrait"
+        },
+        {
+          "value": "portrait-alt",
+          "label": "t:shared.settings.aspect_ratio.options.portrait_alt"
+        },
+        {
+          "value": "square",
+          "label": "t:shared.settings.aspect_ratio.options.square"
+        },
+        {
+          "value": "landscape-alt",
+          "label": "t:shared.settings.aspect_ratio.options.landscape_alt"
+        },
+        {
+          "value": "landscape",
+          "label": "t:shared.settings.aspect_ratio.options.landscape"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_published_date",
+      "label": "t:sections.blog_shared.settings.show_published_date.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "t:sections.blog_shared.settings.show_excerpt.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_more_button",
+      "label": "t:sections.blog_shared.settings.show_read_more_button.label",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "t:shared.settings.button_style.label",
+      "options": [
+        {
+          "value": "solid",
+          "label": "t:shared.settings.button_style.options.solid"
+        },
+        {
+          "value": "outline",
+          "label": "t:shared.settings.button_style.options.outline"
+        },
+        {
+          "value": "text",
+          "label": "t:shared.settings.button_style.options.text"
+        }
+      ],
+      "default": "text"
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "t:shared.settings.section_settings.width.label",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:shared.settings.section_settings.width.options.page_width"
+        },
+        {
+          "value": "full-width-padded",
+          "label": "t:shared.settings.section_settings.width.options.full_width_padded_simplified_language"
+        }
+      ],
+      "info": "t:shared.settings.section_settings.width.info",
+      "default": "page-width"
+    },
+    {
+      "type": "range",
+      "id": "top_padding",
+      "label": "t:shared.settings.section_settings.top_padding.label",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_padding",
+      "label": "t:shared.settings.section_settings.bottom_padding.label",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog posts (List)"
+    }
+  ]
+}
+{% endschema %}
+

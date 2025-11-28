@@ -1,0 +1,82 @@
+{% liquid
+  comment
+    Renders a blog post item for the "Blog posts list" section.
+
+    Required parameters:
+      - article: { Object } The article to render (optional for placeholders).
+
+    Optional parameters:
+      - local_blog: { Object } The blog object associated with the article.
+      - animation_index: { Number } Used to multiply the animation delay.
+  endcomment
+
+  capture image_sizes
+    render 'sizes', small_desktop_width: '400px', mobile_width: '100vw', remove_gutters: true
+  endcapture
+-%}
+
+<article class="blog-posts-list-item" style="--animation-index: {{ animation_index }};">
+  <div class="blog-posts-list-item__header">
+    <h2 class="blog-posts-list-item__title ff-heading fs-heading-5-base">
+      {% if article != blank %}
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      {% else %}
+        {{ 'general.onboarding.article_title' | t }}
+      {% endif %}
+    </h2>
+    
+    {% if section.settings.show_published_date %}
+      <time class="blog-posts-list-item__date fs-body-75 t-opacity-70">
+        {% if article != blank %}
+          {{ article.published_at | date: '%B %d, %Y' }}
+        {% else %}
+          {{ 'now' | date: '%B %d, %Y' }}
+        {% endif %}
+      </time>
+    {% endif %}
+  </div>
+
+  <div class="blog-posts-list-item__content">
+    <div class="blog-posts-list-item__image">
+      {% if article != blank %}
+        {% render 'image',
+          image: article.image,
+          sizes: image_sizes,
+          aspect_ratio: section.settings.grid_image_aspect_ratio,
+          object_fit: 'cover',
+          load_animation_effect: 'blur',
+          include_placeholder: true
+        %}
+      {% else %}
+        {% render 'image',
+          image: blank,
+          sizes: image_sizes,
+          aspect_ratio: section.settings.grid_image_aspect_ratio,
+          object_fit: 'cover',
+          include_placeholder: true
+        %}
+      {% endif %}
+    </div>
+
+    <div class="blog-posts-list-item__text">
+      {% if section.settings.show_excerpt %}
+        <p class="blog-posts-list-item__excerpt fs-body-base">
+          {% if article != blank and article.excerpt_or_content != blank %}
+            {{ article.excerpt_or_content | strip_html | truncatewords: 30 }}
+          {% elsif article == blank %}
+            {{ 'general.onboarding.article_excerpt' | t }}
+          {% endif %}
+        </p>
+      {% endif %}
+
+      {% if section.settings.show_read_more_button %}
+        <a href="{% if article != blank %}{{ article.url }}{% else %}#{% endif %}" class="blog-posts-list-item__link ff-heading fs-body-base">
+          READ ARTICLE
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="blog-posts-list-item__separator"></div>
+</article>
+

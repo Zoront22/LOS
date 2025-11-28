@@ -133,6 +133,9 @@
     width: 100%;
     display: flex;
   }
+  .newsletter-email-form{
+    width: 90vw;
+  }
 }
 @media screen and (max-width: 590px) {
   .content-block-wrapper--heading {

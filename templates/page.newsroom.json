@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_img_phrase_ixcXpG": {
+      "type": "hero-img-phrase",
+      "name": "Hero Beach",
+      "settings": {
+        "bg_image": "shopify://shop_images/a7c578dabbd2bb89a0b4744203c1d1ba35e0a499.png",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "section_height": 670,
+        "content_width": 581,
+        "content_height": 228,
+        "content_top": 277,
+        "content_left": 133,
+        "title_time": "NEWSROOM",
+        "title_highlight": "",
+        "title_size": 112,
+        "title_color": "#ffffff",
+        "subtitle_size": 27,
+        "subtitle": "",
+        "subtitle_color": "#ffffff"
+      }
+    },
+    "blog_posts_list_NNGMNr": {
+      "type": "blog-posts-list",
+      "name": "Blog posts (List)",
+      "settings": {
+        "color_scheme": "",
+        "blog": "news",
+        "articles_per_page": 3,
+        "grid_image_aspect_ratio": "square",
+        "show_published_date": true,
+        "show_excerpt": true,
+        "show_read_more_button": true,
+        "button_style": "text",
+        "width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "content_width": "custom-width",
+        "custom_width": 650,
+        "enable_corner_radius": true,
+        "top_padding": 80,
+        "bottom_padding": 50
+      }
+    },
+    "contact_info_fegQd6": {
+      "type": "contact-info",
+      "name": "Contact Info",
+      "settings": {
+        "color_scheme": "",
+        "bg_color": "#efeae2",
+        "heading_left": "CONTACT US",
+        "text_left": "<p>Tempus leo eu aenean sed diam urna tempor. Pulvinar</p><p><strong>vivamus fringilla lacus nec metus bibendum egestas.</strong></p>",
+        "heading_middle": "WE'RE AVAILABLE:",
+        "text_middle": "<p>Mon-Fri: 8 a.m.-8 p.m. ET</p><p>Sat-Sun: 10 a.m.- 6:30 p.m. ET</p>",
+        "heading_right": "HOW TO CONTACT US:",
+        "text_right": "<p><span style=\"text-decoration:underline\">Live Chat</span></p><p>Call Us <span style=\"text-decoration:underline\">888-475-7674</span></p><p>Text Us <span style=\"text-decoration:underline\">1-315-562-0208</span></p><p><span style=\"text-decoration:underline\">Email Us</span></p>",
+        "content_width": "page-width",
+        "top_padding": 50,
+        "bottom_padding": 50
+      }
+    }
+  },
+  "order": [
+    "hero_img_phrase_ixcXpG",
+    "blog_posts_list_NNGMNr",
+    "main",
+    "contact_info_fegQd6"
+  ]
+}

@@ -1,0 +1,166 @@
+{%- liquid
+  echo 'section-contact-info.css' | asset_url | stylesheet_tag
+-%}
+
+<div
+  class="section contact-info"
+  style="
+    {% render 'settings-section-padding' %}
+    {% render 'color-scheme-to-vars', color_scheme: section.settings.color_scheme %}
+    --bg-color: {{ section.settings.bg_color }};
+  "
+>
+  <div class="section-inner section-inner--width-{{ section.settings.content_width }}">
+    <div class="contact-info__container">
+      <div class="contact-info__column contact-info__column--left">
+        <div class="contact-info__content">
+          <h2 class="contact-info__heading">{{ section.settings.heading_left }}</h2>
+          <div class="contact-info__text rte">
+            {{ section.settings.text_left }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-info__divider"></div>
+      
+      <div class="contact-info__column contact-info__column--middle">
+        <div class="contact-info__content">
+        <h2 class="contact-info__heading">{{ section.settings.heading_middle }}</h2>
+        <div class="contact-info__text rte">
+          {{ section.settings.text_middle }}
+        </div>
+        </div>
+      </div>
+      
+      <div class="contact-info__divider"></div>
+      
+      <div class="contact-info__column contact-info__column--right">
+        <div class="contact-info__content">
+        <h2 class="contact-info__heading">{{ section.settings.heading_right }}</h2>
+        <div class="contact-info__text rte">
+          {{ section.settings.text_right }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact Info",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:shared.settings.color_scheme.label",
+      "default": "scheme_1"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#efeae2"
+    },
+    {
+      "type": "header",
+      "content": "Left Column"
+    },
+    {
+      "type": "text",
+      "id": "heading_left",
+      "label": "Heading",
+      "default": "CONTACT US"
+    },
+    {
+      "type": "richtext",
+      "id": "text_left",
+      "label": "Text",
+      "default": "<p>Tempus leo eu aenean sed diam urna tempor. Pulvinar</p><p><strong>vivamus fringilla lacus nec metus bibendum egestas.</strong></p>"
+    },
+    {
+      "type": "header",
+      "content": "Middle Column"
+    },
+    {
+      "type": "text",
+      "id": "heading_middle",
+      "label": "Heading",
+      "default": "WE'RE AVAILABLE:"
+    },
+    {
+      "type": "richtext",
+      "id": "text_middle",
+      "label": "Text",
+      "default": "<p>Mon-Fri: 8 a.m.-8 p.m. ET</p><p>Sat-Sun: 10 a.m.- 6:30 p.m. ET</p>"
+    },
+    {
+      "type": "header",
+      "content": "Right Column"
+    },
+    {
+      "type": "text",
+      "id": "heading_right",
+      "label": "Heading",
+      "default": "HOW TO CONTACT US:"
+    },
+    {
+      "type": "richtext",
+      "id": "text_right",
+      "label": "Text",
+      "default": "<p><u>Live Chat</u></p><p>Call Us <u>888-475-7674</u></p><p>Text Us <u>1-315-562-0208</u></p><p><u>Email Us</u></p>"
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.content_layout.header.content"
+    },
+    {
+      "type": "select",
+      "id": "content_width",
+      "label": "t:shared.settings.content_layout.content_width.label",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:shared.settings.content_layout.content_width.options.page"
+        },
+        {
+          "value": "custom-width",
+          "label": "t:shared.settings.content_layout.content_width.options.custom"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_settings.header.content"
+    },
+    {
+      "type": "range",
+      "id": "top_padding",
+      "label": "t:shared.settings.section_settings.top_padding.label",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_padding",
+      "label": "t:shared.settings.section_settings.bottom_padding.label",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Info"
+    }
+  ]
+}
+{% endschema %}
+
