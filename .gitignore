@@ -1,8 +1,0 @@
-#
-# config/settings_data.json
-# Ignore the entire .shopify directory
-# contents are managed by Shopify CLI
-.shopify/
-config/
-.gitignore
-*
