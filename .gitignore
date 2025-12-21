@@ -4,4 +4,5 @@
 # contents are managed by Shopify CLI
 .shopify/
 config/
+.gitignore
 *
