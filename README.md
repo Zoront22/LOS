@@ -242,3 +242,7 @@ If you want, I can:
 Acknowledgements and resources
 - Shopify documentation: https://shopify.dev
 - If you'd like, tell me which asset pipeline (webpack, vite, esbuild, etc.) you use and I will add concrete scripts or open a PR with this README in the repository.
+
+---
+View the proyect in [LordsOfFun](https://lordsofsun.com).
+
