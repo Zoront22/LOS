@@ -8,7 +8,7 @@ This repository is intended to be used as a Shopify theme (Liquid, CSS, JavaScri
 
 - Node.js (recommended: 18.x or the version used in your environment).
 - npm or yarn.
-- Shopify CLI (v3+ recommended). Install from https://shopify.dev/docs/cli
+- Shopify CLI (v3+ recommended). Install from [https://shopify.dev/docs/cli](https://shopify.dev/docs)
 - A Shopify development store (e.g. my-store.myshopify.com).
 - Git access to the repository.
 
@@ -19,17 +19,16 @@ Optional:
 
 ## Installation (quick steps)
 
-1. Clone the repository:
-   git clone https://github.com/Zoront22/LOS.git
-   cd LOS
+1. Log in to Shopify using Shopify CLI:
+   `shopify login --store=your-store.myshopify.com`
 
 2. Install dependencies:
    npm install
-   # or
+   or
    yarn install
 
-3. Log in to Shopify using Shopify CLI:
-   shopify login --store=your-store.myshopify.com
+3. Clone the repository:
+   `shopify theme pull [flags]`
 
 4. Start the theme in development mode (depending on your Shopify CLI version):
    shopify theme dev --store=your-store.myshopify.com
